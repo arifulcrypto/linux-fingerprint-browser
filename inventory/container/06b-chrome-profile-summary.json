@@ -1,0 +1,785 @@
+{
+  "/root/.config/chrome-residential": {
+    "path": "/root/.config/chrome-residential",
+    "profile": {
+      "name": "Your Chrome",
+      "avatar_index": 26,
+      "exit_type": "Normal",
+      "default_content_setting_values": {
+        "has_migrated_local_network_access": true
+      },
+      "content_settings_exceptions_keys": [
+        "abusive_notification_permissions",
+        "access_to_get_all_screens_media_in_session",
+        "anti_abuse",
+        "app_banner",
+        "ar",
+        "are_suspicious_notifications_allowlisted_by_user",
+        "auto_picture_in_picture",
+        "auto_select_certificate",
+        "automatic_downloads",
+        "automatic_fullscreen",
+        "autoplay",
+        "background_sync",
+        "bluetooth_chooser_data",
+        "bluetooth_guard",
+        "bluetooth_scanning",
+        "camera_pan_tilt_zoom",
+        "captured_surface_control",
+        "client_hints",
+        "clipboard",
+        "controlled_frame",
+        "cookie_controls_metadata",
+        "cookies",
+        "direct_sockets",
+        "display_media_system_audio",
+        "disruptive_notification_permissions",
+        "durable_storage",
+        "fedcm_idp_registration",
+        "fedcm_idp_signin",
+        "fedcm_share",
+        "file_system_access_chooser_data",
+        "file_system_access_extended_permission",
+        "file_system_access_restore_permission",
+        "file_system_last_picked_directory",
+        "file_system_read_guard",
+        "file_system_write_guard",
+        "formfill_metadata",
+        "geolocation",
+        "geolocation_with_options",
+        "hand_tracking",
+        "has_migrated_local_network_access",
+        "hid_chooser_data",
+        "hid_guard",
+        "http_allowed",
+        "https_enforced",
+        "idle_detection",
+        "images",
+        "important_site_info",
+        "initialized_translations",
+        "inline_cue_menu",
+        "intent_picker_auto_display"
+      ]
+    },
+    "intl": {
+      "accept_languages": null,
+      "charset_default": null
+    },
+    "browser": {
+      "last_clear_browsing_data_time": null,
+      "has_seen_welcome_page": null
+    },
+    "download": {
+      "default_directory": null
+    },
+    "signin": {
+      "allowed": true,
+      "allowed_on_next_startup": null
+    },
+    "sync": {
+      "requested": null
+    },
+    "hardware_acceleration_mode": null,
+    "media": {
+      "autoplay_policy": null
+    },
+    "extensions": [
+      {
+        "id": "mhjfbmdgcfjbbpaeojofohoefgiehjai",
+        "name": "Chrome PDF Viewer",
+        "version": "1",
+        "permissions": [
+          "chrome://resources/",
+          "chrome://webui-test/",
+          "contentSettings",
+          "metricsPrivate",
+          "pdfViewerPrivate",
+          "resourcesPrivate",
+          "tabs",
+          {
+            "fileSystem": [
+              "write"
+            ]
+          }
+        ],
+        "host_permissions": null,
+        "location": 5,
+        "state": null
+      },
+      {
+        "id": "nmmhkkegccagdldgiimedpiccmgmieda",
+        "name": "Chrome Web Store Payments",
+        "version": "1.0.0.6",
+        "permissions": [
+          "identity",
+          "webview",
+          "https://www.google.com/",
+          "https://www.googleapis.com/*",
+          "https://payments.google.com/payments/v4/js/integrator.js",
+          "https://sandbox.google.com/payments/v4/js/integrator.js"
+        ],
+        "host_permissions": null,
+        "location": 10,
+        "state": null
+      },
+      {
+        "id": "ghbmnnjooekpmoecnnnilnnbdlolhkhi",
+        "name": "Google Docs Offline",
+        "version": "1.111.1",
+        "permissions": [
+          "alarms",
+          "storage",
+          "unlimitedStorage",
+          "offscreen"
+        ],
+        "host_permissions": [
+          "https://docs.google.com/*",
+          "https://drive.google.com/*"
+        ],
+        "location": 1,
+        "state": null
+      },
+      {
+        "id": "nkeimhogjdpnpccoofpliimaahmaaome",
+        "name": "Google Hangouts",
+        "version": "1.3.26",
+        "permissions": [
+          "enterprise.hardwarePlatform",
+          "processes",
+          "system.cpu",
+          "webrtcLoggingPrivate"
+        ],
+        "host_permissions": null,
+        "location": 5,
+        "state": null
+      },
+      {
+        "id": "fignfifoniblkonapihmkfakmlgkbkcf",
+        "name": "Google Network Speech",
+        "version": "1.0",
+        "permissions": [
+          "metricsPrivate",
+          "offscreen",
+          "systemPrivate",
+          "ttsEngine"
+        ],
+        "host_permissions": [
+          "https://www.google.com/"
+        ],
+        "location": 5,
+        "state": null
+      }
+    ],
+    "local_state": {
+      "last_used": null,
+      "last_active_profiles": [],
+      "profiles": {
+        "Default": {
+          "name": "Your Chrome",
+          "avatar_icon": "chrome://theme/IDR_PROFILE_AVATAR_26",
+          "is_using_default_name": true
+        }
+      },
+      "variations_country": "ph",
+      "variations_permanent_consistency_country": [
+        "156.0.8078.79",
+        "ph"
+      ]
+    }
+  },
+  "/root/.config/chrome-tr-proxy": {
+    "path": "/root/.config/chrome-tr-proxy",
+    "profile": {
+      "name": "Your Chrome",
+      "avatar_index": 26,
+      "exit_type": "Crashed",
+      "default_content_setting_values": {
+        "has_migrated_local_network_access": true
+      },
+      "content_settings_exceptions_keys": [
+        "abusive_notification_permissions",
+        "access_to_get_all_screens_media_in_session",
+        "anti_abuse",
+        "app_banner",
+        "ar",
+        "are_suspicious_notifications_allowlisted_by_user",
+        "auto_picture_in_picture",
+        "auto_select_certificate",
+        "automatic_downloads",
+        "automatic_fullscreen",
+        "autoplay",
+        "background_sync",
+        "bluetooth_chooser_data",
+        "bluetooth_guard",
+        "bluetooth_scanning",
+        "camera_pan_tilt_zoom",
+        "captured_surface_control",
+        "client_hints",
+        "clipboard",
+        "controlled_frame",
+        "cookie_controls_metadata",
+        "cookies",
+        "direct_sockets",
+        "display_media_system_audio",
+        "disruptive_notification_permissions",
+        "durable_storage",
+        "fedcm_idp_registration",
+        "fedcm_idp_signin",
+        "fedcm_share",
+        "file_system_access_chooser_data",
+        "file_system_access_extended_permission",
+        "file_system_access_restore_permission",
+        "file_system_last_picked_directory",
+        "file_system_read_guard",
+        "file_system_write_guard",
+        "formfill_metadata",
+        "geolocation",
+        "geolocation_with_options",
+        "hand_tracking",
+        "has_migrated_local_network_access",
+        "hid_chooser_data",
+        "hid_guard",
+        "http_allowed",
+        "https_enforced",
+        "idle_detection",
+        "images",
+        "important_site_info",
+        "initialized_translations",
+        "inline_cue_menu",
+        "intent_picker_auto_display"
+      ]
+    },
+    "intl": {
+      "accept_languages": null,
+      "charset_default": null
+    },
+    "browser": {
+      "last_clear_browsing_data_time": null,
+      "has_seen_welcome_page": null
+    },
+    "download": {
+      "default_directory": null
+    },
+    "signin": {
+      "allowed": true,
+      "allowed_on_next_startup": null
+    },
+    "sync": {
+      "requested": null
+    },
+    "hardware_acceleration_mode": null,
+    "media": {
+      "autoplay_policy": null
+    },
+    "extensions": [
+      {
+        "id": "mhjfbmdgcfjbbpaeojofohoefgiehjai",
+        "name": "Chrome PDF Viewer",
+        "version": "1",
+        "permissions": [
+          "chrome://resources/",
+          "chrome://webui-test/",
+          "contentSettings",
+          "metricsPrivate",
+          "pdfViewerPrivate",
+          "resourcesPrivate",
+          "tabs",
+          {
+            "fileSystem": [
+              "write"
+            ]
+          }
+        ],
+        "host_permissions": null,
+        "location": 5,
+        "state": null
+      },
+      {
+        "id": "nmmhkkegccagdldgiimedpiccmgmieda",
+        "name": "Chrome Web Store Payments",
+        "version": "1.0.0.6",
+        "permissions": [
+          "identity",
+          "webview",
+          "https://www.google.com/",
+          "https://www.googleapis.com/*",
+          "https://payments.google.com/payments/v4/js/integrator.js",
+          "https://sandbox.google.com/payments/v4/js/integrator.js"
+        ],
+        "host_permissions": null,
+        "location": 10,
+        "state": null
+      },
+      {
+        "id": "admccjkmockfdflocgggjfgdacdodkdf",
+        "name": "Gemini in Chrome",
+        "version": "1.2",
+        "permissions": [
+          "glicPrivate",
+          "glicPrivate.invoke"
+        ],
+        "host_permissions": null,
+        "location": 5,
+        "state": null
+      },
+      {
+        "id": "ghbmnnjooekpmoecnnnilnnbdlolhkhi",
+        "name": "Google Docs Offline",
+        "version": "1.111.1",
+        "permissions": [
+          "alarms",
+          "storage",
+          "unlimitedStorage",
+          "offscreen"
+        ],
+        "host_permissions": [
+          "https://docs.google.com/*",
+          "https://drive.google.com/*"
+        ],
+        "location": 6,
+        "state": null
+      },
+      {
+        "id": "nkeimhogjdpnpccoofpliimaahmaaome",
+        "name": "Google Hangouts",
+        "version": "1.4.5",
+        "permissions": [
+          "enterprise.hardwarePlatform",
+          "processes",
+          "system.cpu",
+          "webrtcLoggingPrivate"
+        ],
+        "host_permissions": null,
+        "location": 5,
+        "state": null
+      },
+      {
+        "id": "fignfifoniblkonapihmkfakmlgkbkcf",
+        "name": "Google Network Speech",
+        "version": "1.0",
+        "permissions": [
+          "metricsPrivate",
+          "offscreen",
+          "systemPrivate",
+          "ttsEngine"
+        ],
+        "host_permissions": [
+          "https://www.google.com/"
+        ],
+        "location": 5,
+        "state": null
+      }
+    ],
+    "local_state": {
+      "last_used": null,
+      "last_active_profiles": [
+        "Default"
+      ],
+      "profiles": {
+        "Default": {
+          "name": "Your Chrome",
+          "avatar_icon": "chrome://theme/IDR_PROFILE_AVATAR_26",
+          "is_using_default_name": true
+        }
+      },
+      "variations_country": "tr",
+      "variations_permanent_consistency_country": [
+        "156.0.8078.79",
+        "tr"
+      ]
+    }
+  },
+  "/root/.config/chrome-us-proxy": {
+    "path": "/root/.config/chrome-us-proxy",
+    "profile": {
+      "name": "Your Chrome",
+      "avatar_index": 26,
+      "exit_type": "Crashed",
+      "default_content_setting_values": {
+        "has_migrated_local_network_access": true
+      },
+      "content_settings_exceptions_keys": [
+        "abusive_notification_permissions",
+        "access_to_get_all_screens_media_in_session",
+        "anti_abuse",
+        "app_banner",
+        "ar",
+        "are_suspicious_notifications_allowlisted_by_user",
+        "auto_picture_in_picture",
+        "auto_select_certificate",
+        "automatic_downloads",
+        "automatic_fullscreen",
+        "autoplay",
+        "background_sync",
+        "bluetooth_chooser_data",
+        "bluetooth_guard",
+        "bluetooth_scanning",
+        "camera_pan_tilt_zoom",
+        "captured_surface_control",
+        "client_hints",
+        "clipboard",
+        "controlled_frame",
+        "cookie_controls_metadata",
+        "cookies",
+        "direct_sockets",
+        "display_media_system_audio",
+        "disruptive_notification_permissions",
+        "durable_storage",
+        "fedcm_idp_registration",
+        "fedcm_idp_signin",
+        "fedcm_share",
+        "file_system_access_chooser_data",
+        "file_system_access_extended_permission",
+        "file_system_access_restore_permission",
+        "file_system_last_picked_directory",
+        "file_system_read_guard",
+        "file_system_write_guard",
+        "formfill_metadata",
+        "geolocation",
+        "geolocation_with_options",
+        "hand_tracking",
+        "has_migrated_local_network_access",
+        "hid_chooser_data",
+        "hid_guard",
+        "http_allowed",
+        "https_enforced",
+        "idle_detection",
+        "images",
+        "important_site_info",
+        "initialized_translations",
+        "inline_cue_menu",
+        "intent_picker_auto_display"
+      ]
+    },
+    "intl": {
+      "accept_languages": null,
+      "charset_default": null
+    },
+    "browser": {
+      "last_clear_browsing_data_time": null,
+      "has_seen_welcome_page": null
+    },
+    "download": {
+      "default_directory": null
+    },
+    "signin": {
+      "allowed": true,
+      "allowed_on_next_startup": null
+    },
+    "sync": {
+      "requested": null
+    },
+    "hardware_acceleration_mode": null,
+    "media": {
+      "autoplay_policy": null
+    },
+    "extensions": [
+      {
+        "id": "mhjfbmdgcfjbbpaeojofohoefgiehjai",
+        "name": "Chrome PDF Viewer",
+        "version": "1",
+        "permissions": [
+          "chrome://resources/",
+          "chrome://webui-test/",
+          "contentSettings",
+          "metricsPrivate",
+          "pdfViewerPrivate",
+          "resourcesPrivate",
+          "tabs",
+          {
+            "fileSystem": [
+              "write"
+            ]
+          }
+        ],
+        "host_permissions": null,
+        "location": 5,
+        "state": null
+      },
+      {
+        "id": "nmmhkkegccagdldgiimedpiccmgmieda",
+        "name": "Chrome Web Store Payments",
+        "version": "1.0.0.6",
+        "permissions": [
+          "identity",
+          "webview",
+          "https://www.google.com/",
+          "https://www.googleapis.com/*",
+          "https://payments.google.com/payments/v4/js/integrator.js",
+          "https://sandbox.google.com/payments/v4/js/integrator.js"
+        ],
+        "host_permissions": null,
+        "location": 10,
+        "state": null
+      },
+      {
+        "id": "admccjkmockfdflocgggjfgdacdodkdf",
+        "name": "Gemini in Chrome",
+        "version": "1.2",
+        "permissions": [
+          "glicPrivate",
+          "glicPrivate.invoke"
+        ],
+        "host_permissions": null,
+        "location": 5,
+        "state": null
+      },
+      {
+        "id": "ghbmnnjooekpmoecnnnilnnbdlolhkhi",
+        "name": "Google Docs Offline",
+        "version": "1.111.1",
+        "permissions": [
+          "alarms",
+          "storage",
+          "unlimitedStorage",
+          "offscreen"
+        ],
+        "host_permissions": [
+          "https://docs.google.com/*",
+          "https://drive.google.com/*"
+        ],
+        "location": 6,
+        "state": null
+      },
+      {
+        "id": "nkeimhogjdpnpccoofpliimaahmaaome",
+        "name": "Google Hangouts",
+        "version": "1.4.5",
+        "permissions": [
+          "enterprise.hardwarePlatform",
+          "processes",
+          "system.cpu",
+          "webrtcLoggingPrivate"
+        ],
+        "host_permissions": null,
+        "location": 5,
+        "state": null
+      },
+      {
+        "id": "fignfifoniblkonapihmkfakmlgkbkcf",
+        "name": "Google Network Speech",
+        "version": "1.0",
+        "permissions": [
+          "metricsPrivate",
+          "offscreen",
+          "systemPrivate",
+          "ttsEngine"
+        ],
+        "host_permissions": [
+          "https://www.google.com/"
+        ],
+        "location": 5,
+        "state": null
+      }
+    ],
+    "local_state": {
+      "last_used": null,
+      "last_active_profiles": [
+        "Default"
+      ],
+      "profiles": {
+        "Default": {
+          "name": "Your Chrome",
+          "avatar_icon": "chrome://theme/IDR_PROFILE_AVATAR_26",
+          "is_using_default_name": true
+        }
+      },
+      "variations_country": "cn",
+      "variations_permanent_consistency_country": [
+        "156.0.8078.79",
+        "cn"
+      ]
+    }
+  },
+  "/root/.config/google-chrome": {
+    "path": "/root/.config/google-chrome",
+    "profile": {
+      "name": "Your Chrome",
+      "avatar_index": 26,
+      "exit_type": "Normal",
+      "default_content_setting_values": {
+        "has_migrated_local_network_access": true
+      },
+      "content_settings_exceptions_keys": [
+        "abusive_notification_permissions",
+        "access_to_get_all_screens_media_in_session",
+        "anti_abuse",
+        "app_banner",
+        "ar",
+        "are_suspicious_notifications_allowlisted_by_user",
+        "auto_picture_in_picture",
+        "auto_select_certificate",
+        "automatic_downloads",
+        "automatic_fullscreen",
+        "autoplay",
+        "background_sync",
+        "bluetooth_chooser_data",
+        "bluetooth_guard",
+        "bluetooth_scanning",
+        "camera_pan_tilt_zoom",
+        "captured_surface_control",
+        "client_hints",
+        "clipboard",
+        "controlled_frame",
+        "cookie_controls_metadata",
+        "cookies",
+        "direct_sockets",
+        "display_media_system_audio",
+        "disruptive_notification_permissions",
+        "durable_storage",
+        "fedcm_idp_registration",
+        "fedcm_idp_signin",
+        "fedcm_share",
+        "file_system_access_chooser_data",
+        "file_system_access_extended_permission",
+        "file_system_access_restore_permission",
+        "file_system_last_picked_directory",
+        "file_system_read_guard",
+        "file_system_write_guard",
+        "formfill_metadata",
+        "geolocation",
+        "geolocation_with_options",
+        "hand_tracking",
+        "has_migrated_local_network_access",
+        "hid_chooser_data",
+        "hid_guard",
+        "http_allowed",
+        "https_enforced",
+        "idle_detection",
+        "images",
+        "important_site_info",
+        "initialized_translations",
+        "inline_cue_menu",
+        "intent_picker_auto_display"
+      ]
+    },
+    "intl": {
+      "accept_languages": null,
+      "charset_default": null
+    },
+    "browser": {
+      "last_clear_browsing_data_time": null,
+      "has_seen_welcome_page": null
+    },
+    "download": {
+      "default_directory": null
+    },
+    "signin": {
+      "allowed": true,
+      "allowed_on_next_startup": null
+    },
+    "sync": {
+      "requested": null
+    },
+    "hardware_acceleration_mode": null,
+    "media": {
+      "autoplay_policy": null
+    },
+    "extensions": [
+      {
+        "id": "mhjfbmdgcfjbbpaeojofohoefgiehjai",
+        "name": "Chrome PDF Viewer",
+        "version": "1",
+        "permissions": [
+          "chrome://resources/",
+          "chrome://webui-test/",
+          "contentSettings",
+          "metricsPrivate",
+          "pdfViewerPrivate",
+          "resourcesPrivate",
+          "tabs",
+          {
+            "fileSystem": [
+              "write"
+            ]
+          }
+        ],
+        "host_permissions": null,
+        "location": 5,
+        "state": null
+      },
+      {
+        "id": "nmmhkkegccagdldgiimedpiccmgmieda",
+        "name": "Chrome Web Store Payments",
+        "version": "1.0.0.6",
+        "permissions": [
+          "identity",
+          "webview",
+          "https://www.google.com/",
+          "https://www.googleapis.com/*",
+          "https://payments.google.com/payments/v4/js/integrator.js",
+          "https://sandbox.google.com/payments/v4/js/integrator.js"
+        ],
+        "host_permissions": null,
+        "location": 10,
+        "state": null
+      },
+      {
+        "id": "ghbmnnjooekpmoecnnnilnnbdlolhkhi",
+        "name": "Google Docs Offline",
+        "version": "1.111.1",
+        "permissions": [
+          "alarms",
+          "storage",
+          "unlimitedStorage",
+          "offscreen"
+        ],
+        "host_permissions": [
+          "https://docs.google.com/*",
+          "https://drive.google.com/*"
+        ],
+        "location": 1,
+        "state": null
+      },
+      {
+        "id": "nkeimhogjdpnpccoofpliimaahmaaome",
+        "name": "Google Hangouts",
+        "version": "1.3.26",
+        "permissions": [
+          "enterprise.hardwarePlatform",
+          "processes",
+          "system.cpu",
+          "webrtcLoggingPrivate"
+        ],
+        "host_permissions": null,
+        "location": 5,
+        "state": null
+      },
+      {
+        "id": "fignfifoniblkonapihmkfakmlgkbkcf",
+        "name": "Google Network Speech",
+        "version": "1.0",
+        "permissions": [
+          "metricsPrivate",
+          "offscreen",
+          "systemPrivate",
+          "ttsEngine"
+        ],
+        "host_permissions": [
+          "https://www.google.com/"
+        ],
+        "location": 5,
+        "state": null
+      }
+    ],
+    "local_state": {
+      "last_used": null,
+      "last_active_profiles": [],
+      "profiles": {
+        "Default": {
+          "name": "Your Chrome",
+          "avatar_icon": "chrome://theme/IDR_PROFILE_AVATAR_26",
+          "is_using_default_name": true
+        }
+      },
+      "variations_country": "jp",
+      "variations_permanent_consistency_country": [
+        "156.0.8078.79",
+        "jp"
+      ]
+    }
+  },
+  "/root/.config/google-chrome-headless": {
+    "path": "/root/.config/google-chrome-headless"
+  }
+}

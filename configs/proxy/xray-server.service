@@ -1,0 +1,19 @@
+[Unit]
+Description=Xray VLESS Reality residential node
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/xray run -c /etc/xray/config.json
+Restart=on-failure
+RestartSec=3s
+LimitNOFILE=65535
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/log/xray
+
+[Install]
+WantedBy=multi-user.target

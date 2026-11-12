@@ -1,0 +1,474 @@
+### ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:xx:xx:xx brd 00:00:00:xx:xx:xx
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq state UP group default qlen 1000
+    link/ether 00:c2:57:xx:xx:xx brd ff:ff:ff:xx:xx:xx
+    inet 198.51.100.99/24 brd 198.51.100.99 scope global ens3
+       valid_lft forever preferred_lft forever
+    inet6 2001:db8::99/64 scope global 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::2c2:57ff:fe96:8c95/64 scope link 
+       valid_lft forever preferred_lft forever
+3: lxdbr0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 00:16:3e:xx:xx:xx brd ff:ff:ff:xx:xx:xx
+    inet 10.0.43.1/24 scope global lxdbr0
+       valid_lft forever preferred_lft forever
+    inet6 fd42:43::1/64 scope global 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::216:3eff:fed8:d793/64 scope link 
+       valid_lft forever preferred_lft forever
+5: vethf8961d03@if4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master lxdbr0 state UP group default qlen 1000
+    link/ether f6:56:31:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 0
+7: vethee99d34a@if6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master lxdbr0 state UP group default qlen 1000
+    link/ether a2:f2:37:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 1
+9: veth4c0d3ba9@if8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master lxdbr0 state UP group default qlen 1000
+    link/ether 6e:a8:51:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 2
+13: vethaa99aff8@if12: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master lxdbr0 state UP group default qlen 1000
+    link/ether b6:1a:e3:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 5
+
+### ip route
+default via 198.51.100.99 dev ens3 proto static 
+10.0.43.0/24 dev lxdbr0 proto kernel scope link src 10.0.43.1 
+198.51.100.99/24 dev ens3 proto kernel scope link src 198.51.100.99 
+198.51.100.99 dev ens3 proto static scope link 
+
+### public ip
+198.51.100.99
+
+### resolv
+# This file is managed by man:systemd-resolved(8). Do not edit.
+#
+# This is a dynamic resolv.conf file for connecting local clients to the
+# internal DNS stub resolver of systemd-resolved. This file lists all
+# configured search domains.
+#
+# Run "resolvectl status" to see details about the uplink DNS servers
+# currently in use.
+#
+# Third party programs must not access this file directly, but only through the
+# symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a different way,
+# replace this symlink by a static file or a different symlink.
+#
+# See man:systemd-resolved.service(8) for details about the supported modes of
+# operation for /etc/resolv.conf.
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+Global
+       LLMNR setting: no                  
+MulticastDNS setting: no                  
+  DNSOverTLS setting: no                  
+      DNSSEC setting: no                  
+    DNSSEC supported: no                  
+          DNSSEC NTA: 10.in-addr.arpa     
+                      16.172.in-addr.arpa 
+                      168.192.in-addr.arpa
+                      17.172.in-addr.arpa 
+                      18.172.in-addr.arpa 
+                      19.172.in-addr.arpa 
+                      20.172.in-addr.arpa 
+                      21.172.in-addr.arpa 
+                      22.172.in-addr.arpa 
+                      23.172.in-addr.arpa 
+                      24.172.in-addr.arpa 
+                      25.172.in-addr.arpa 
+                      26.172.in-addr.arpa 
+                      27.172.in-addr.arpa 
+                      28.172.in-addr.arpa 
+                      29.172.in-addr.arpa 
+                      30.172.in-addr.arpa 
+                      31.172.in-addr.arpa 
+                      corp                
+                      d.f.ip6.arpa        
+                      home                
+                      internal            
+                      intranet            
+                      lan                 
+                      local               
+                      private             
+                      test                
+
+Link 13 (vethaa99aff8)
+      Current Scopes: none
+DefaultRoute setting: no  
+       LLMNR setting: yes 
+MulticastDNS setting: no  
+  DNSOverTLS setting: no  
+
+### listeners
+Netid State  Recv-Q Send-Q                     Local Address:Port  Peer Address:Port         Process                                                            
+udp   UNCONN 0      0                              10.0.43.1:53         0.0.0.0:*             users:(("dnsmasq",pid=2568240,fd=8))                              
+udp   UNCONN 0      0                          127.0.0.53%lo:53         0.0.0.0:*             users:(("systemd-resolve",pid=654,fd=12))                         
+udp   UNCONN 0      0                         0.0.0.0%lxdbr0:67         0.0.0.0:*             users:(("dnsmasq",pid=2568240,fd=4))                              
+udp   UNCONN 0      0                            [::]%lxdbr0:547           [::]:*             users:(("dnsmasq",pid=2568240,fd=6))                              
+udp   UNCONN 0      0                                      *:39732            *:*             users:(("xray-linux-amd6",pid=491375,fd=9))                       
+udp   UNCONN 0      0               [2001:db8::99]:42972         [::]:*             users:(("lxd",pid=1735,fd=3))                                     
+udp   UNCONN 0      0               [2001:db8::99]:42973         [::]:*             users:(("lxd",pid=2190,fd=3))                                     
+udp   UNCONN 0      0               [2001:db8::99]:42974         [::]:*             users:(("lxd",pid=2686,fd=3))                                     
+udp   UNCONN 0      0                           [fd42:43::1]:53            [::]:*             users:(("dnsmasq",pid=2568240,fd=12))                             
+udp   UNCONN 0      0      [fe80::216:3eff:fed8:d793]%lxdbr0:53            [::]:*             users:(("dnsmasq",pid=2568240,fd=10))                             
+tcp   LISTEN 0      4096                           127.0.0.1:62789      0.0.0.0:*             users:(("xray-linux-amd6",pid=491375,fd=5))                       
+tcp   LISTEN 0      4096                           127.0.0.1:11111      0.0.0.0:*             users:(("xray-linux-amd6",pid=491375,fd=12))                      
+tcp   LISTEN 0      128                              0.0.0.0:39822      0.0.0.0:*             users:(("sshd",pid=834,fd=3))                                     
+tcp   LISTEN 0      32                             10.0.43.1:53         0.0.0.0:*             users:(("dnsmasq",pid=2568240,fd=9))                              
+tcp   LISTEN 0      4096                       127.0.0.53%lo:53         0.0.0.0:*             users:(("systemd-resolve",pid=654,fd=13))                         
+tcp   LISTEN 0      4096            [2001:db8::99]:20159         [::]:*             users:(("lxd",pid=1859,fd=8),("lxd",pid=1859,fd=3))               
+tcp   LISTEN 0      4096            [2001:db8::99]:20160         [::]:*             users:(("lxd",pid=2357,fd=8),("lxd",pid=2357,fd=3))               
+tcp   LISTEN 0      4096            [2001:db8::99]:20161         [::]:*             users:(("lxd",pid=2798,fd=8),("lxd",pid=2798,fd=3))               
+tcp   LISTEN 0      4096            [2001:db8::99]:2083          [::]:*             users:(("lxd",pid=2592,fd=8),("lxd",pid=2592,fd=3))               
+tcp   LISTEN 0      4096                                   *:56804            *:*             users:(("xray-linux-amd6",pid=491375,fd=11))                      
+tcp   LISTEN 0      4096            [2001:db8::99]:2053          [::]:*             users:(("lxd",pid=2087,fd=8),("lxd",pid=2087,fd=3))               
+tcp   LISTEN 0      4096                                   *:2087             *:*             users:(("x-ui",pid=491348,fd=12))                                 
+tcp   LISTEN 0      4096                                   *:23272            *:*             users:(("xray-linux-amd6",pid=491375,fd=10))                      
+tcp   LISTEN 0      128                                 [::]:39822         [::]:*             users:(("sshd",pid=834,fd=4))                                     
+tcp   LISTEN 0      4096                                   *:2096             *:*             users:(("x-ui",pid=491348,fd=17))                                 
+tcp   LISTEN 0      32                          [fd42:43::1]:53            [::]:*             users:(("dnsmasq",pid=2568240,fd=13))                             
+tcp   LISTEN 0      32     [fe80::216:3eff:fed8:d793]%lxdbr0:53            [::]:*             users:(("dnsmasq",pid=2568240,fd=11))                             
+tcp   LISTEN 0      4096            [2001:db8::99]:8088          [::]:*             users:(("lxd",pid=2569674,fd=7),("lxd",pid=2569674,fd=3))         
+tcp   LISTEN 0      4096            [2001:db8::99]:54840         [::]:*             users:(("lxd",pid=1761,fd=8),("lxd",pid=1761,fd=3))               
+tcp   LISTEN 0      4096            [2001:db8::99]:54841         [::]:*             users:(("lxd",pid=2256,fd=8),("lxd",pid=2256,fd=3))               
+tcp   LISTEN 0      4096                                   *:2201             *:*             users:(("lxd",pid=1997,fd=8),("lxd",pid=1997,fd=3))               
+tcp   LISTEN 0      4096            [2001:db8::99]:54842         [::]:*             users:(("lxd",pid=2711,fd=8),("lxd",pid=2711,fd=3))               
+tcp   LISTEN 0      4096                                   *:2202             *:*             users:(("lxd",pid=2488,fd=8),("lxd",pid=2488,fd=3))               
+tcp   LISTEN 0      4096                                   *:2203             *:*             users:(("lxd",pid=2865,fd=8),("lxd",pid=2865,fd=3))               
+tcp   LISTEN 0      4096            [2001:db8::99]:8443          [::]:*             users:(("lxd",pid=1639,fd=8),("lxd",pid=1639,fd=3))               
+tcp   LISTEN 0      4096                                   *:443              *:*             users:(("xray-linux-amd6",pid=491375,fd=8))                       
+tcp   LISTEN 0      4096                                   *:2204             *:*             users:(("lxd",pid=2569752,fd=7),("lxd",pid=2569752,fd=3))         
+
+### nft
+table inet lxd {
+	chain prert.c1-proxy.p10011 {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 10011 dnat ip to 10.0.43.10:10011
+	}
+
+	chain out.c1-proxy.p10011 {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 10011 dnat ip to 10.0.43.10:10011
+	}
+
+	chain pstrt.c1-proxy.p10011 {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.10 ip daddr 10.0.43.10 tcp dport 10011 masquerade
+	}
+
+	chain prert.c1-proxy.p10012 {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 10012 dnat ip to 10.0.43.10:10012
+	}
+
+	chain out.c1-proxy.p10012 {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 10012 dnat ip to 10.0.43.10:10012
+	}
+
+	chain pstrt.c1-proxy.p10012 {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.10 ip daddr 10.0.43.10 tcp dport 10012 masquerade
+	}
+
+	chain prert.c1-proxy.p8443 {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 8443 dnat ip to 10.0.43.10:8443
+	}
+
+	chain out.c1-proxy.p8443 {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 8443 dnat ip to 10.0.43.10:8443
+	}
+
+	chain pstrt.c1-proxy.p8443 {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.10 ip daddr 10.0.43.10 tcp dport 8443 masquerade
+	}
+
+	chain prert.c1-proxy.phy2 {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 udp dport 42972 dnat ip to 10.0.43.10:42972
+	}
+
+	chain out.c1-proxy.phy2 {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 udp dport 42972 dnat ip to 10.0.43.10:42972
+	}
+
+	chain pstrt.c1-proxy.phy2 {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.10 ip daddr 10.0.43.10 udp dport 42972 masquerade
+	}
+
+	chain prert.c1-proxy.ppanel {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 54840 dnat ip to 10.0.43.10:54840
+	}
+
+	chain out.c1-proxy.ppanel {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 54840 dnat ip to 10.0.43.10:54840
+	}
+
+	chain pstrt.c1-proxy.ppanel {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.10 ip daddr 10.0.43.10 tcp dport 54840 masquerade
+	}
+
+	chain prert.c1-proxy.preality {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 20159 dnat ip to 10.0.43.10:20159
+	}
+
+	chain out.c1-proxy.preality {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 20159 dnat ip to 10.0.43.10:20159
+	}
+
+	chain pstrt.c1-proxy.preality {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.10 ip daddr 10.0.43.10 tcp dport 20159 masquerade
+	}
+
+	chain prert.c2-app.p10021 {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 10021 dnat ip to 10.0.43.20:10021
+	}
+
+	chain out.c2-app.p10021 {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 10021 dnat ip to 10.0.43.20:10021
+	}
+
+	chain pstrt.c2-app.p10021 {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.20 ip daddr 10.0.43.20 tcp dport 10021 masquerade
+	}
+
+	chain prert.c2-app.p10022 {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 10022 dnat ip to 10.0.43.20:10022
+	}
+
+	chain out.c2-app.p10022 {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 10022 dnat ip to 10.0.43.20:10022
+	}
+
+	chain pstrt.c2-app.p10022 {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.20 ip daddr 10.0.43.20 tcp dport 10022 masquerade
+	}
+
+	chain prert.c2-app.p2053 {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 2053 dnat ip to 10.0.43.20:2053
+	}
+
+	chain out.c2-app.p2053 {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 2053 dnat ip to 10.0.43.20:2053
+	}
+
+	chain pstrt.c2-app.p2053 {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.20 ip daddr 10.0.43.20 tcp dport 2053 masquerade
+	}
+
+	chain prert.c2-app.phy2 {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 udp dport 42973 dnat ip to 10.0.43.20:42973
+	}
+
+	chain out.c2-app.phy2 {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 udp dport 42973 dnat ip to 10.0.43.20:42973
+	}
+
+	chain pstrt.c2-app.phy2 {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.20 ip daddr 10.0.43.20 udp dport 42973 masquerade
+	}
+
+	chain prert.c2-app.ppanel {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 54841 dnat ip to 10.0.43.20:54841
+	}
+
+	chain out.c2-app.ppanel {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 54841 dnat ip to 10.0.43.20:54841
+	}
+
+	chain pstrt.c2-app.ppanel {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.20 ip daddr 10.0.43.20 tcp dport 54841 masquerade
+	}
+
+	chain prert.c2-app.preality {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 20160 dnat ip to 10.0.43.20:20160
+	}
+
+	chain out.c2-app.preality {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 20160 dnat ip to 10.0.43.20:20160
+	}
+
+	chain pstrt.c2-app.preality {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.20 ip daddr 10.0.43.20 tcp dport 20160 masquerade
+	}
+
+	chain prert.c3-backup.p10031 {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 10031 dnat ip to 10.0.43.30:10031
+	}
+
+	chain out.c3-backup.p10031 {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 10031 dnat ip to 10.0.43.30:10031
+	}
+
+	chain pstrt.c3-backup.p10031 {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.30 ip daddr 10.0.43.30 tcp dport 10031 masquerade
+	}
+
+	chain prert.c3-backup.p10032 {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 10032 dnat ip to 10.0.43.30:10032
+	}
+
+	chain out.c3-backup.p10032 {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 10032 dnat ip to 10.0.43.30:10032
+	}
+
+	chain pstrt.c3-backup.p10032 {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.30 ip daddr 10.0.43.30 tcp dport 10032 masquerade
+	}
+
+	chain prert.c3-backup.p2083 {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 2083 dnat ip to 10.0.43.30:2083
+	}
+
+	chain out.c3-backup.p2083 {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 2083 dnat ip to 10.0.43.30:2083
+	}
+
+	chain pstrt.c3-backup.p2083 {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.30 ip daddr 10.0.43.30 tcp dport 2083 masquerade
+	}
+
+	chain prert.c3-backup.phy2 {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 udp dport 42974 dnat ip to 10.0.43.30:42974
+	}
+
+	chain out.c3-backup.phy2 {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 udp dport 42974 dnat ip to 10.0.43.30:42974
+	}
+
+	chain pstrt.c3-backup.phy2 {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.30 ip daddr 10.0.43.30 udp dport 42974 masquerade
+	}
+
+	chain prert.c3-backup.ppanel {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 54842 dnat ip to 10.0.43.30:54842
+	}
+
+	chain out.c3-backup.ppanel {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 54842 dnat ip to 10.0.43.30:54842
+	}
+
+	chain pstrt.c3-backup.ppanel {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.30 ip daddr 10.0.43.30 tcp dport 54842 masquerade
+	}
+
+	chain prert.c3-backup.preality {
+		type nat hook prerouting priority dstnat; policy accept;
+		ip daddr 198.51.100.99 tcp dport 20161 dnat ip to 10.0.43.30:20161
+	}
+
+	chain out.c3-backup.preality {
+		type nat hook output priority -100; policy accept;
+		ip daddr 198.51.100.99 tcp dport 20161 dnat ip to 10.0.43.30:20161
+	}
+
+	chain pstrt.c3-backup.preality {
+		type nat hook postrouting priority srcnat; policy accept;
+		ip saddr 10.0.43.30 ip daddr 10.0.43.30 tcp dport 20161 masquerade
+	}
+
+	chain pstrt.lxdbr0 {
+		type nat hook postrouting priority srcnat; policy accept;
+		@nh,96,24 655403 @nh,128,24 != 655403 oifname != "lxdbr0" masquerade
+		@nh,64,64 18249148927821479936 @nh,192,64 != 18249148927821479936 oifname != "lxdbr0" masquerade
+	}
+
+	chain fwd.lxdbr0 {
+		type filter hook forward priority filter; policy accept;
+		ip version 4 oifname "lxdbr0" accept
+		ip version 4 iifname "lxdbr0" accept
+		ip6 version 6 oifname "lxdbr0" accept
+		ip6 version 6 iifname "lxdbr0" accept
+	}
+
+	chain in.lxdbr0 {
+		type filter hook input priority filter; policy accept;
+		iifname "lxdbr0" tcp dport 53 accept
+		iifname "lxdbr0" udp dport 53 accept
+		iifname "lo" tcp dport 53 accept
+		iifname "lo" udp dport 53 accept
+		ip daddr 10.0.43.1 tcp dport 53 drop
+		ip daddr 10.0.43.1 udp dport 53 drop
+		iifname "lxdbr0" icmp type { destination-unreachable, time-exceeded, parameter-problem } accept
+		iifname "lxdbr0" udp dport 67 accept
+		ip6 daddr fd42:43::1 tcp dport 53 drop
+		ip6 daddr fd42:43::1 udp dport 53 drop
+		iifname "lxdbr0" icmpv6 type { destination-unreachable, packet-too-big, time-exceeded, parameter-problem, nd-router-solicit, nd-neighbor-solicit, nd-neighbor-advert, mld2-listener-report } accept
+		iifname "lxdbr0" udp dport 547 accept
+	}
+
+### iptables
+# Generated by iptables-save v1.8.4 on Thu Nov 12 04:09:19 2026
+*raw
+:PREROUTING ACCEPT [199037801:163450556284]
+:OUTPUT ACCEPT [35552302:33028237285]
+COMMIT
+# Completed on Thu Nov 12 04:09:19 2026
+# Generated by iptables-save v1.8.4 on Thu Nov 12 04:09:19 2026
+*mangle
+:PREROUTING ACCEPT [199037801:163450556284]
+:INPUT ACCEPT [32873995:28384558010]
+:FORWARD ACCEPT [165400717:134862679199]
+:OUTPUT ACCEPT [35552302:33028237285]
+:POSTROUTING ACCEPT [200953018:167890916404]
+COMMIT
+# Completed on Thu Nov 12 04:09:19 2026
+# Generated by iptables-save v1.8.4 on Thu Nov 12 04:09:19 2026
+*nat
+:PREROUTING ACCEPT [3242223:354659125]
+:INPUT ACCEPT [2058276:126065841]
+:OUTPUT ACCEPT [1251221:102368021]
+:POSTROUTING ACCEPT [1929565:142979041]
+COMMIT
+# Completed on Thu Nov 12 04:09:19 2026
+# Generated by iptables-save v1.8.4 on Thu Nov 12 04:09:19 2026
+*filter
+:INPUT ACCEPT [32873995:28384558010]
+:FORWARD ACCEPT [165400717:134862679199]
+:OUTPUT ACCEPT [35552301:33028237205]
+COMMIT
+# Completed on Thu Nov 12 04:09:19 2026

@@ -1,0 +1,5 @@
+{
+  "WebRtcIPHandlingPolicy": "disable_non_proxied_udp",
+  "WebRtcAllowLegacyTLSProtocols": false,
+  "DnsOverHttpsMode": "off"
+}

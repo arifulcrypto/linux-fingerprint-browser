@@ -1,0 +1,340 @@
+### units
+===== xray-client-us =====
+# /etc/systemd/system/xray-client-us.service
+[Unit]
+Description=Xray Client Proxy Service (Port 2080)
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/xray run -c /etc/xray-client-us/config.json
+Restart=on-failure
+RestartSec=5s
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
+
+===== xray-c4-tr =====
+# /etc/systemd/system/xray-c4-tr.service
+[Unit]
+Description=Xray c4 TR Residential + Direct Node
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/xray-26.6.27 run -c /etc/xray-c4-tr/config.json
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
+
+===== hysteria-server =====
+# /etc/systemd/system/hysteria-server.service
+[Unit]
+Description=Hysteria2 TR Residential Node (UDP 10042)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/hysteria server -c /etc/hysteria/config.yaml
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
+
+===== proxy-bridge =====
+# /run/systemd/transient/proxy-bridge.service
+# This is a transient unit file, created programmatically via the systemd API. Do not edit.
+[Unit]
+Description=/usr/local/bin/pproxy -l http://127.0.0.1:18080 -r http://proxy.example-provider.net:32345#REDACTED-PH:REDACTED
+
+[Service]
+ExecStart=
+ExecStart="/usr/local/bin/pproxy" "-l" "http://127.0.0.1:18080" "-r" "http://proxy.example-provider.net:32345#REDACTED-PH:REDACTED"
+
+===== proxy-bridge-tr =====
+# /etc/systemd/system/proxy-bridge-tr.service
+[Unit]
+Description=pproxy Residential Bridge - Turkey (Residential provider)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/pproxy -l http://127.0.0.1:18081 -r http://proxy.example-provider.net:32345#REDACTED-TR-session-REDACTED-ttl-24h:REDACTED
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
+
+### unit status
+===== xray-client-us =====
+● xray-client-us.service - Xray Client Proxy Service (Port 2080)
+     Loaded: loaded (/etc/systemd/system/xray-client-us.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2026-11-10 16:01:23 UTC; 1 day 12h ago
+   Main PID: 2157613 (xray)
+      Tasks: 9 (limit: 4625)
+     Memory: 15.4M
+     CGroup: /system.slice/xray-client-us.service
+             └─2157613 /usr/local/bin/xray run -c /etc/xray-client-us/config.json
+
+
+===== xray-c4-tr =====
+● xray-c4-tr.service - Xray c4 TR Residential + Direct Node
+     Loaded: loaded (/etc/systemd/system/xray-c4-tr.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2026-11-11 19:04:40 UTC; 9h ago
+   Main PID: 3232274 (xray-26.6.27)
+      Tasks: 9 (limit: 4625)
+     Memory: 22.5M
+     CGroup: /system.slice/xray-c4-tr.service
+             └─3232274 /usr/local/bin/xray-26.6.27 run -c /etc/xray-c4-tr/config.json
+
+Notice: journal has been rotated since unit was started, output may be incomplete.
+
+===== hysteria-server =====
+● hysteria-server.service - Hysteria2 TR Residential Node (UDP 10042)
+     Loaded: loaded (/etc/systemd/system/hysteria-server.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2026-11-11 19:05:04 UTC; 9h ago
+   Main PID: 3232619 (hysteria)
+      Tasks: 9 (limit: 4625)
+     Memory: 6.7M
+     CGroup: /system.slice/hysteria-server.service
+             └─3232619 /usr/local/bin/hysteria server -c /etc/hysteria/config.yaml
+
+Notice: journal has been rotated since unit was started, output may be incomplete.
+
+===== proxy-bridge =====
+● proxy-bridge.service - /usr/local/bin/pproxy -l http://127.0.0.1:18080 -r http://proxy.example-provider.net:32345#REDACTED-PH:REDACTED
+     Loaded: loaded (/run/systemd/transient/proxy-bridge.service; transient)
+  Transient: yes
+     Active: active (running) since Sun 2026-11-08 12:21:44 UTC; 3 days ago
+   Main PID: 111662 (pproxy)
+      Tasks: 7 (limit: 4625)
+     Memory: 5.9M
+     CGroup: /system.slice/proxy-bridge.service
+             └─111662 /usr/bin/python3 /usr/local/bin/pproxy -l http://127.0.0.1:18080 -r http://proxy.example-provider.net:32345#REDACTED-PH:REDACTED
+
+Notice: journal has been rotated since unit was started, output may be incomplete.
+
+===== proxy-bridge-tr =====
+● proxy-bridge-tr.service - pproxy Residential Bridge - Turkey (Residential provider)
+     Loaded: loaded (/etc/systemd/system/proxy-bridge-tr.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2026-11-11 19:05:36 UTC; 9h ago
+   Main PID: 3232992 (pproxy)
+      Tasks: 6 (limit: 4625)
+     Memory: 8.9M
+     CGroup: /system.slice/proxy-bridge-tr.service
+             └─3232992 /usr/bin/python3 /usr/local/bin/pproxy -l http://127.0.0.1:18081 -r http://proxy.example-provider.net:32345#REDACTED-TR-session-REDACTED-ttl-24h:REDACTED
+
+Notice: journal has been rotated since unit was started, output may be incomplete.
+
+
+### versions
+Xray 26.6.27 (Xray, Penetrates Everything.) 45cf289 (go1.26.4 linux/amd64)
+A unified platform for anti-censorship.
+
+░█░█░█░█░█▀▀░▀█▀░█▀▀░█▀▄░▀█▀░█▀█░░░▀▀▄
+░█▀█░░█░░▀▀█░░█░░█▀▀░█▀▄░░█░░█▀█░░░▄▀░
+░▀░▀░░▀░░▀▀▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀░▀░░░▀▀▀
+
+a powerful, lightning fast and censorship resistant proxy
+Aperture Internet Laboratory <https://github.com/apernet>
+
+pproxy 2.7.9
+
+### pproxy path
+-rwxr-xr-x 1 root root 212 Nov  8 12:20 /usr/local/bin/pproxy
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+import re
+
+### xray config (sanitized)
+{
+  "log": {
+    "loglevel": "warning",
+    "access": "none"
+  },
+  "inbounds": [
+    {
+      "tag": "tr-residential-in",
+      "listen": "0.0.0.0",
+      "port": 10041,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "REDACTED",
+            "flow": "xtls-rprx-vision",
+            "email": "tr-residential"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "show": false,
+          "target": "addons.mozilla.org:443",
+          "xver": 0,
+          "serverNames": [
+            "addons.mozilla.org"
+          ],
+          "privateKey": "REDACTED",
+          "shortIds": [
+            "REDACTED"
+          ]
+        }
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "routeOnly": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "tr-http-out",
+      "protocol": "http",
+      "settings": {
+        "servers": [
+          {
+            "address": "proxy.example-provider.net",
+            "port": 32345,
+            "users": [
+              {
+                "user": "REDACTED",
+                "pass": "REDACTED"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tag": "blocked-out",
+      "protocol": "blackhole"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "tr-residential-in"
+        ],
+        "outboundTag": "tr-http-out"
+      }
+    ]
+  }
+}
+
+### xray-client-us config (sanitized)
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "http-in",
+      "listen": "127.0.0.1",
+      "port": 2080,
+      "protocol": "http",
+      "settings": {
+        "timeout": 300
+      }
+    },
+    {
+      "tag": "socks-in",
+      "listen": "127.0.0.1",
+      "port": 2081,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy-out",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "198.51.100.99",
+            "port": 24447,
+            "users": [
+              {
+                "id": "REDACTED",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "show": false,
+          "fingerprint": "chrome",
+          "serverName": "REDACTED",
+          "publicKey": "REDACTED",
+          "shortId": "REDACTED",
+          "spiderX": ""
+        }
+      }
+    }
+  ]
+}
+
+### hysteria config (sanitized)
+listen: :10042
+
+tls:
+  cert: /etc/hysteria/cert.pem
+  key: /etc/hysteria/key.pem
+  sniGuard: disable
+
+auth:
+  type: password
+  password: REDACTED
+
+obfs:
+  type: salamander
+  salamander:
+    password: REDACTED
+
+disableUDP: true
+
+outbounds:
+  - name: tr-http
+    type: http
+    http:
+      url: http://REDACTED@proxy.example-provider.net:32345
+
+masquerade:
+  type: proxy
+  proxy:
+    url: https://www.bing.com
+    rewriteHost: true

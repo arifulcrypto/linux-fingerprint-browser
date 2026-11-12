@@ -1,0 +1,55 @@
+### screen geometry
+Screen 0: minimum 256 x 256, current 1280 x 720, maximum 16384 x 16384
+rdp0 connected 1280x720+0+0 0mm x 0mm
+   1280x720      50.00* 
+
+### dpi
+  dimensions:    1280x720 pixels (339x191 millimeters)
+  resolution:    96x96 dots per inch
+  depth of root window:    24 planes
+
+### gpu
+/tmp/collect_container.sh: line 332: glxinfo: command not found
+
+### audio
+/tmp/collect_container.sh: line 333: pactl: command not found
+/tmp/collect_container.sh: line 333: aplay: command not found
+
+### timezone
+               Local time: Thu 2026-11-12 04:07:39 UTC
+                Time zone: Etc/UTC (UTC, +0000)
+
+### language
+LANG=en_US.UTF-8
+LANGUAGE=
+LC_CTYPE="en_US.UTF-8"
+LC_NUMERIC="en_US.UTF-8"
+LC_TIME="en_US.UTF-8"
+LC_COLLATE="en_US.UTF-8"
+LC_MONETARY="en_US.UTF-8"
+LC_MESSAGES="en_US.UTF-8"
+LC_PAPER="en_US.UTF-8"
+LC_NAME="en_US.UTF-8"
+LC_ADDRESS="en_US.UTF-8"
+LC_TELEPHONE="en_US.UTF-8"
+LC_MEASUREMENT="en_US.UTF-8"
+LC_IDENTIFICATION="en_US.UTF-8"
+LC_ALL=en_US.UTF-8
+
+### fonts count
+166
+
+### chrome version
+Google Chrome 156.0.8078.79 
+
+### MAC
+00:16:3e:xx:xx:xx
+
+### cpu model
+model name	: AMD EPYC-Rome Processor
+
+### memory GB
+3.8 GB
+
+### cores
+2

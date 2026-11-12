@@ -1,0 +1,839 @@
+### display env
+DISPLAY=
+XAUTHORITY=
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus
+
+### X sockets
+total 8
+drwxrwxrwt  2 root root 4096 Nov  8 09:28 .
+drwxrwxrwt 21 root root 4096 Nov 12 04:07 ..
+srwxrwxrwx  1 root root    0 Nov  8 09:28 X10
+
+### desktop processes
+message+     119       1 dbus-daemon     @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         143       1 xrdp-sesman     /usr/sbin/xrdp-sesman
+xrdp         155       1 xrdp            /usr/sbin/xrdp
+root        1118     143 xrdp-sesman     /usr/sbin/xrdp-sesman
+root        1127    1118 xfce4-session   xfce4-session
+root        1128    1118 Xorg            /usr/lib/xorg/Xorg :10 -auth .Xauthority -config xrdp/xorg.conf -noreset -nolisten tcp -logfile .xorgxrdp.%s.log
+root        1131    1118 xrdp-chansrv    /usr/sbin/xrdp-chansrv
+root        1149    1120 dbus-daemon     /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root        1194       1 dbus-launch     /usr/bin/dbus-launch --sh-syntax --exit-with-session xfce4-session
+root        1195       1 dbus-daemon     /usr/bin/dbus-daemon --syslog --fork --print-pid 5 --print-address 7 --session
+root        1199       1 xfconfd         /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+root        1229    1127 xfce4-panel     xfce4-panel
+root        1276    1229 panel-6-systray /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 6 16777224 systray Status Tray Plugin Provides status notifier items (application indicators) and legacy systray items
+root        1277    1127 xfce4-notifyd   /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+root        1278    1229 panel-8-pulseau /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libpulseaudio-plugin.so 8 16777225 pulseaudio PulseAudio Plugin Adjust the audio volume of the PulseAudio sound system
+root        1281    1229 panel-10-notifi /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libnotification-plugin.so 10 16777226 notification-plugin Notification Plugin Notification plugin for the Xfce panel
+root        1303    1229 panel-14-action /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libactions.so 14 16777227 actions Action Buttons Log out, lock or other system actions
+root      111205    1120 xfce4-notifyd   /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+root      111222    1120 xfconfd         /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+root     2158374       1 chrome          /opt/google/chrome/chrome --no-sandbox --disable-dev-shm-usage --no-first-run --no-default-browser-check --user-data-dir=/root/.config/chrome-us-proxy --class=us-proxy-chrome --lang=en-US --proxy-server=http://127.0.0.1:2080 --proxy-bypass-list=127.0.0.1,localhost --disable-quic --webrtc-ip-handling-policy=disable_non_proxied_udp --enforce-webrtc-ip-permission-check --disable-features=DnsOverHttps --no-sandbox --disable-dev-shm-usage https://ipinfo.io https://claude.ai
+root     2158381       1 chrome_crashpad /opt/google/chrome/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --user-stream-region=4,65568 --database=/root/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Ubuntu 22.04.5 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=156.0.8078.79 --initial-client-fd=7 --shared-client-connection
+root     2158383       1 chrome_crashpad /opt/google/chrome/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/root/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Ubuntu 22.04.5 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=156.0.8078.79 --initial-client-fd=4 --shared-client-connection
+root     2158388 2158374 chrome          /opt/google/chrome/chrome --type=zygote --no-zygote-sandbox --no-sandbox --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable
+root     2158389 2158374 chrome          /opt/google/chrome/chrome --type=zygote --no-sandbox --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable
+root     2158411 2158388 chrome          /opt/google/chrome/chrome --type=gpu-process --gpu-recent-crash-count=0 --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable --gpu-preferences=YAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAASAAAAAAAAAABAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAwAAAAAAAAAAEAAAAAAAAACAAAAAAAAAAMAAAAAQAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --metrics-shmem-handle=4,i,15135163271308233849,2187724198917263123,262144 --field-trial-handle=3,i,3075688487953901744,12592704470238977477,262144 --disable-features=DnsOverHttps --variations-seed-version=20261110-010107.225000-production --pseudonymization-salt-handle=7,i,16455851129625405127,14452431019711311522,4 --trace-process-track-uuid=3190708988185955192
+root     2158412 2158374 chrome          /opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --disable-dev-shm-usage --disable-quic --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,4078980786174425914,8665910895624992194,524288 --field-trial-handle=3,i,3075688487953901744,12592704470238977477,262144 --disable-features=DnsOverHttps --variations-seed-version=20261110-010107.225000-production --pseudonymization-salt-handle=7,i,16455851129625405127,14452431019711311522,4 --trace-process-track-uuid=3190708989122997041
+root     2158416 2158389 chrome          /opt/google/chrome/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-US --service-sandbox-type=utility --no-sandbox --disable-dev-shm-usage --disable-quic --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,15019966329138989385,14852027849848651561,524288 --field-trial-handle=3,i,3075688487953901744,12592704470238977477,262144 --disable-features=DnsOverHttps --variations-seed-version=20261110-010107.225000-production --pseudonymization-salt-handle=7,i,16455851129625405127,14452431019711311522,4 --trace-process-track-uuid=3190708990060038890
+root     2158451 2158389 chrome          /opt/google/chrome/chrome --type=renderer --top-chrome-webui --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --lang=en-US --num-raster-threads=1 --renderer-client-id=5 --launch-time-ticks=787337951146 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,18351890521523817533,229227373574105542,1572864 --field-trial-handle=3,i,3075688487953901744,12592704470238977477,262144 --disable-features=DnsOverHttps --variations-seed-version=20261110-010107.225000-production --pseudonymization-salt-handle=7,i,16455851129625405127,14452431019711311522,4 --trace-process-track-uuid=3190708990997080739
+root     2158681 2158389 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --disable-gpu-compositing --lang=en-US --num-raster-threads=1 --renderer-client-id=13 --launch-time-ticks=787349403455 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,523985119112787606,3942901528011440890,1572864 --field-trial-handle=3,i,3075688487953901744,12592704470238977477,262144 --disable-features=DnsOverHttps --variations-seed-version=20261110-010107.225000-production --pseudonymization-salt-handle=7,i,16455851129625405127,14452431019711311522,4 --trace-process-track-uuid=3190708998493415531
+root     2158683 2158389 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --disable-gpu-compositing --lang=en-US --num-raster-threads=1 --renderer-client-id=14 --launch-time-ticks=787349417806 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,14062373566954061106,7211518814469411567,1572864 --field-trial-handle=3,i,3075688487953901744,12592704470238977477,262144 --disable-features=DnsOverHttps --variations-seed-version=20261110-010107.225000-production --pseudonymization-salt-handle=7,i,16455851129625405127,14452431019711311522,4 --trace-process-track-uuid=3190708999430457380
+root     2158958 2158389 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --disable-gpu-compositing --lang=en-US --num-raster-threads=1 --renderer-client-id=19 --launch-time-ticks=787369042081 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,15486439474397235926,7353247310167812079,1572864 --field-trial-handle=3,i,3075688487953901744,12592704470238977477,262144 --disable-features=DnsOverHttps --variations-seed-version=20261110-010107.225000-production --pseudonymization-salt-handle=7,i,16455851129625405127,14452431019711311522,4 --trace-process-track-uuid=3190709004115666625
+root     2159171 2158374 chrome          /opt/google/chrome/chrome --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --no-sandbox --disable-dev-shm-usage --disable-quic --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,3412192643621806489,3673854667364626676,524288 --field-trial-handle=3,i,3075688487953901744,12592704470238977477,262144 --disable-features=DnsOverHttps --variations-seed-version=20261110-010107.225000-production --pseudonymization-salt-handle=7,i,16455851129625405127,14452431019711311522,4 --trace-process-track-uuid=3190709012549043266
+root     2703932 2158389 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --disable-gpu-compositing --lang=en-US --num-raster-threads=1 --renderer-client-id=54 --launch-time-ticks=836824877163 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,1968129687182894176,14952944884988822632,1572864 --field-trial-handle=3,i,3075688487953901744,12592704470238977477,262144 --disable-features=DnsOverHttps --variations-seed-version=20261110-010107.225000-production --pseudonymization-salt-handle=7,i,16455851129625405127,14452431019711311522,4 --trace-process-track-uuid=3190709036912131340
+root     2987442 2158389 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --disable-gpu-compositing --lang=en-US --num-raster-threads=1 --renderer-client-id=69 --launch-time-ticks=862682917255 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,3840292055415041326,4956978158288962283,1572864 --field-trial-handle=3,i,3075688487953901744,12592704470238977477,262144 --disable-features=DnsOverHttps --variations-seed-version=20261110-010107.225000-production --pseudonymization-salt-handle=7,i,16455851129625405127,14452431019711311522,4 --trace-process-track-uuid=3190709050967759075
+root     3232104 2158389 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --disable-gpu-compositing --lang=en-US --num-raster-threads=1 --renderer-client-id=90 --launch-time-ticks=884652395311 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,13715282682887027304,7720701828826645645,1572864 --field-trial-handle=3,i,3075688487953901744,12592704470238977477,262144 --disable-features=DnsOverHttps --variations-seed-version=20261110-010107.225000-production --pseudonymization-salt-handle=7,i,16455851129625405127,14452431019711311522,4 --trace-process-track-uuid=3190709070645637904
+root     3232115 2158389 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --disable-gpu-compositing --lang=en-US --num-raster-threads=1 --renderer-client-id=91 --launch-time-ticks=884653300837 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,7499375838021679233,482141123494780855,1572864 --field-trial-handle=3,i,3075688487953901744,12592704470238977477,262144 --disable-features=DnsOverHttps --variations-seed-version=20261110-010107.225000-production --pseudonymization-salt-handle=7,i,16455851129625405127,14452431019711311522,4 --trace-process-track-uuid=3190709071582679753
+root     3244073 2158389 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=2158381 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-us-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --disable-gpu-compositing --lang=en-US --num-raster-threads=1 --renderer-client-id=94 --launch-time-ticks=885710898511 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,17127198468437772246,8301466960855310270,1572864 --field-trial-handle=3,i,3075688487953901744,12592704470238977477,262144 --disable-features=DnsOverHttps --variations-seed-version=20261110-010107.225000-production --pseudonymization-salt-handle=7,i,16455851129625405127,14452431019711311522,4 --trace-process-track-uuid=3190709074393805300
+root     3258440       1 chrome          /opt/google/chrome/chrome --no-sandbox --disable-dev-shm-usage --no-first-run --no-default-browser-check --user-data-dir=/root/.config/chrome-tr-proxy --class=tr-proxy-chrome --lang=en-US --proxy-server=http://127.0.0.1:18081 --proxy-bypass-list=127.0.0.1,localhost --disable-quic --webrtc-ip-handling-policy=disable_non_proxied_udp --enforce-webrtc-ip-permission-check --disable-features=DnsOverHttps --no-sandbox --disable-dev-shm-usage https://ipinfo.io https://ippure.com
+root     3258447       1 chrome_crashpad /opt/google/chrome/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --user-stream-region=4,65568 --database=/root/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Ubuntu 22.04.5 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=156.0.8078.79 --initial-client-fd=7 --shared-client-connection
+root     3258449       1 chrome_crashpad /opt/google/chrome/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/root/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Ubuntu 22.04.5 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=156.0.8078.79 --initial-client-fd=4 --shared-client-connection
+root     3258454 3258440 chrome          /opt/google/chrome/chrome --type=zygote --no-zygote-sandbox --no-sandbox --crashpad-handler-pid=3258447 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-tr-proxy --change-stack-guard-on-fork=enable
+root     3258455 3258440 chrome          /opt/google/chrome/chrome --type=zygote --no-sandbox --crashpad-handler-pid=3258447 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-tr-proxy --change-stack-guard-on-fork=enable
+root     3258478 3258454 chrome          /opt/google/chrome/chrome --type=gpu-process --gpu-recent-crash-count=0 --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --crashpad-handler-pid=3258447 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-tr-proxy --change-stack-guard-on-fork=enable --gpu-preferences=YAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAASAAAAAAAAAABAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAwAAAAAAAAAAEAAAAAAAAACAAAAAAAAAAMAAAAAQAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --metrics-shmem-handle=4,i,8545622122223107163,3650627608336330863,262144 --field-trial-handle=3,i,5599385487256646672,7354327086206388204,262144 --disable-features=DnsOverHttps --variations-seed-version=20261111-010039.256000-production --pseudonymization-salt-handle=7,i,15805364737654350683,2931665568582292758,4 --trace-process-track-uuid=3190708988185955192
+root     3258480 3258440 chrome          /opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --disable-dev-shm-usage --disable-quic --crashpad-handler-pid=3258447 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-tr-proxy --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,11496831593229433567,6775955242961910248,524288 --field-trial-handle=3,i,5599385487256646672,7354327086206388204,262144 --disable-features=DnsOverHttps --variations-seed-version=20261111-010039.256000-production --pseudonymization-salt-handle=7,i,15805364737654350683,2931665568582292758,4 --trace-process-track-uuid=3190708989122997041
+root     3258491 3258455 chrome          /opt/google/chrome/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-US --service-sandbox-type=utility --no-sandbox --disable-dev-shm-usage --disable-quic --crashpad-handler-pid=3258447 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-tr-proxy --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,9079181323234050187,4719900091871429421,524288 --field-trial-handle=3,i,5599385487256646672,7354327086206388204,262144 --disable-features=DnsOverHttps --variations-seed-version=20261111-010039.256000-production --pseudonymization-salt-handle=7,i,15805364737654350683,2931665568582292758,4 --trace-process-track-uuid=3190708990060038890
+root     3258519 3258455 chrome          /opt/google/chrome/chrome --type=renderer --top-chrome-webui --crashpad-handler-pid=3258447 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-tr-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --lang=en-US --num-raster-threads=1 --renderer-client-id=5 --launch-time-ticks=887003904083 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,3173285289503588822,10740373529320447991,1572864 --field-trial-handle=3,i,5599385487256646672,7354327086206388204,262144 --disable-features=DnsOverHttps --variations-seed-version=20261111-010039.256000-production --pseudonymization-salt-handle=7,i,15805364737654350683,2931665568582292758,4 --trace-process-track-uuid=3190708990997080739
+root     3258531 3258455 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3258447 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-tr-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --lang=en-US --num-raster-threads=1 --renderer-client-id=7 --launch-time-ticks=887004068746 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,13670606594751875060,5325211753749782708,1572864 --field-trial-handle=3,i,5599385487256646672,7354327086206388204,262144 --disable-features=DnsOverHttps --variations-seed-version=20261111-010039.256000-production --pseudonymization-salt-handle=7,i,15805364737654350683,2931665568582292758,4 --trace-process-track-uuid=3190708992871164437
+root     3258532 3258455 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3258447 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-tr-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --lang=en-US --num-raster-threads=1 --renderer-client-id=6 --launch-time-ticks=887004080121 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,17271028819262303687,6519848125287881202,1572864 --field-trial-handle=3,i,5599385487256646672,7354327086206388204,262144 --disable-features=DnsOverHttps --variations-seed-version=20261111-010039.256000-production --pseudonymization-salt-handle=7,i,15805364737654350683,2931665568582292758,4 --trace-process-track-uuid=3190708991934122588
+root     3258653 3258455 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3258447 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-tr-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --disable-gpu-compositing --lang=en-US --num-raster-threads=1 --renderer-client-id=12 --launch-time-ticks=887006576058 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,12993907714322509252,15121013416023986000,1572864 --field-trial-handle=3,i,5599385487256646672,7354327086206388204,262144 --disable-features=DnsOverHttps --variations-seed-version=20261111-010039.256000-production --pseudonymization-salt-handle=7,i,15805364737654350683,2931665568582292758,4 --trace-process-track-uuid=3190708997556373682
+root     3262263 3258455 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3258447 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-tr-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --disable-gpu-compositing --lang=en-US --num-raster-threads=1 --renderer-client-id=29 --launch-time-ticks=887320556930 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,1497427303880854789,17740862058214705644,1572864 --field-trial-handle=3,i,5599385487256646672,7354327086206388204,262144 --disable-features=DnsOverHttps --variations-seed-version=20261111-010039.256000-production --pseudonymization-salt-handle=7,i,15805364737654350683,2931665568582292758,4 --trace-process-track-uuid=3190709013486085115
+root     3262448 3258455 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3258447 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-tr-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --disable-gpu-compositing --lang=en-US --num-raster-threads=1 --renderer-client-id=34 --launch-time-ticks=887327546497 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,4906298525619017491,1100057127972396051,1572864 --field-trial-handle=3,i,5599385487256646672,7354327086206388204,262144 --disable-features=DnsOverHttps --variations-seed-version=20261111-010039.256000-production --pseudonymization-salt-handle=7,i,15805364737654350683,2931665568582292758,4 --trace-process-track-uuid=3190709018171294360
+root     3262459 3258455 chrome          /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3258447 --enable-crash-reporter=, --user-data-dir=/root/.config/chrome-tr-proxy --change-stack-guard-on-fork=enable --no-sandbox --disable-dev-shm-usage --ozone-platform=x11 --disable-gpu-compositing --lang=en-US --num-raster-threads=1 --renderer-client-id=35 --launch-time-ticks=887331186270 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,4288120210822351606,16305714286203111946,1572864 --field-trial-handle=3,i,5599385487256646672,7354327086206388204,262144 --disable-features=DnsOverHttps --variations-seed-version=20261111-010039.256000-production --pseudonymization-salt-handle=7,i,15805364737654350683,2931665568582292758,4 --trace-process-track-uuid=3190709019108336209
+xrdp     3507627     155 xrdp            /usr/sbin/xrdp
+xrdp     3509300     155 xrdp            /usr/sbin/xrdp
+xrdp     3510227     155 xrdp            /usr/sbin/xrdp
+xrdp     3510321     155 xrdp            /usr/sbin/xrdp
+xrdp     3511057     155 xrdp            /usr/sbin/xrdp
+xrdp     3511184     155 xrdp            /usr/sbin/xrdp
+xrdp     3511682     155 xrdp            /usr/sbin/xrdp
+xrdp     3511683     155 xrdp            /usr/sbin/xrdp
+xrdp     3512414     155 xrdp            /usr/sbin/xrdp
+xrdp     3512877     155 xrdp            /usr/sbin/xrdp
+xrdp     3513350     155 xrdp            /usr/sbin/xrdp
+xrdp     3513644     155 xrdp            /usr/sbin/xrdp
+xrdp     3513665     155 xrdp            /usr/sbin/xrdp
+xrdp     3513746     155 xrdp            /usr/sbin/xrdp
+xrdp     3514083     155 xrdp            /usr/sbin/xrdp
+xrdp     3514202     155 xrdp            /usr/sbin/xrdp
+xrdp     3514267     155 xrdp            /usr/sbin/xrdp
+xrdp     3514326     155 xrdp            /usr/sbin/xrdp
+xrdp     3514961     155 xrdp            /usr/sbin/xrdp
+xrdp     3514982     155 xrdp            /usr/sbin/xrdp
+xrdp     3515022     155 xrdp            /usr/sbin/xrdp
+xrdp     3515198     155 xrdp            /usr/sbin/xrdp
+xrdp     3515239     155 xrdp            /usr/sbin/xrdp
+xrdp     3515240     155 xrdp            /usr/sbin/xrdp
+xrdp     3515242     155 xrdp            /usr/sbin/xrdp
+xrdp     3515342     155 xrdp            /usr/sbin/xrdp
+xrdp     3515383     155 xrdp            /usr/sbin/xrdp
+xrdp     3515442     155 xrdp            /usr/sbin/xrdp
+xrdp     3515499     155 xrdp            /usr/sbin/xrdp
+xrdp     3515516     155 xrdp            /usr/sbin/xrdp
+xrdp     3515772     155 xrdp            /usr/sbin/xrdp
+xrdp     3515816     155 xrdp            /usr/sbin/xrdp
+xrdp     3516044     155 xrdp            /usr/sbin/xrdp
+xrdp     3516186     155 xrdp            /usr/sbin/xrdp
+xrdp     3516263     155 xrdp            /usr/sbin/xrdp
+xrdp     3516320     155 xrdp            /usr/sbin/xrdp
+xrdp     3516586     155 xrdp            /usr/sbin/xrdp
+xrdp     3516919     155 xrdp            /usr/sbin/xrdp
+xrdp     3517123     155 xrdp            /usr/sbin/xrdp
+xrdp     3517364     155 xrdp            /usr/sbin/xrdp
+xrdp     3517614     155 xrdp            /usr/sbin/xrdp
+xrdp     3517751     155 xrdp            /usr/sbin/xrdp
+xrdp     3518096     155 xrdp            /usr/sbin/xrdp
+xrdp     3518135     155 xrdp            /usr/sbin/xrdp
+xrdp     3518354     155 xrdp            /usr/sbin/xrdp
+xrdp     3518374     155 xrdp            /usr/sbin/xrdp
+xrdp     3518412     155 xrdp            /usr/sbin/xrdp
+xrdp     3518454     155 xrdp            /usr/sbin/xrdp
+xrdp     3518584     155 xrdp            /usr/sbin/xrdp
+xrdp     3518587     155 xrdp            /usr/sbin/xrdp
+xrdp     3518588     155 xrdp            /usr/sbin/xrdp
+xrdp     3518685     155 xrdp            /usr/sbin/xrdp
+xrdp     3518686     155 xrdp            /usr/sbin/xrdp
+xrdp     3518749     155 xrdp            /usr/sbin/xrdp
+xrdp     3518765     155 xrdp            /usr/sbin/xrdp
+xrdp     3518787     155 xrdp            /usr/sbin/xrdp
+xrdp     3518792     155 xrdp            /usr/sbin/xrdp
+xrdp     3518923     155 xrdp            /usr/sbin/xrdp
+xrdp     3518986     155 xrdp            /usr/sbin/xrdp
+xrdp     3519121     155 xrdp            /usr/sbin/xrdp
+xrdp     3519123     155 xrdp            /usr/sbin/xrdp
+xrdp     3519256     155 xrdp            /usr/sbin/xrdp
+xrdp     3519413     155 xrdp            /usr/sbin/xrdp
+xrdp     3519499     155 xrdp            /usr/sbin/xrdp
+xrdp     3519645     155 xrdp            /usr/sbin/xrdp
+xrdp     3519788     155 xrdp            /usr/sbin/xrdp
+xrdp     3519996     155 xrdp            /usr/sbin/xrdp
+xrdp     3520021     155 xrdp            /usr/sbin/xrdp
+xrdp     3520671     155 xrdp            /usr/sbin/xrdp
+xrdp     3520715     155 xrdp            /usr/sbin/xrdp
+xrdp     3521059     155 xrdp            /usr/sbin/xrdp
+xrdp     3521195     155 xrdp            /usr/sbin/xrdp
+xrdp     3521326     155 xrdp            /usr/sbin/xrdp
+xrdp     3521468     155 xrdp            /usr/sbin/xrdp
+xrdp     3521524     155 xrdp            /usr/sbin/xrdp
+xrdp     3521614     155 xrdp            /usr/sbin/xrdp
+xrdp     3521616     155 xrdp            /usr/sbin/xrdp
+xrdp     3521636     155 xrdp            /usr/sbin/xrdp
+xrdp     3521734     155 xrdp            /usr/sbin/xrdp
+xrdp     3521814     155 xrdp            /usr/sbin/xrdp
+xrdp     3522126     155 xrdp            /usr/sbin/xrdp
+xrdp     3522240     155 xrdp            /usr/sbin/xrdp
+xrdp     3522298     155 xrdp            /usr/sbin/xrdp
+xrdp     3522437     155 xrdp            /usr/sbin/xrdp
+xrdp     3522438     155 xrdp            /usr/sbin/xrdp
+xrdp     3522580     155 xrdp            /usr/sbin/xrdp
+xrdp     3522781     155 xrdp            /usr/sbin/xrdp
+xrdp     3522969     155 xrdp            /usr/sbin/xrdp
+xrdp     3523019     155 xrdp            /usr/sbin/xrdp
+xrdp     3523443     155 xrdp            /usr/sbin/xrdp
+xrdp     3523602     155 xrdp            /usr/sbin/xrdp
+xrdp     3523969     155 xrdp            /usr/sbin/xrdp
+xrdp     3523988     155 xrdp            /usr/sbin/xrdp
+xrdp     3524111     155 xrdp            /usr/sbin/xrdp
+xrdp     3524244     155 xrdp            /usr/sbin/xrdp
+xrdp     3524342     155 xrdp            /usr/sbin/xrdp
+xrdp     3524399     155 xrdp            /usr/sbin/xrdp
+xrdp     3524466     155 xrdp            /usr/sbin/xrdp
+xrdp     3524634     155 xrdp            /usr/sbin/xrdp
+xrdp     3524787     155 xrdp            /usr/sbin/xrdp
+xrdp     3524823     155 xrdp            /usr/sbin/xrdp
+xrdp     3524844     155 xrdp            /usr/sbin/xrdp
+xrdp     3524979     155 xrdp            /usr/sbin/xrdp
+xrdp     3525075     155 xrdp            /usr/sbin/xrdp
+xrdp     3525254     155 xrdp            /usr/sbin/xrdp
+xrdp     3525255     155 xrdp            /usr/sbin/xrdp
+xrdp     3525457     155 xrdp            /usr/sbin/xrdp
+xrdp     3525756     155 xrdp            /usr/sbin/xrdp
+xrdp     3525793     155 xrdp            /usr/sbin/xrdp
+xrdp     3525797     155 xrdp            /usr/sbin/xrdp
+xrdp     3525798     155 xrdp            /usr/sbin/xrdp
+xrdp     3525884     155 xrdp            /usr/sbin/xrdp
+xrdp     3526000     155 xrdp            /usr/sbin/xrdp
+xrdp     3526001     155 xrdp            /usr/sbin/xrdp
+xrdp     3526160     155 xrdp            /usr/sbin/xrdp
+xrdp     3526298     155 xrdp            /usr/sbin/xrdp
+xrdp     3526336     155 xrdp            /usr/sbin/xrdp
+xrdp     3526378     155 xrdp            /usr/sbin/xrdp
+xrdp     3526456     155 xrdp            /usr/sbin/xrdp
+xrdp     3526457     155 xrdp            /usr/sbin/xrdp
+xrdp     3526481     155 xrdp            /usr/sbin/xrdp
+xrdp     3526576     155 xrdp            /usr/sbin/xrdp
+xrdp     3526899     155 xrdp            /usr/sbin/xrdp
+xrdp     3527213     155 xrdp            /usr/sbin/xrdp
+xrdp     3527385     155 xrdp            /usr/sbin/xrdp
+xrdp     3527620     155 xrdp            /usr/sbin/xrdp
+xrdp     3527794     155 xrdp            /usr/sbin/xrdp
+xrdp     3527984     155 xrdp            /usr/sbin/xrdp
+xrdp     3528047     155 xrdp            /usr/sbin/xrdp
+xrdp     3528358     155 xrdp            /usr/sbin/xrdp
+xrdp     3528435     155 xrdp            /usr/sbin/xrdp
+xrdp     3528537     155 xrdp            /usr/sbin/xrdp
+xrdp     3528960     155 xrdp            /usr/sbin/xrdp
+xrdp     3528981     155 xrdp            /usr/sbin/xrdp
+xrdp     3529170     155 xrdp            /usr/sbin/xrdp
+xrdp     3529179     155 xrdp            /usr/sbin/xrdp
+xrdp     3529198     155 xrdp            /usr/sbin/xrdp
+xrdp     3529220     155 xrdp            /usr/sbin/xrdp
+xrdp     3529223     155 xrdp            /usr/sbin/xrdp
+xrdp     3529416     155 xrdp            /usr/sbin/xrdp
+xrdp     3529437     155 xrdp            /usr/sbin/xrdp
+xrdp     3529463     155 xrdp            /usr/sbin/xrdp
+xrdp     3529598     155 xrdp            /usr/sbin/xrdp
+xrdp     3529690     155 xrdp            /usr/sbin/xrdp
+xrdp     3529773     155 xrdp            /usr/sbin/xrdp
+xrdp     3529776     155 xrdp            /usr/sbin/xrdp
+xrdp     3529838     155 xrdp            /usr/sbin/xrdp
+xrdp     3530060     155 xrdp            /usr/sbin/xrdp
+xrdp     3530299     155 xrdp            /usr/sbin/xrdp
+xrdp     3530504     155 xrdp            /usr/sbin/xrdp
+xrdp     3530676     155 xrdp            /usr/sbin/xrdp
+xrdp     3530777     155 xrdp            /usr/sbin/xrdp
+xrdp     3531032     155 xrdp            /usr/sbin/xrdp
+xrdp     3531135     155 xrdp            /usr/sbin/xrdp
+xrdp     3531345     155 xrdp            /usr/sbin/xrdp
+xrdp     3531502     155 xrdp            /usr/sbin/xrdp
+xrdp     3531615     155 xrdp            /usr/sbin/xrdp
+xrdp     3531759     155 xrdp            /usr/sbin/xrdp
+xrdp     3531972     155 xrdp            /usr/sbin/xrdp
+xrdp     3531973     155 xrdp            /usr/sbin/xrdp
+xrdp     3532094     155 xrdp            /usr/sbin/xrdp
+xrdp     3532095     155 xrdp            /usr/sbin/xrdp
+xrdp     3532502     155 xrdp            /usr/sbin/xrdp
+xrdp     3532582     155 xrdp            /usr/sbin/xrdp
+xrdp     3532643     155 xrdp            /usr/sbin/xrdp
+xrdp     3532786     155 xrdp            /usr/sbin/xrdp
+xrdp     3532998     155 xrdp            /usr/sbin/xrdp
+xrdp     3533083     155 xrdp            /usr/sbin/xrdp
+xrdp     3533107     155 xrdp            /usr/sbin/xrdp
+xrdp     3533340     155 xrdp            /usr/sbin/xrdp
+xrdp     3533434     155 xrdp            /usr/sbin/xrdp
+xrdp     3533492     155 xrdp            /usr/sbin/xrdp
+xrdp     3533514     155 xrdp            /usr/sbin/xrdp
+xrdp     3533536     155 xrdp            /usr/sbin/xrdp
+xrdp     3533579     155 xrdp            /usr/sbin/xrdp
+xrdp     3533697     155 xrdp            /usr/sbin/xrdp
+xrdp     3533919     155 xrdp            /usr/sbin/xrdp
+xrdp     3534010     155 xrdp            /usr/sbin/xrdp
+xrdp     3534115     155 xrdp            /usr/sbin/xrdp
+xrdp     3534467     155 xrdp            /usr/sbin/xrdp
+xrdp     3534468     155 xrdp            /usr/sbin/xrdp
+xrdp     3534531     155 xrdp            /usr/sbin/xrdp
+xrdp     3534612     155 xrdp            /usr/sbin/xrdp
+xrdp     3534765     155 xrdp            /usr/sbin/xrdp
+xrdp     3534788     155 xrdp            /usr/sbin/xrdp
+xrdp     3534846     155 xrdp            /usr/sbin/xrdp
+xrdp     3535126     155 xrdp            /usr/sbin/xrdp
+xrdp     3535181     155 xrdp            /usr/sbin/xrdp
+xrdp     3535328     155 xrdp            /usr/sbin/xrdp
+xrdp     3535366     155 xrdp            /usr/sbin/xrdp
+xrdp     3535501     155 xrdp            /usr/sbin/xrdp
+xrdp     3535662     155 xrdp            /usr/sbin/xrdp
+xrdp     3535741     155 xrdp            /usr/sbin/xrdp
+xrdp     3535859     155 xrdp            /usr/sbin/xrdp
+xrdp     3535941     155 xrdp            /usr/sbin/xrdp
+xrdp     3535997     155 xrdp            /usr/sbin/xrdp
+xrdp     3536038     155 xrdp            /usr/sbin/xrdp
+xrdp     3536063     155 xrdp            /usr/sbin/xrdp
+xrdp     3536080     155 xrdp            /usr/sbin/xrdp
+xrdp     3536161     155 xrdp            /usr/sbin/xrdp
+xrdp     3536284     155 xrdp            /usr/sbin/xrdp
+xrdp     3536337     155 xrdp            /usr/sbin/xrdp
+xrdp     3536378     155 xrdp            /usr/sbin/xrdp
+xrdp     3536697     155 xrdp            /usr/sbin/xrdp
+xrdp     3536735     155 xrdp            /usr/sbin/xrdp
+xrdp     3536757     155 xrdp            /usr/sbin/xrdp
+xrdp     3536897     155 xrdp            /usr/sbin/xrdp
+xrdp     3536958     155 xrdp            /usr/sbin/xrdp
+xrdp     3537363     155 xrdp            /usr/sbin/xrdp
+xrdp     3537603     155 xrdp            /usr/sbin/xrdp
+xrdp     3537683     155 xrdp            /usr/sbin/xrdp
+xrdp     3537809     155 xrdp            /usr/sbin/xrdp
+xrdp     3537871     155 xrdp            /usr/sbin/xrdp
+xrdp     3538212     155 xrdp            /usr/sbin/xrdp
+xrdp     3538315     155 xrdp            /usr/sbin/xrdp
+xrdp     3538559     155 xrdp            /usr/sbin/xrdp
+xrdp     3538940     155 xrdp            /usr/sbin/xrdp
+xrdp     3538995     155 xrdp            /usr/sbin/xrdp
+xrdp     3539129     155 xrdp            /usr/sbin/xrdp
+xrdp     3539226     155 xrdp            /usr/sbin/xrdp
+xrdp     3539516     155 xrdp            /usr/sbin/xrdp
+xrdp     3540406     155 xrdp            /usr/sbin/xrdp
+xrdp     3540507     155 xrdp            /usr/sbin/xrdp
+xrdp     3540588     155 xrdp            /usr/sbin/xrdp
+xrdp     3540716     155 xrdp            /usr/sbin/xrdp
+xrdp     3540754     155 xrdp            /usr/sbin/xrdp
+xrdp     3541223     155 xrdp            /usr/sbin/xrdp
+xrdp     3541639     155 xrdp            /usr/sbin/xrdp
+xrdp     3541708     155 xrdp            /usr/sbin/xrdp
+xrdp     3541763     155 xrdp            /usr/sbin/xrdp
+xrdp     3541783     155 xrdp            /usr/sbin/xrdp
+xrdp     3541841     155 xrdp            /usr/sbin/xrdp
+xrdp     3541863     155 xrdp            /usr/sbin/xrdp
+xrdp     3541864     155 xrdp            /usr/sbin/xrdp
+xrdp     3542244     155 xrdp            /usr/sbin/xrdp
+xrdp     3542454     155 xrdp            /usr/sbin/xrdp
+xrdp     3542551     155 xrdp            /usr/sbin/xrdp
+xrdp     3542650     155 xrdp            /usr/sbin/xrdp
+xrdp     3542879     155 xrdp            /usr/sbin/xrdp
+xrdp     3542986     155 xrdp            /usr/sbin/xrdp
+xrdp     3543078     155 xrdp            /usr/sbin/xrdp
+xrdp     3543283     155 xrdp            /usr/sbin/xrdp
+xrdp     3543286     155 xrdp            /usr/sbin/xrdp
+xrdp     3543291     155 xrdp            /usr/sbin/xrdp
+xrdp     3543506     155 xrdp            /usr/sbin/xrdp
+xrdp     3543634     155 xrdp            /usr/sbin/xrdp
+xrdp     3543884     155 xrdp            /usr/sbin/xrdp
+xrdp     3543906     155 xrdp            /usr/sbin/xrdp
+xrdp     3543974     155 xrdp            /usr/sbin/xrdp
+xrdp     3544015     155 xrdp            /usr/sbin/xrdp
+xrdp     3544102     155 xrdp            /usr/sbin/xrdp
+xrdp     3544143     155 xrdp            /usr/sbin/xrdp
+xrdp     3544182     155 xrdp            /usr/sbin/xrdp
+xrdp     3544204     155 xrdp            /usr/sbin/xrdp
+xrdp     3544433     155 xrdp            /usr/sbin/xrdp
+xrdp     3544436     155 xrdp            /usr/sbin/xrdp
+xrdp     3544476     155 xrdp            /usr/sbin/xrdp
+xrdp     3544478     155 xrdp            /usr/sbin/xrdp
+xrdp     3544596     155 xrdp            /usr/sbin/xrdp
+xrdp     3544674     155 xrdp            /usr/sbin/xrdp
+xrdp     3544766     155 xrdp            /usr/sbin/xrdp
+xrdp     3544862     155 xrdp            /usr/sbin/xrdp
+xrdp     3545098     155 xrdp            /usr/sbin/xrdp
+xrdp     3545140     155 xrdp            /usr/sbin/xrdp
+xrdp     3545311     155 xrdp            /usr/sbin/xrdp
+xrdp     3545425     155 xrdp            /usr/sbin/xrdp
+xrdp     3545482     155 xrdp            /usr/sbin/xrdp
+xrdp     3545725     155 xrdp            /usr/sbin/xrdp
+xrdp     3545769     155 xrdp            /usr/sbin/xrdp
+xrdp     3545807     155 xrdp            /usr/sbin/xrdp
+xrdp     3545869     155 xrdp            /usr/sbin/xrdp
+xrdp     3546024     155 xrdp            /usr/sbin/xrdp
+xrdp     3546094     155 xrdp            /usr/sbin/xrdp
+xrdp     3546156     155 xrdp            /usr/sbin/xrdp
+xrdp     3546194     155 xrdp            /usr/sbin/xrdp
+xrdp     3546196     155 xrdp            /usr/sbin/xrdp
+xrdp     3546234     155 xrdp            /usr/sbin/xrdp
+xrdp     3546235     155 xrdp            /usr/sbin/xrdp
+xrdp     3546432     155 xrdp            /usr/sbin/xrdp
+xrdp     3546599     155 xrdp            /usr/sbin/xrdp
+xrdp     3546638     155 xrdp            /usr/sbin/xrdp
+xrdp     3547017     155 xrdp            /usr/sbin/xrdp
+xrdp     3547317     155 xrdp            /usr/sbin/xrdp
+xrdp     3547322     155 xrdp            /usr/sbin/xrdp
+xrdp     3547378     155 xrdp            /usr/sbin/xrdp
+xrdp     3547650     155 xrdp            /usr/sbin/xrdp
+xrdp     3547882     155 xrdp            /usr/sbin/xrdp
+xrdp     3548050     155 xrdp            /usr/sbin/xrdp
+xrdp     3548123     155 xrdp            /usr/sbin/xrdp
+xrdp     3548162     155 xrdp            /usr/sbin/xrdp
+xrdp     3548180     155 xrdp            /usr/sbin/xrdp
+xrdp     3548225     155 xrdp            /usr/sbin/xrdp
+xrdp     3548285     155 xrdp            /usr/sbin/xrdp
+xrdp     3548462     155 xrdp            /usr/sbin/xrdp
+xrdp     3548519     155 xrdp            /usr/sbin/xrdp
+xrdp     3548564     155 xrdp            /usr/sbin/xrdp
+xrdp     3548622     155 xrdp            /usr/sbin/xrdp
+xrdp     3548626     155 xrdp            /usr/sbin/xrdp
+xrdp     3548790     155 xrdp            /usr/sbin/xrdp
+xrdp     3549320     155 xrdp            /usr/sbin/xrdp
+xrdp     3549324     155 xrdp            /usr/sbin/xrdp
+xrdp     3549522     155 xrdp            /usr/sbin/xrdp
+xrdp     3549889     155 xrdp            /usr/sbin/xrdp
+xrdp     3549890     155 xrdp            /usr/sbin/xrdp
+xrdp     3550215     155 xrdp            /usr/sbin/xrdp
+xrdp     3550282     155 xrdp            /usr/sbin/xrdp
+xrdp     3550350     155 xrdp            /usr/sbin/xrdp
+xrdp     3550390     155 xrdp            /usr/sbin/xrdp
+xrdp     3550419     155 xrdp            /usr/sbin/xrdp
+xrdp     3550900     155 xrdp            /usr/sbin/xrdp
+xrdp     3550999     155 xrdp            /usr/sbin/xrdp
+xrdp     3551135     155 xrdp            /usr/sbin/xrdp
+xrdp     3551252     155 xrdp            /usr/sbin/xrdp
+xrdp     3551293     155 xrdp            /usr/sbin/xrdp
+xrdp     3551394     155 xrdp            /usr/sbin/xrdp
+xrdp     3551667     155 xrdp            /usr/sbin/xrdp
+xrdp     3551803     155 xrdp            /usr/sbin/xrdp
+xrdp     3551861     155 xrdp            /usr/sbin/xrdp
+xrdp     3551922     155 xrdp            /usr/sbin/xrdp
+xrdp     3552142     155 xrdp            /usr/sbin/xrdp
+xrdp     3552206     155 xrdp            /usr/sbin/xrdp
+xrdp     3552246     155 xrdp            /usr/sbin/xrdp
+xrdp     3552265     155 xrdp            /usr/sbin/xrdp
+xrdp     3552306     155 xrdp            /usr/sbin/xrdp
+xrdp     3552309     155 xrdp            /usr/sbin/xrdp
+xrdp     3552649     155 xrdp            /usr/sbin/xrdp
+xrdp     3552650     155 xrdp            /usr/sbin/xrdp
+xrdp     3552692     155 xrdp            /usr/sbin/xrdp
+xrdp     3552888     155 xrdp            /usr/sbin/xrdp
+xrdp     3552890     155 xrdp            /usr/sbin/xrdp
+xrdp     3552990     155 xrdp            /usr/sbin/xrdp
+xrdp     3553229     155 xrdp            /usr/sbin/xrdp
+xrdp     3553385     155 xrdp            /usr/sbin/xrdp
+xrdp     3553570     155 xrdp            /usr/sbin/xrdp
+xrdp     3553735     155 xrdp            /usr/sbin/xrdp
+xrdp     3553738     155 xrdp            /usr/sbin/xrdp
+xrdp     3554383     155 xrdp            /usr/sbin/xrdp
+xrdp     3554580     155 xrdp            /usr/sbin/xrdp
+xrdp     3554765     155 xrdp            /usr/sbin/xrdp
+xrdp     3555245     155 xrdp            /usr/sbin/xrdp
+xrdp     3555570     155 xrdp            /usr/sbin/xrdp
+xrdp     3555899     155 xrdp            /usr/sbin/xrdp
+xrdp     3556003     155 xrdp            /usr/sbin/xrdp
+xrdp     3556351     155 xrdp            /usr/sbin/xrdp
+xrdp     3556352     155 xrdp            /usr/sbin/xrdp
+xrdp     3556448     155 xrdp            /usr/sbin/xrdp
+xrdp     3556683     155 xrdp            /usr/sbin/xrdp
+xrdp     3556784     155 xrdp            /usr/sbin/xrdp
+xrdp     3556878     155 xrdp            /usr/sbin/xrdp
+xrdp     3556881     155 xrdp            /usr/sbin/xrdp
+xrdp     3556985     155 xrdp            /usr/sbin/xrdp
+xrdp     3557221     155 xrdp            /usr/sbin/xrdp
+xrdp     3557360     155 xrdp            /usr/sbin/xrdp
+xrdp     3557886     155 xrdp            /usr/sbin/xrdp
+xrdp     3557991     155 xrdp            /usr/sbin/xrdp
+xrdp     3558034     155 xrdp            /usr/sbin/xrdp
+xrdp     3558093     155 xrdp            /usr/sbin/xrdp
+xrdp     3558094     155 xrdp            /usr/sbin/xrdp
+xrdp     3558132     155 xrdp            /usr/sbin/xrdp
+xrdp     3558136     155 xrdp            /usr/sbin/xrdp
+xrdp     3558223     155 xrdp            /usr/sbin/xrdp
+xrdp     3558366     155 xrdp            /usr/sbin/xrdp
+xrdp     3558465     155 xrdp            /usr/sbin/xrdp
+xrdp     3558556     155 xrdp            /usr/sbin/xrdp
+xrdp     3558662     155 xrdp            /usr/sbin/xrdp
+xrdp     3558765     155 xrdp            /usr/sbin/xrdp
+xrdp     3558961     155 xrdp            /usr/sbin/xrdp
+xrdp     3559237     155 xrdp            /usr/sbin/xrdp
+xrdp     3559686     155 xrdp            /usr/sbin/xrdp
+xrdp     3559916     155 xrdp            /usr/sbin/xrdp
+xrdp     3559917     155 xrdp            /usr/sbin/xrdp
+xrdp     3560014     155 xrdp            /usr/sbin/xrdp
+xrdp     3560054     155 xrdp            /usr/sbin/xrdp
+xrdp     3560154     155 xrdp            /usr/sbin/xrdp
+xrdp     3560283     155 xrdp            /usr/sbin/xrdp
+xrdp     3560583     155 xrdp            /usr/sbin/xrdp
+xrdp     3561022     155 xrdp            /usr/sbin/xrdp
+xrdp     3561083     155 xrdp            /usr/sbin/xrdp
+xrdp     3561260     155 xrdp            /usr/sbin/xrdp
+xrdp     3561366     155 xrdp            /usr/sbin/xrdp
+xrdp     3561521     155 xrdp            /usr/sbin/xrdp
+xrdp     3561522     155 xrdp            /usr/sbin/xrdp
+xrdp     3561596     155 xrdp            /usr/sbin/xrdp
+xrdp     3561737     155 xrdp            /usr/sbin/xrdp
+xrdp     3561932     155 xrdp            /usr/sbin/xrdp
+xrdp     3561974     155 xrdp            /usr/sbin/xrdp
+xrdp     3562191     155 xrdp            /usr/sbin/xrdp
+xrdp     3562330     155 xrdp            /usr/sbin/xrdp
+xrdp     3562349     155 xrdp            /usr/sbin/xrdp
+xrdp     3562531     155 xrdp            /usr/sbin/xrdp
+xrdp     3562729     155 xrdp            /usr/sbin/xrdp
+xrdp     3562861     155 xrdp            /usr/sbin/xrdp
+xrdp     3563040     155 xrdp            /usr/sbin/xrdp
+xrdp     3563098     155 xrdp            /usr/sbin/xrdp
+xrdp     3563101     155 xrdp            /usr/sbin/xrdp
+xrdp     3563381     155 xrdp            /usr/sbin/xrdp
+xrdp     3563387     155 xrdp            /usr/sbin/xrdp
+xrdp     3563443     155 xrdp            /usr/sbin/xrdp
+xrdp     3563486     155 xrdp            /usr/sbin/xrdp
+xrdp     3563635     155 xrdp            /usr/sbin/xrdp
+xrdp     3563636     155 xrdp            /usr/sbin/xrdp
+xrdp     3563834     155 xrdp            /usr/sbin/xrdp
+xrdp     3563888     155 xrdp            /usr/sbin/xrdp
+xrdp     3563906     155 xrdp            /usr/sbin/xrdp
+xrdp     3564017     155 xrdp            /usr/sbin/xrdp
+xrdp     3564118     155 xrdp            /usr/sbin/xrdp
+xrdp     3564224     155 xrdp            /usr/sbin/xrdp
+xrdp     3564297     155 xrdp            /usr/sbin/xrdp
+xrdp     3564676     155 xrdp            /usr/sbin/xrdp
+xrdp     3564684     155 xrdp            /usr/sbin/xrdp
+xrdp     3564686     155 xrdp            /usr/sbin/xrdp
+xrdp     3564724     155 xrdp            /usr/sbin/xrdp
+xrdp     3564769     155 xrdp            /usr/sbin/xrdp
+xrdp     3564774     155 xrdp            /usr/sbin/xrdp
+xrdp     3564803     155 xrdp            /usr/sbin/xrdp
+xrdp     3564882     155 xrdp            /usr/sbin/xrdp
+xrdp     3565403     155 xrdp            /usr/sbin/xrdp
+xrdp     3565443     155 xrdp            /usr/sbin/xrdp
+xrdp     3565482     155 xrdp            /usr/sbin/xrdp
+xrdp     3565539     155 xrdp            /usr/sbin/xrdp
+xrdp     3565591     155 xrdp            /usr/sbin/xrdp
+xrdp     3565612     155 xrdp            /usr/sbin/xrdp
+xrdp     3565615     155 xrdp            /usr/sbin/xrdp
+xrdp     3565775     155 xrdp            /usr/sbin/xrdp
+xrdp     3565776     155 xrdp            /usr/sbin/xrdp
+xrdp     3565918     155 xrdp            /usr/sbin/xrdp
+xrdp     3566019     155 xrdp            /usr/sbin/xrdp
+xrdp     3566125     155 xrdp            /usr/sbin/xrdp
+xrdp     3566322     155 xrdp            /usr/sbin/xrdp
+xrdp     3566529     155 xrdp            /usr/sbin/xrdp
+xrdp     3566664     155 xrdp            /usr/sbin/xrdp
+xrdp     3566797     155 xrdp            /usr/sbin/xrdp
+xrdp     3566845     155 xrdp            /usr/sbin/xrdp
+xrdp     3566959     155 xrdp            /usr/sbin/xrdp
+xrdp     3567080     155 xrdp            /usr/sbin/xrdp
+xrdp     3567422     155 xrdp            /usr/sbin/xrdp
+xrdp     3567522     155 xrdp            /usr/sbin/xrdp
+xrdp     3567723     155 xrdp            /usr/sbin/xrdp
+xrdp     3567763     155 xrdp            /usr/sbin/xrdp
+xrdp     3567929     155 xrdp            /usr/sbin/xrdp
+xrdp     3568004     155 xrdp            /usr/sbin/xrdp
+xrdp     3568064     155 xrdp            /usr/sbin/xrdp
+xrdp     3568185     155 xrdp            /usr/sbin/xrdp
+xrdp     3568401     155 xrdp            /usr/sbin/xrdp
+xrdp     3568498     155 xrdp            /usr/sbin/xrdp
+xrdp     3568538     155 xrdp            /usr/sbin/xrdp
+xrdp     3568600     155 xrdp            /usr/sbin/xrdp
+xrdp     3568602     155 xrdp            /usr/sbin/xrdp
+xrdp     3568745     155 xrdp            /usr/sbin/xrdp
+xrdp     3568859     155 xrdp            /usr/sbin/xrdp
+xrdp     3568919     155 xrdp            /usr/sbin/xrdp
+xrdp     3569197     155 xrdp            /usr/sbin/xrdp
+xrdp     3569217     155 xrdp            /usr/sbin/xrdp
+xrdp     3569275     155 xrdp            /usr/sbin/xrdp
+xrdp     3569319     155 xrdp            /usr/sbin/xrdp
+xrdp     3569320     155 xrdp            /usr/sbin/xrdp
+xrdp     3569516     155 xrdp            /usr/sbin/xrdp
+xrdp     3569723     155 xrdp            /usr/sbin/xrdp
+xrdp     3570100     155 xrdp            /usr/sbin/xrdp
+xrdp     3570133     155 xrdp            /usr/sbin/xrdp
+xrdp     3570234     155 xrdp            /usr/sbin/xrdp
+xrdp     3570338     155 xrdp            /usr/sbin/xrdp
+xrdp     3570399     155 xrdp            /usr/sbin/xrdp
+xrdp     3570738     155 xrdp            /usr/sbin/xrdp
+xrdp     3570778     155 xrdp            /usr/sbin/xrdp
+xrdp     3570913     155 xrdp            /usr/sbin/xrdp
+xrdp     3571434     155 xrdp            /usr/sbin/xrdp
+xrdp     3571680     155 xrdp            /usr/sbin/xrdp
+xrdp     3571738     155 xrdp            /usr/sbin/xrdp
+xrdp     3571870     155 xrdp            /usr/sbin/xrdp
+xrdp     3571913     155 xrdp            /usr/sbin/xrdp
+xrdp     3572070     155 xrdp            /usr/sbin/xrdp
+xrdp     3572341     155 xrdp            /usr/sbin/xrdp
+xrdp     3572445     155 xrdp            /usr/sbin/xrdp
+xrdp     3572659     155 xrdp            /usr/sbin/xrdp
+xrdp     3572699     155 xrdp            /usr/sbin/xrdp
+xrdp     3572742     155 xrdp            /usr/sbin/xrdp
+xrdp     3573111     155 xrdp            /usr/sbin/xrdp
+xrdp     3573125     155 xrdp            /usr/sbin/xrdp
+xrdp     3573226     155 xrdp            /usr/sbin/xrdp
+xrdp     3573305     155 xrdp            /usr/sbin/xrdp
+xrdp     3573344     155 xrdp            /usr/sbin/xrdp
+xrdp     3573432     155 xrdp            /usr/sbin/xrdp
+xrdp     3573749     155 xrdp            /usr/sbin/xrdp
+xrdp     3573787     155 xrdp            /usr/sbin/xrdp
+xrdp     3573791     155 xrdp            /usr/sbin/xrdp
+xrdp     3573882     155 xrdp            /usr/sbin/xrdp
+xrdp     3574019     155 xrdp            /usr/sbin/xrdp
+xrdp     3574020     155 xrdp            /usr/sbin/xrdp
+xrdp     3574123     155 xrdp            /usr/sbin/xrdp
+xrdp     3574217     155 xrdp            /usr/sbin/xrdp
+xrdp     3574478     155 xrdp            /usr/sbin/xrdp
+xrdp     3574694     155 xrdp            /usr/sbin/xrdp
+xrdp     3574893     155 xrdp            /usr/sbin/xrdp
+xrdp     3574907     155 xrdp            /usr/sbin/xrdp
+xrdp     3574972     155 xrdp            /usr/sbin/xrdp
+xrdp     3574991     155 xrdp            /usr/sbin/xrdp
+xrdp     3575225     155 xrdp            /usr/sbin/xrdp
+xrdp     3575423     155 xrdp            /usr/sbin/xrdp
+xrdp     3575479     155 xrdp            /usr/sbin/xrdp
+xrdp     3575555     155 xrdp            /usr/sbin/xrdp
+xrdp     3575615     155 xrdp            /usr/sbin/xrdp
+xrdp     3575659     155 xrdp            /usr/sbin/xrdp
+xrdp     3575759     155 xrdp            /usr/sbin/xrdp
+xrdp     3575897     155 xrdp            /usr/sbin/xrdp
+xrdp     3575898     155 xrdp            /usr/sbin/xrdp
+xrdp     3576101     155 xrdp            /usr/sbin/xrdp
+xrdp     3576121     155 xrdp            /usr/sbin/xrdp
+xrdp     3576389     155 xrdp            /usr/sbin/xrdp
+xrdp     3576655     155 xrdp            /usr/sbin/xrdp
+xrdp     3576713     155 xrdp            /usr/sbin/xrdp
+xrdp     3577204     155 xrdp            /usr/sbin/xrdp
+xrdp     3577324     155 xrdp            /usr/sbin/xrdp
+xrdp     3577384     155 xrdp            /usr/sbin/xrdp
+xrdp     3577603     155 xrdp            /usr/sbin/xrdp
+xrdp     3577645     155 xrdp            /usr/sbin/xrdp
+xrdp     3577935     155 xrdp            /usr/sbin/xrdp
+xrdp     3578262     155 xrdp            /usr/sbin/xrdp
+xrdp     3578263     155 xrdp            /usr/sbin/xrdp
+xrdp     3578346     155 xrdp            /usr/sbin/xrdp
+xrdp     3578347     155 xrdp            /usr/sbin/xrdp
+xrdp     3578367     155 xrdp            /usr/sbin/xrdp
+xrdp     3578422     155 xrdp            /usr/sbin/xrdp
+xrdp     3578611     155 xrdp            /usr/sbin/xrdp
+xrdp     3578612     155 xrdp            /usr/sbin/xrdp
+xrdp     3578656     155 xrdp            /usr/sbin/xrdp
+xrdp     3578995     155 xrdp            /usr/sbin/xrdp
+xrdp     3579051     155 xrdp            /usr/sbin/xrdp
+xrdp     3579094     155 xrdp            /usr/sbin/xrdp
+xrdp     3579154     155 xrdp            /usr/sbin/xrdp
+xrdp     3579291     155 xrdp            /usr/sbin/xrdp
+xrdp     3579372     155 xrdp            /usr/sbin/xrdp
+xrdp     3579492     155 xrdp            /usr/sbin/xrdp
+xrdp     3579627     155 xrdp            /usr/sbin/xrdp
+xrdp     3579628     155 xrdp            /usr/sbin/xrdp
+xrdp     3579667     155 xrdp            /usr/sbin/xrdp
+xrdp     3579770     155 xrdp            /usr/sbin/xrdp
+xrdp     3580003     155 xrdp            /usr/sbin/xrdp
+xrdp     3580084     155 xrdp            /usr/sbin/xrdp
+xrdp     3580102     155 xrdp            /usr/sbin/xrdp
+xrdp     3580297     155 xrdp            /usr/sbin/xrdp
+xrdp     3580581     155 xrdp            /usr/sbin/xrdp
+xrdp     3580639     155 xrdp            /usr/sbin/xrdp
+xrdp     3580640     155 xrdp            /usr/sbin/xrdp
+xrdp     3580974     155 xrdp            /usr/sbin/xrdp
+xrdp     3581084     155 xrdp            /usr/sbin/xrdp
+xrdp     3581311     155 xrdp            /usr/sbin/xrdp
+xrdp     3581362     155 xrdp            /usr/sbin/xrdp
+xrdp     3581373     155 xrdp            /usr/sbin/xrdp
+xrdp     3581393     155 xrdp            /usr/sbin/xrdp
+xrdp     3581412     155 xrdp            /usr/sbin/xrdp
+xrdp     3581511     155 xrdp            /usr/sbin/xrdp
+xrdp     3581516     155 xrdp            /usr/sbin/xrdp
+xrdp     3581608     155 xrdp            /usr/sbin/xrdp
+xrdp     3581711     155 xrdp            /usr/sbin/xrdp
+xrdp     3581753     155 xrdp            /usr/sbin/xrdp
+xrdp     3581978     155 xrdp            /usr/sbin/xrdp
+xrdp     3582038     155 xrdp            /usr/sbin/xrdp
+xrdp     3582077     155 xrdp            /usr/sbin/xrdp
+xrdp     3582109     155 xrdp            /usr/sbin/xrdp
+xrdp     3582150     155 xrdp            /usr/sbin/xrdp
+xrdp     3582248     155 xrdp            /usr/sbin/xrdp
+xrdp     3582330     155 xrdp            /usr/sbin/xrdp
+xrdp     3582486     155 xrdp            /usr/sbin/xrdp
+xrdp     3582817     155 xrdp            /usr/sbin/xrdp
+xrdp     3582859     155 xrdp            /usr/sbin/xrdp
+xrdp     3582860     155 xrdp            /usr/sbin/xrdp
+xrdp     3583080     155 xrdp            /usr/sbin/xrdp
+xrdp     3583100     155 xrdp            /usr/sbin/xrdp
+xrdp     3583121     155 xrdp            /usr/sbin/xrdp
+xrdp     3583180     155 xrdp            /usr/sbin/xrdp
+xrdp     3583184     155 xrdp            /usr/sbin/xrdp
+xrdp     3583206     155 xrdp            /usr/sbin/xrdp
+xrdp     3583275     155 xrdp            /usr/sbin/xrdp
+xrdp     3583361     155 xrdp            /usr/sbin/xrdp
+xrdp     3583630     155 xrdp            /usr/sbin/xrdp
+xrdp     3583730     155 xrdp            /usr/sbin/xrdp
+xrdp     3584024     155 xrdp            /usr/sbin/xrdp
+xrdp     3584061     155 xrdp            /usr/sbin/xrdp
+xrdp     3584102     155 xrdp            /usr/sbin/xrdp
+xrdp     3584103     155 xrdp            /usr/sbin/xrdp
+xrdp     3584106     155 xrdp            /usr/sbin/xrdp
+xrdp     3584164     155 xrdp            /usr/sbin/xrdp
+xrdp     3584184     155 xrdp            /usr/sbin/xrdp
+xrdp     3584297     155 xrdp            /usr/sbin/xrdp
+xrdp     3584298     155 xrdp            /usr/sbin/xrdp
+xrdp     3584336     155 xrdp            /usr/sbin/xrdp
+xrdp     3584437     155 xrdp            /usr/sbin/xrdp
+xrdp     3584438     155 xrdp            /usr/sbin/xrdp
+xrdp     3584624     155 xrdp            /usr/sbin/xrdp
+xrdp     3584664     155 xrdp            /usr/sbin/xrdp
+xrdp     3584865     155 xrdp            /usr/sbin/xrdp
+xrdp     3585092     155 xrdp            /usr/sbin/xrdp
+xrdp     3585149     155 xrdp            /usr/sbin/xrdp
+xrdp     3585189     155 xrdp            /usr/sbin/xrdp
+xrdp     3585191     155 xrdp            /usr/sbin/xrdp
+xrdp     3585545     155 xrdp            /usr/sbin/xrdp
+xrdp     3585642     155 xrdp            /usr/sbin/xrdp
+xrdp     3585832     155 xrdp            /usr/sbin/xrdp
+xrdp     3585964     155 xrdp            /usr/sbin/xrdp
+xrdp     3586064     155 xrdp            /usr/sbin/xrdp
+xrdp     3586498     155 xrdp            /usr/sbin/xrdp
+xrdp     3586604     155 xrdp            /usr/sbin/xrdp
+xrdp     3586625     155 xrdp            /usr/sbin/xrdp
+xrdp     3586665     155 xrdp            /usr/sbin/xrdp
+xrdp     3586765     155 xrdp            /usr/sbin/xrdp
+xrdp     3586996     155 xrdp            /usr/sbin/xrdp
+xrdp     3586998     155 xrdp            /usr/sbin/xrdp
+xrdp     3587057     155 xrdp            /usr/sbin/xrdp
+xrdp     3587120     155 xrdp            /usr/sbin/xrdp
+xrdp     3587165     155 xrdp            /usr/sbin/xrdp
+xrdp     3587341     155 xrdp            /usr/sbin/xrdp
+xrdp     3587789     155 xrdp            /usr/sbin/xrdp
+xrdp     3587827     155 xrdp            /usr/sbin/xrdp
+xrdp     3588042     155 xrdp            /usr/sbin/xrdp
+xrdp     3588101     155 xrdp            /usr/sbin/xrdp
+xrdp     3588104     155 xrdp            /usr/sbin/xrdp
+xrdp     3588254     155 xrdp            /usr/sbin/xrdp
+xrdp     3588327     155 xrdp            /usr/sbin/xrdp
+xrdp     3588429     155 xrdp            /usr/sbin/xrdp
+xrdp     3588661     155 xrdp            /usr/sbin/xrdp
+xrdp     3588664     155 xrdp            /usr/sbin/xrdp
+xrdp     3588806     155 xrdp            /usr/sbin/xrdp
+xrdp     3588867     155 xrdp            /usr/sbin/xrdp
+xrdp     3588912     155 xrdp            /usr/sbin/xrdp
+xrdp     3589102     155 xrdp            /usr/sbin/xrdp
+xrdp     3589204     155 xrdp            /usr/sbin/xrdp
+xrdp     3589206     155 xrdp            /usr/sbin/xrdp
+xrdp     3589346     155 xrdp            /usr/sbin/xrdp
+xrdp     3589405     155 xrdp            /usr/sbin/xrdp
+xrdp     3589446     155 xrdp            /usr/sbin/xrdp
+xrdp     3589738     155 xrdp            /usr/sbin/xrdp
+xrdp     3589844     155 xrdp            /usr/sbin/xrdp
+xrdp     3590079     155 xrdp            /usr/sbin/xrdp
+xrdp     3590118     155 xrdp            /usr/sbin/xrdp
+xrdp     3590200     155 xrdp            /usr/sbin/xrdp
+xrdp     3590264     155 xrdp            /usr/sbin/xrdp
+xrdp     3590285     155 xrdp            /usr/sbin/xrdp
+xrdp     3590358     155 xrdp            /usr/sbin/xrdp
+xrdp     3590360     155 xrdp            /usr/sbin/xrdp
+xrdp     3590522     155 xrdp            /usr/sbin/xrdp
+xrdp     3590757     155 xrdp            /usr/sbin/xrdp
+xrdp     3590798     155 xrdp            /usr/sbin/xrdp
+xrdp     3590883     155 xrdp            /usr/sbin/xrdp
+xrdp     3590902     155 xrdp            /usr/sbin/xrdp
+xrdp     3590959     155 xrdp            /usr/sbin/xrdp
+xrdp     3590962     155 xrdp            /usr/sbin/xrdp
+xrdp     3591019     155 xrdp            /usr/sbin/xrdp
+xrdp     3591040     155 xrdp            /usr/sbin/xrdp
+xrdp     3591097     155 xrdp            /usr/sbin/xrdp
+xrdp     3591100     155 xrdp            /usr/sbin/xrdp
+xrdp     3591581     155 xrdp            /usr/sbin/xrdp
+xrdp     3591620     155 xrdp            /usr/sbin/xrdp
+xrdp     3591809     155 xrdp            /usr/sbin/xrdp
+xrdp     3592221     155 xrdp            /usr/sbin/xrdp
+xrdp     3592460     155 xrdp            /usr/sbin/xrdp
+xrdp     3592969     155 xrdp            /usr/sbin/xrdp
+xrdp     3593018     155 xrdp            /usr/sbin/xrdp
+xrdp     3593095     155 xrdp            /usr/sbin/xrdp
+xrdp     3593425     155 xrdp            /usr/sbin/xrdp
+xrdp     3593528     155 xrdp            /usr/sbin/xrdp
+xrdp     3593547     155 xrdp            /usr/sbin/xrdp
+xrdp     3593685     155 xrdp            /usr/sbin/xrdp
+xrdp     3593802     155 xrdp            /usr/sbin/xrdp
+xrdp     3593959     155 xrdp            /usr/sbin/xrdp
+xrdp     3593998     155 xrdp            /usr/sbin/xrdp
+xrdp     3594142     155 xrdp            /usr/sbin/xrdp
+xrdp     3594199     155 xrdp            /usr/sbin/xrdp
+xrdp     3594202     155 xrdp            /usr/sbin/xrdp
+xrdp     3594300     155 xrdp            /usr/sbin/xrdp
+
+### all processes count
+785
+
+### session
+SESSION UID USER SEAT TTY
+   2347   0 root      
+     c1   0 root      
+
+2 sessions listed.
+Id=2347
+User=0
+Name=root
+Timestamp=Thu 2026-11-12 04:07:30 UTC
+TimestampMonotonic=917234862501
+VTNr=0
+Remote=yes
+RemoteHost=127.0.0.1
+Service=sshd
+Scope=session-2347.scope
+Leader=3594200
+Audit=2347
+Type=tty
+Class=user
+Active=yes
+State=active
+IdleHint=no
+IdleSinceHint=0
+IdleSinceHintMonotonic=0
+LockedHint=no
+
+### window manager
+xfwm4           xfwm4
+
+### xrdp version
+xrdp 0.9.17
+  A Remote Desktop Protocol Server.
+  Copyright (C) 2004-2020 Jay Sorg, Neutrino Labs, and all contributors.
+  See https://github.com/neutrinolabs/xrdp for more information.
+
+xrdp-sesman 0.9.17
+  The xrdp session manager
+  Copyright (C) 2004-2020 Jay Sorg, Neutrino Labs, and all contributors.
+  See https://github.com/neutrinolabs/xrdp for more information.
+
+
+### xrdp packages
+ii  dbus-x11                             1.12.20-2ubuntu4.1                      amd64        simple interprocess messaging system (X11 deps)
+ii  libxfce4panel-2.0-4                  4.16.3-1                                amd64        Xfce4 panel library (GTK3 variant)
+ii  libxfce4ui-2-0:amd64                 4.16.1-1                                amd64        widget library for Xfce - Gtk+3 variant
+ii  libxfce4ui-common                    4.16.1-1                                all          common files for libxfce4ui
+ii  libxfce4ui-utils                     4.16.1-1                                amd64        Utility files for libxfce4ui
+ii  libxfce4util-common                  4.16.0-1                                all          common files for libxfce4util
+ii  libxfce4util7:amd64                  4.16.0-1                                amd64        Utility functions library for Xfce4
+ii  xfce4                                4.16                                    all          Meta-package for the Xfce Lightweight Desktop Environment
+ii  xfce4-appfinder                      4.16.1-1                                amd64        Application finder for the Xfce4 desktop environment
+ii  xfce4-battery-plugin                 1.1.4-0ubuntu1                          amd64        battery monitor plugin for the Xfce4 panel
+ii  xfce4-clipman                        2:1.6.2-1                               amd64        clipboard history utility
+ii  xfce4-clipman-plugin:amd64           2:1.6.2-1                               amd64        clipboard history plugin for Xfce panel
+ii  xfce4-cpufreq-plugin:amd64           1.2.7-1                                 amd64        cpufreq information plugin for the Xfce4 panel
+ii  xfce4-cpugraph-plugin:amd64          1.2.6-1                                 amd64        CPU load graph plugin for the Xfce4 panel
+ii  xfce4-datetime-plugin:amd64          0.8.1-1                                 amd64        date and time plugin for the Xfce4 panel
+ii  xfce4-dict                           0.8.4-1build1                           amd64        Dictionary plugin for Xfce4 panel
+ii  xfce4-diskperf-plugin:amd64          2.6.3-1                                 amd64        disk performance display plugin for the Xfce4 panel
+ii  xfce4-fsguard-plugin:amd64           1.1.2-1                                 amd64        filesystem monitor plugin for the Xfce4 panel
+ii  xfce4-genmon-plugin:amd64            4.1.1-1                                 amd64        Generic Monitor for the Xfce4 panel
+ii  xfce4-goodies                        4.14.0                                  amd64        enhancements for the Xfce4 Desktop Environment
+ii  xfce4-helpers                        4.16.2-1ubuntu2.22.04.1                 amd64        helpers for the Xfce4 desktop environment
+ii  xfce4-mailwatch-plugin               1.3.0-0ubuntu2                          amd64        mail watcher plugin for the Xfce4 panel
+ii  xfce4-netload-plugin                 1.4.0-0ubuntu1                          amd64        network load monitor plugin for the Xfce4 panel
+ii  xfce4-notifyd                        0.6.3-1                                 amd64        simple, visually-appealing notification daemon for Xfce
+ii  xfce4-panel                          4.16.3-1                                amd64        panel for Xfce4 desktop environment
+ii  xfce4-places-plugin                  1.8.1-1build1                           amd64        quick access to folders, documents and removable media
+ii  xfce4-pulseaudio-plugin:amd64        0.4.3-1                                 amd64        Xfce4 panel plugin to control pulseaudio
+ii  xfce4-screenshooter                  1.9.9-1                                 amd64        screenshots utility for Xfce
+ii  xfce4-sensors-plugin                 1.4.3-1                                 amd64        hardware sensors plugin for the Xfce4 panel
+ii  xfce4-session                        4.16.0-1ubuntu2                         amd64        Xfce4 Session Manager
+ii  xfce4-settings                       4.16.2-1ubuntu2.22.04.1                 amd64        graphical application for managing Xfce settings
+ii  xfce4-smartbookmark-plugin:amd64     0.5.2-1                                 amd64        search the web via the Xfce4 panel
+ii  xfce4-systemload-plugin:amd64        1:1.3.1-1ubuntu1                        amd64        system load monitor plugin for the Xfce4 panel
+ii  xfce4-taskmanager                    1.5.2-1                                 amd64        process manager for the Xfce4 Desktop Environment
+ii  xfce4-terminal                       0.8.10-1                                amd64        Xfce terminal emulator
+ii  xfce4-timer-plugin:amd64             1.7.1-1                                 amd64        timer plugin for Xfce panel
+ii  xfce4-verve-plugin:amd64             2.0.1-1                                 amd64        Verve (command line) plugin for Xfce panel
+ii  xfce4-wavelan-plugin:amd64           0.6.2-1                                 amd64        wavelan status plugin for the Xfce4 panel
+ii  xfce4-weather-plugin:amd64           0.11.0-1                                amd64        weather information plugin for the Xfce4 panel
+ii  xfce4-whiskermenu-plugin:amd64       2.7.1-1                                 amd64        Alternate menu plugin for the Xfce desktop environment
+ii  xfce4-xkb-plugin:amd64               1:0.8.2-1                               amd64        xkb layout switch plugin for the Xfce4 panel
+ii  xorg                                 1:7.7+23ubuntu2                         amd64        X.Org X Window System
+ii  xorg-docs-core                       1:1.7.1-1.2                             all          Core documentation for the X.org X Window System
+ii  xorgxrdp                             1:0.2.17-1build1                        amd64        Remote Desktop Protocol (RDP) modules for X.org
+ii  xrdp                                 0.9.17-2ubuntu3.1                       amd64        Remote Desktop Protocol (RDP) server
+ii  xserver-xorg                         1:7.7+23ubuntu2                         amd64        X.Org X server
+ii  xserver-xorg-core                    2:21.1.4-2ubuntu1.7~22.04.16            amd64        Xorg X server - core server
+ii  xserver-xorg-legacy                  2:21.1.4-2ubuntu1.7~22.04.16            amd64        setuid root Xorg server wrapper
+ii  xserver-xorg-video-all               1:7.7+23ubuntu2                         amd64        X.Org X server -- output driver metapackage
+ii  xserver-xorg-video-amdgpu            22.0.0-1ubuntu0.2                       amd64        X.Org X server -- AMDGPU display driver
+ii  xserver-xorg-video-ati               1:19.1.0-2ubuntu1                       amd64        X.Org X server -- AMD/ATI display driver wrapper
+ii  xserver-xorg-video-fbdev             1:0.5.0-2build1                         amd64        X.Org X server -- fbdev display driver
+ii  xserver-xorg-video-intel             2:2.99.917+git20210115-1                amd64        X.Org X server -- Intel i8xx, i9xx display driver
+ii  xserver-xorg-video-nouveau           1:1.0.17-2build1                        amd64        X.Org X server -- Nouveau display driver
+ii  xserver-xorg-video-qxl               0.1.5+git20200331-3                     amd64        X.Org X server -- QXL display driver
+ii  xserver-xorg-video-radeon            1:19.1.0-2ubuntu1                       amd64        X.Org X server -- AMD/ATI Radeon display driver
+ii  xserver-xorg-video-vesa              1:2.5.0-1build4                         amd64        X.Org X server -- VESA display driver
+ii  xserver-xorg-video-vmware            1:13.3.0-3build1                        amd64        X.Org X server -- VMware display driver

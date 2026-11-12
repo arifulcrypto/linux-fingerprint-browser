@@ -1,0 +1,21 @@
+[Unit]
+Description=Local HTTP-to-residential proxy bridge
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Credentials must not appear in ExecStart (visible in `ps` and `systemctl cat`).
+# Put UPSTREAM_URL in /etc/fingerprint-browser/bridge.env with mode 0600.
+EnvironmentFile=/etc/fingerprint-browser/bridge.env
+ExecStart=/usr/local/bin/pproxy -l http://127.0.0.1:18081 -r ${UPSTREAM_URL}
+Restart=on-failure
+RestartSec=5s
+LimitNOFILE=65535
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

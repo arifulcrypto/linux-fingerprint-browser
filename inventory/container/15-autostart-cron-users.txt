@@ -1,0 +1,181 @@
+### crontab root
+no crontab for root
+
+### cron files
+/etc/cron.daily/apport
+/etc/cron.daily/apt-compat
+/etc/cron.daily/dpkg
+/etc/cron.daily/man-db
+/etc/cron.daily/.placeholder
+/etc/cron.d/e2scrub_all
+/etc/cron.d/kesiv-backup
+/etc/cron.d/.placeholder
+/etc/cron.hourly/.placeholder
+
+### enabled units
+apport-autoreport.path                 enabled enabled
+apparmor.service                       enabled enabled
+blk-availability.service               enabled enabled
+cloud-config.service                   enabled enabled
+cloud-final.service                    enabled enabled
+cloud-init-local.service               enabled enabled
+cloud-init.service                     enabled enabled
+containerd.service                     enabled enabled
+cron.service                           enabled enabled
+docker.service                         enabled enabled
+e2scrub_reap.service                   enabled enabled
+fail2ban.service                       enabled enabled
+finalrd.service                        enabled enabled
+getty@.service                         enabled enabled
+hysteria-server.service                enabled enabled
+lvm2-monitor.service                   enabled enabled
+lxd-agent.service                      enabled enabled
+networkd-dispatcher.service            enabled enabled
+open-iscsi.service                     enabled enabled
+pollinate.service                      enabled enabled
+proxy-bridge-tr.service                enabled enabled
+secureboot-db.service                  enabled enabled
+snapd.apparmor.service                 enabled enabled
+snapd.autoimport.service               enabled enabled
+snapd.core-fixup.service               enabled enabled
+snapd.recovery-chooser-trigger.service enabled enabled
+snapd.seeded.service                   enabled enabled
+snapd.service                          enabled enabled
+snapd.system-shutdown.service          enabled enabled
+ssh.service                            enabled enabled
+systemd-networkd-wait-online.service   enabled disabled
+systemd-networkd.service               enabled enabled
+systemd-pstore.service                 enabled enabled
+systemd-resolved.service               enabled enabled
+systemd-timesyncd.service              enabled enabled
+ua-reboot-cmds.service                 enabled enabled
+ubuntu-advantage.service               enabled enabled
+ufw.service                            enabled enabled
+unattended-upgrades.service            enabled enabled
+xray-c4-tr.service                     enabled enabled
+xray-client-us.service                 enabled enabled
+xrdp-sesman.service                    enabled enabled
+xrdp.service                           enabled enabled
+apport-forward.socket                  enabled enabled
+cloud-init-hotplugd.socket             enabled enabled
+dm-event.socket                        enabled enabled
+docker.socket                          enabled enabled
+iscsid.socket                          enabled enabled
+lvm2-lvmpolld.socket                   enabled enabled
+lxd-installer.socket                   enabled enabled
+snapd.socket                           enabled enabled
+systemd-networkd.socket                enabled enabled
+remote-fs.target                       enabled enabled
+apport-autoreport.timer                enabled enabled
+apt-daily-upgrade.timer                enabled enabled
+apt-daily.timer                        enabled enabled
+dpkg-db-backup.timer                   enabled enabled
+e2scrub_all.timer                      enabled enabled
+fstrim.timer                           enabled enabled
+man-db.timer                           enabled enabled
+mdcheck_continue.timer                 enabled enabled
+mdcheck_start.timer                    enabled enabled
+mdmonitor-oneshot.timer                enabled enabled
+motd-news.timer                        enabled enabled
+snapd.snap-repair.timer                enabled enabled
+ua-timer.timer                         enabled enabled
+update-notifier-download.timer         enabled enabled
+update-notifier-motd.timer             enabled enabled
+
+### running units
+  console-getty.service       loaded active running Console Getty
+  containerd.service          loaded active running containerd container runtime
+  cron.service                loaded active running Regular background program processing daemon
+  dbus.service                loaded active running D-Bus System Message Bus
+  docker.service              loaded active running Docker Application Container Engine
+  fail2ban.service            loaded active running Fail2Ban Service
+  hysteria-server.service     loaded active running Hysteria2 TR Residential Node (UDP 10042)
+  networkd-dispatcher.service loaded active running Dispatcher daemon for systemd-networkd
+  polkit.service              loaded active running Authorization Manager
+  proxy-bridge-tr.service     loaded active running pproxy Residential Bridge - Turkey (Residential provider)
+  proxy-bridge.service        loaded active running /usr/local/bin/pproxy -l http://127.0.0.1:18080 -r http://proxy.example-provider.net:32345#REDACTED-PH:REDACTED
+  snapd.service               loaded active running Snap Daemon
+  ssh.service                 loaded active running OpenBSD Secure Shell server
+  systemd-hostnamed.service   loaded active running Hostname Service
+  systemd-journald.service    loaded active running Journal Service
+  systemd-logind.service      loaded active running User Login Management
+  systemd-networkd.service    loaded active running Network Configuration
+  systemd-resolved.service    loaded active running Network Name Resolution
+  systemd-timedated.service   loaded active running Time & Date Service
+  systemd-udevd.service       loaded active running Rule-based Manager for Device Events and Files
+  unattended-upgrades.service loaded active running Unattended Upgrades Shutdown
+  user@0.service              loaded active running User Manager for UID 0
+  xray-c4-tr.service          loaded active running Xray c4 TR Residential + Direct Node
+  xray-client-us.service      loaded active running Xray Client Proxy Service (Port 2080)
+  xrdp-sesman.service         loaded active running xrdp session manager
+  xrdp.service                loaded active running xrdp daemon
+
+### users
+ubuntu 1000 /home/ubuntu /bin/bash
+
+### sshd config (effective, sanitized)
+port 22
+addressfamily any
+listenaddress [::]:22
+listenaddress 0.0.0.0:22
+usepam yes
+logingracetime 120
+x11displayoffset 10
+maxauthtries 6
+maxsessions 10
+clientaliveinterval 0
+clientalivecountmax 3
+streamlocalbindmask 0177
+permitrootlogin yes
+ignorerhosts yes
+ignoreuserknownhosts no
+hostbasedauthentication no
+hostbasedusesnamefrompacketonly no
+kerberosauthentication no
+kerberosorlocalpasswd yes
+kerberosticketcleanup yes
+gssapiauthentication no
+gssapicleanupcredentials yes
+gssapistrictacceptorcheck yes
+gssapikexalgorithms gss-group14-sha256-,gss-group16-sha512-,gss-nistp256-sha256-,gss-curve25519-sha256-,gss-group14-sha1-,gss-gex-sha1-
+kbdinteractiveauthentication no
+printmotd no
+printlastlog yes
+x11forwarding yes
+x11uselocalhost yes
+permittty yes
+permituserrc yes
+strictmodes yes
+tcpkeepalive yes
+compression yes
+gatewayports no
+usedns no
+allowtcpforwarding yes
+allowagentforwarding yes
+disableforwarding no
+allowstreamlocalforwarding yes
+streamlocalbindunlink no
+fingerprinthash SHA256
+exposeauthinfo no
+pidfile /run/sshd.pid
+modulifile /etc/ssh/moduli
+xauthlocation /usr/bin/xauth
+ciphers chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+macs umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+banner none
+forcecommand none
+chrootdirectory none
+authorizedprincipalsfile none
+versionaddendum none
+authorizedprincipalscommand none
+authorizedprincipalscommanduser none
+kexalgorithms curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,sntrup761x25519-sha512@openssh.com,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256
+casignaturealgorithms ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256
+hostbasedacceptedalgorithms ssh-ed25519-cert-v01@openssh.com,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com,sk-ecdsa-sha2-nistp256-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256
+loglevel INFO
+syslogfacility AUTH
+
+### fail2ban jails
+Status
+|- Number of jail:	1
+`- Jail list:	sshd

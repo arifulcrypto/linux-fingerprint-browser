@@ -1,0 +1,69 @@
+### chrome binaries
+/usr/bin/google-chrome
+/usr/bin/google-chrome-stable
+
+### chrome version
+Google Chrome 156.0.8078.79 
+Google Chrome 156.0.8078.79 
+
+### chrome package
+ii  google-chrome-stable                 156.0.8078.79-1                         amd64        The web browser from Google
+
+### chrome path
+total 383980
+drwxr-xr-x 8 root root      4096 Nov  8 09:42 .
+drwxr-xr-x 3 root root      4096 Oct 31 03:41 ..
+drwxr-xr-x 2 root root      4096 Oct 31 03:41 apparmor.d
+-rwxr-xr-x 1 root root 302792008 Oct 28 20:20 chrome
+-rw-r--r-- 1 root root   1037871 Oct 28 20:20 chrome_100_percent.pak
+-rw-r--r-- 1 root root   1807602 Oct 28 20:20 chrome_200_percent.pak
+-rwxr-xr-x 1 root root   1966016 Oct 28 20:20 chrome_crashpad_handler
+-rwxr-xr-x 1 root root   8479952 Oct 28 20:20 chrome-management-service
+-rwsr-xr-x 1 root root     15216 Oct 28 20:20 chrome-sandbox
+-rw-r--r-- 1 root root         7 Oct 28 20:20 CHROME_VERSION_EXTRA
+drwxr-xr-x 2 root root      4096 Oct 31 03:41 cron
+-rw-r--r-- 1 root root       482 Oct 28 20:20 default-app-block
+drwx------ 2 root root      4096 Nov  8 09:42 extensions
+-rwxr-xr-x 1 root root      1071 Nov  8 09:22 google-chrome
+-rw-r--r-- 1 root root  10824576 Oct 28 20:20 icudtl.dat
+-rw-r--r-- 1 root root  11063568 Oct 28 20:20 libLiteRtWebGpuAccelerator.so
+-rw-r--r-- 1 root root  23242728 Oct 28 20:20 liboptimization_guide_internal.so
+-rw-r--r-- 1 root root     27752 Oct 28 20:20 libqt5_shim.so
+-rw-r--r-- 1 root root     29952 Oct 28 20:20 libqt6_shim.so
+-rw-r--r-- 1 root root   4046376 Oct 28 20:20 libvk_swiftshader.so
+-rw-r--r-- 1 root root    694032 Oct 28 20:20 libvulkan.so.1
+drwxr-xr-x 2 root root     12288 Oct 31 03:41 locales
+drwxr-xr-x 2 root root      4096 Oct 31 03:41 MEIPreload
+-rw-r--r-- 1 root root     10577 Oct 28 20:20 product_logo_128.png
+-rw-r--r-- 1 root root       787 Oct 28 20:20 product_logo_16.png
+-rw-r--r-- 1 root root      1281 Oct 28 20:20 product_logo_24.png
+-rw-r--r-- 1 root root     38037 Oct 28 20:20 product_logo_256.png
+-rw-r--r-- 1 root root      1810 Oct 28 20:20 product_logo_32.png
+-rw-r--r-- 1 root root      3095 Oct 28 20:20 product_logo_48.png
+-rw-r--r-- 1 root root      4557 Oct 28 20:20 product_logo_64.png
+-rw-r--r-- 1 root root  26252312 Oct 28 20:20 resources.pak
+-rw-r--r-- 1 root root    753112 Oct 28 20:20 v8_context_snapshot.bin
+-rw-r--r-- 1 root root       107 Oct 28 20:20 vk_swiftshader_icd.json
+drwxr-xr-x 3 root root      4096 Oct 31 03:41 WidevineCdm
+
+### chrome policies dirs
+/etc/opt/chrome/policies/managed/webrtc_policy.json
+
+### chrome policies
+--- /etc/opt/chrome/policies/managed/webrtc_policy.json
+{
+  "WebRtcIPHandlingPolicy": "disable_non_proxied_udp"
+}
+
+### chrome sandbox
+-rwsr-xr-x 1 root root 15216 Oct 28 20:20 /opt/google/chrome/chrome-sandbox
+
+### chrome remote debugging
+none
+
+### chromedriver
+/tmp/collect_container.sh: line 96: chromedriver: command not found
+
+### chrome processes (cmdline only)
+2158374 /opt/google/chrome/chrome --no-sandbox --disable-dev-shm-usage --no-first-run --no-default-browser-check --user-data-dir=/root/.config/chrome-us-proxy --class=us-proxy-chrome --lang=en-US --proxy-server=http://127.0.0.1:2080 --proxy-bypass-list=127.0.0.1,localhost --disable-quic --webrtc-ip-handling-policy=disable_non_proxied_udp --enforce-webrtc-ip-permission-check --disable-features=DnsOverHttps --no-sandbox --disable-dev-shm-usage https://ipinfo.io https://claude.ai
+3258440 /opt/google/chrome/chrome --no-sandbox --disable-dev-shm-usage --no-first-run --no-default-browser-check --user-data-dir=/root/.config/chrome-tr-proxy --class=tr-proxy-chrome --lang=en-US --proxy-server=http://127.0.0.1:18081 --proxy-bypass-list=127.0.0.1,localhost --disable-quic --webrtc-ip-handling-policy=disable_non_proxied_udp --enforce-webrtc-ip-permission-check --disable-features=DnsOverHttps --no-sandbox --disable-dev-shm-usage https://ipinfo.io https://ippure.com

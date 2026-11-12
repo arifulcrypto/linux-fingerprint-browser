@@ -1,0 +1,101 @@
+### port mappings (nft)
+	chain prert.c4-desktop.p10041 {
+		ip daddr 198.51.100.99 tcp dport 10041 dnat ip to 10.0.43.40:10041
+	chain out.c4-desktop.p10041 {
+		ip daddr 198.51.100.99 tcp dport 10041 dnat ip to 10.0.43.40:10041
+	chain pstrt.c4-desktop.p10041 {
+		ip saddr 10.0.43.40 ip daddr 10.0.43.40 tcp dport 10041 masquerade
+	chain prert.c4-desktop.p10042 {
+		ip daddr 198.51.100.99 tcp dport 10042 dnat ip to 10.0.43.40:10042
+	chain out.c4-desktop.p10042 {
+		ip daddr 198.51.100.99 tcp dport 10042 dnat ip to 10.0.43.40:10042
+	chain pstrt.c4-desktop.p10042 {
+		ip saddr 10.0.43.40 ip daddr 10.0.43.40 tcp dport 10042 masquerade
+	chain prert.c4-desktop.p8088 {
+		ip daddr 198.51.100.99 tcp dport 8088 dnat ip to 10.0.43.40:8088
+	chain out.c4-desktop.p8088 {
+		ip daddr 198.51.100.99 tcp dport 8088 dnat ip to 10.0.43.40:8088
+	chain pstrt.c4-desktop.p8088 {
+		ip saddr 10.0.43.40 ip daddr 10.0.43.40 tcp dport 8088 masquerade
+	chain prert.c4-desktop.prdp_tcp {
+		ip daddr 198.51.100.99 tcp dport 3389 dnat ip to 10.0.43.40:3389
+	chain out.c4-desktop.prdp_tcp {
+		ip daddr 198.51.100.99 tcp dport 3389 dnat ip to 10.0.43.40:3389
+	chain pstrt.c4-desktop.prdp_tcp {
+		ip saddr 10.0.43.40 ip daddr 10.0.43.40 tcp dport 3389 masquerade
+	chain prert.c4-desktop.prdp_udp {
+		ip daddr 198.51.100.99 udp dport 3389 dnat ip to 10.0.43.40:3389
+	chain out.c4-desktop.prdp_udp {
+		ip daddr 198.51.100.99 udp dport 3389 dnat ip to 10.0.43.40:3389
+	chain pstrt.c4-desktop.prdp_udp {
+		ip saddr 10.0.43.40 ip daddr 10.0.43.40 udp dport 3389 masquerade
+	chain prert.c4-desktop.ph2_10042 {
+		ip daddr 198.51.100.99 udp dport 10042 dnat ip to 10.0.43.40:10042
+	chain out.c4-desktop.ph2_10042 {
+		ip daddr 198.51.100.99 udp dport 10042 dnat ip to 10.0.43.40:10042
+	chain pstrt.c4-desktop.ph2_10042 {
+		ip saddr 10.0.43.40 ip daddr 10.0.43.40 udp dport 10042 masquerade
+
+### lxd proxy devices
+p8088:
+  connect: tcp:10.0.43.40:8088
+  listen: tcp:198.51.100.99:8088
+  nat: "true"
+  type: proxy
+p8088_v6:
+  connect: tcp:10.0.43.40:8088
+  listen: tcp:[2001:db8::99]:8088
+  type: proxy
+p10041:
+  connect: tcp:10.0.43.40:10041
+  listen: tcp:198.51.100.99:10041
+  nat: "true"
+  type: proxy
+p10042:
+  connect: tcp:10.0.43.40:10042
+  listen: tcp:198.51.100.99:10042
+  nat: "true"
+  type: proxy
+ph2_10042:
+  connect: udp:10.0.43.40:10042
+  listen: udp:198.51.100.99:10042
+  nat: "true"
+  type: proxy
+prdp_tcp:
+  connect: tcp:10.0.43.40:3389
+  listen: tcp:198.51.100.99:3389
+  nat: "true"
+  type: proxy
+prdp_udp:
+  connect: udp:10.0.43.40:3389
+  listen: udp:198.51.100.99:3389
+  nat: "true"
+  type: proxy
+root:
+  path: /
+--
+ssh2204:
+  connect: tcp:127.0.0.1:22
+  listen: tcp:0.0.0.0:2204
+  type: proxy
+
+### c4 ip
++------------+------------------------------+------------------------------------+
+|    NAME    |             IPV4             |                IPV6                |
++------------+------------------------------+------------------------------------+
+| c4-desktop | 172.17.0.1 (docker0)         | fd42:43::216:3eff:fe41:db37 (eth0) |
+|            | 10.89.13.1 (br-ef69b38fd4ad) |                                    |
+|            | 10.89.12.1 (br-45b3d09a4a4c) |                                    |
+|            | 10.89.11.1 (br-20bd22c3dc50) |                                    |
+|            | 10.89.10.1 (br-7e79ca610495) |                                    |
+|            | 10.0.43.40 (eth0)            |                                    |
++------------+------------------------------+------------------------------------+
+
+### host time
+               Local time: Thu 2026-11-12 04:09:20 GMT
+           Universal time: Thu 2026-11-12 04:09:20 UTC
+                 RTC time: Thu 2026-11-12 04:09:21    
+                Time zone: Europe/London (GMT, +0000) 
+System clock synchronized: yes                        
+              NTP service: active                     
+          RTC in local TZ: no                         

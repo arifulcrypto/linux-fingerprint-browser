@@ -1,0 +1,303 @@
+### font count
+166
+
+### font families
+Bitstream Charter
+C059
+Century Schoolbook L
+Courier 10 Pitch
+D050000L
+DejaVu Sans
+DejaVu Sans Mono
+DejaVu Serif
+Dingbats
+Liberation Mono
+Liberation Sans
+Liberation Sans Narrow
+Liberation Serif
+Nimbus Mono L
+Nimbus Mono PS
+Nimbus Roman
+Nimbus Roman No9 L
+Nimbus Sans
+Nimbus Sans L
+Nimbus Sans Narrow
+Noto Color Emoji
+Noto Sans CJK HK
+Noto Sans CJK JP
+Noto Sans CJK KR
+Noto Sans CJK SC
+Noto Sans CJK TC
+Noto Sans Mono CJK HK
+Noto Sans Mono CJK JP
+Noto Sans Mono CJK KR
+Noto Sans Mono CJK SC
+Noto Sans Mono CJK TC
+Noto Serif CJK HK
+Noto Serif CJK JP
+Noto Serif CJK KR
+Noto Serif CJK SC
+Noto Serif CJK TC
+P052
+Standard Symbols L
+Standard Symbols PS
+URW Bookman
+URW Bookman L
+URW Chancery L
+URW Gothic
+URW Gothic L
+URW Palladio L
+Z003
+
+### font files (first 200)
+/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf: DejaVu Serif:style=Bold
+/usr/share/fonts/opentype/urw-base35/URWBookman-LightItalic.otf: URW Bookman:style=Light Italic
+/usr/share/fonts/opentype/urw-base35/URWBookman-Light.otf: URW Bookman:style=Light
+/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf: DejaVu Sans Mono:style=Book
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc: Noto Serif CJK SC:style=Bold
+/usr/share/fonts/opentype/urw-base35/NimbusMonoPS-Italic.otf: Nimbus Mono PS:style=Italic
+/usr/share/fonts/X11/Type1/c0649bt_.pfb: Bitstream Charter:style=Italic
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc: Noto Serif CJK TC:style=Bold
+/usr/share/fonts/opentype/urw-base35/P052-Italic.otf: P052:style=Italic
+/usr/share/fonts/type1/urw-base35/URWGothic-BookOblique.t1: URW Gothic:style=Book Oblique
+/usr/share/fonts/truetype/liberation/LiberationSansNarrow-Italic.ttf: Liberation Sans Narrow:style=Italic
+/usr/share/fonts/type1/gsfonts/n021024l.pfb: Nimbus Roman No9 L:style=Medium Italic
+/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf: DejaVu Sans:style=Book
+/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf: Nimbus Sans:style=Regular
+/usr/share/fonts/X11/Type1/c0419bt_.pfb: Courier 10 Pitch:style=Regular
+/usr/share/fonts/type1/urw-base35/URWBookman-DemiItalic.t1: URW Bookman:style=Demi Italic
+/usr/share/fonts/opentype/urw-base35/NimbusSansNarrow-Oblique.otf: Nimbus Sans Narrow:style=Oblique
+/usr/share/fonts/type1/urw-base35/NimbusSans-Regular.t1: Nimbus Sans:style=Regular
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc: Noto Serif CJK JP:style=Bold
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc: Noto Serif CJK HK:style=Bold
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc: Noto Serif CJK KR:style=Bold
+/usr/share/fonts/opentype/urw-base35/C059-Roman.otf: C059:style=Roman
+/usr/share/fonts/type1/gsfonts/n021004l.pfb: Nimbus Roman No9 L:style=Medium
+/usr/share/fonts/opentype/urw-base35/NimbusMonoPS-BoldItalic.otf: Nimbus Mono PS:style=Bold Italic
+/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf: Liberation Sans:style=Regular
+/usr/share/fonts/type1/urw-base35/URWGothic-DemiOblique.t1: URW Gothic:style=Demi Oblique
+/usr/share/fonts/type1/gsfonts/p052023l.pfb: URW Palladio L:style=Italic
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK JP:style=Regular
+/usr/share/fonts/type1/gsfonts/n022003l.pfb: Nimbus Mono L:style=Regular
+/usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf: Liberation Mono:style=Bold Italic
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK HK:style=Regular
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK KR:style=Regular
+/usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf: Liberation Serif:style=Italic
+/usr/share/fonts/type1/gsfonts/z003034l.pfb: URW Chancery L:style=Medium Italic
+/usr/share/fonts/X11/Type1/c0633bt_.pfb: Bitstream Charter:style=Bold Italic
+/usr/share/fonts/X11/Type1/c0648bt_.pfb: Bitstream Charter:style=Regular
+/usr/share/fonts/type1/urw-base35/URWBookman-LightItalic.t1: URW Bookman:style=Light Italic
+/usr/share/fonts/opentype/urw-base35/NimbusSansNarrow-BoldOblique.otf: Nimbus Sans Narrow:style=Bold Oblique
+/usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf: Liberation Mono:style=Bold
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK SC:style=Regular
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK TC:style=Regular
+/usr/share/fonts/type1/gsfonts/c059013l.pfb: Century Schoolbook L:style=Roman
+/usr/share/fonts/type1/urw-base35/NimbusSansNarrow-BoldOblique.t1: Nimbus Sans Narrow:style=Bold Oblique
+/usr/share/fonts/opentype/urw-base35/NimbusSans-Bold.otf: Nimbus Sans:style=Bold
+/usr/share/fonts/type1/urw-base35/NimbusMonoPS-Italic.t1: Nimbus Mono PS:style=Italic
+/usr/share/fonts/type1/urw-base35/NimbusRoman-BoldItalic.t1: Nimbus Roman:style=Bold Italic
+/usr/share/fonts/truetype/liberation/LiberationSansNarrow-Regular.ttf: Liberation Sans Narrow:style=Regular
+/usr/share/fonts/opentype/urw-base35/Z003-MediumItalic.otf: Z003:style=Medium Italic
+/usr/share/fonts/opentype/urw-base35/NimbusSans-BoldItalic.otf: Nimbus Sans:style=Bold Italic
+/usr/share/fonts/opentype/urw-base35/URWGothic-Book.otf: URW Gothic:style=Book
+/usr/share/fonts/type1/gsfonts/d050000l.pfb: Dingbats:style=Regular
+/usr/share/fonts/type1/gsfonts/n021023l.pfb: Nimbus Roman No9 L:style=Regular Italic
+/usr/share/fonts/X11/Type1/c0611bt_.pfb: Courier 10 Pitch:style=Bold Italic
+/usr/share/fonts/opentype/urw-base35/D050000L.otf: D050000L:style=Regular
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc: Noto Serif CJK SC:style=Regular
+/usr/share/fonts/type1/gsfonts/n019063l.pfb: Nimbus Sans L:style=Regular Condensed Italic
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc: Noto Serif CJK TC:style=Regular
+/usr/share/fonts/opentype/urw-base35/C059-BdIta.otf: C059:style=Bold Italic
+/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf: DejaVu Sans:style=Bold
+/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf: Liberation Serif:style=Bold
+/usr/share/fonts/type1/gsfonts/a010013l.pfb: URW Gothic L:style=Book
+/usr/share/fonts/opentype/urw-base35/NimbusRoman-Regular.otf: Nimbus Roman:style=Regular
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc: Noto Serif CJK JP:style=Regular
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc: Noto Serif CJK KR:style=Regular
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc: Noto Serif CJK HK:style=Regular
+/usr/share/fonts/opentype/urw-base35/C059-Italic.otf: C059:style=Italic
+/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf: Liberation Mono:style=Regular
+/usr/share/fonts/opentype/urw-base35/NimbusMonoPS-Bold.otf: Nimbus Mono PS:style=Bold
+/usr/share/fonts/opentype/urw-base35/NimbusRoman-Bold.otf: Nimbus Roman:style=Bold
+/usr/share/fonts/type1/urw-base35/NimbusSansNarrow-Bold.t1: Nimbus Sans Narrow:style=Bold
+/usr/share/fonts/opentype/urw-base35/NimbusRoman-BoldItalic.otf: Nimbus Roman:style=Bold Italic
+/usr/share/fonts/type1/gsfonts/n019064l.pfb: Nimbus Sans L:style=Bold Condensed Italic
+/usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf: Liberation Sans:style=Italic
+/usr/share/fonts/type1/gsfonts/p052004l.pfb: URW Palladio L:style=Bold
+/usr/share/fonts/type1/urw-base35/C059-Roman.t1: C059:style=Roman
+/usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf: Liberation Serif:style=Bold Italic
+/usr/share/fonts/type1/urw-base35/NimbusRoman-Italic.t1: Nimbus Roman:style=Italic
+/usr/share/fonts/opentype/urw-base35/NimbusSans-Italic.otf: Nimbus Sans:style=Italic
+/usr/share/fonts/type1/gsfonts/n022023l.pfb: Nimbus Mono L:style=Regular Oblique
+/usr/share/fonts/type1/urw-base35/URWBookman-Demi.t1: URW Bookman:style=Demi
+/usr/share/fonts/type1/gsfonts/a010015l.pfb: URW Gothic L:style=Demi
+/usr/share/fonts/truetype/liberation/LiberationSansNarrow-BoldItalic.ttf: Liberation Sans Narrow:style=Bold Italic
+/usr/share/fonts/type1/urw-base35/URWGothic-Book.t1: URW Gothic:style=Book
+/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf: DejaVu Sans Mono:style=Bold
+/usr/share/fonts/type1/urw-base35/NimbusRoman-Regular.t1: Nimbus Roman:style=Regular
+/usr/share/fonts/opentype/urw-base35/NimbusMonoPS-Regular.otf: Nimbus Mono PS:style=Regular
+/usr/share/fonts/opentype/urw-base35/NimbusSansNarrow-Regular.otf: Nimbus Sans Narrow:style=Regular
+/usr/share/fonts/type1/gsfonts/n019043l.pfb: Nimbus Sans L:style=Regular Condensed
+/usr/share/fonts/opentype/urw-base35/URWBookman-Demi.otf: URW Bookman:style=Demi
+/usr/share/fonts/type1/urw-base35/NimbusMonoPS-Regular.t1: Nimbus Mono PS:style=Regular
+/usr/share/fonts/type1/urw-base35/NimbusSans-BoldItalic.t1: Nimbus Sans:style=Bold Italic
+/usr/share/fonts/type1/urw-base35/NimbusSans-Bold.t1: Nimbus Sans:style=Bold
+/usr/share/fonts/type1/gsfonts/n019044l.pfb: Nimbus Sans L:style=Bold Condensed
+/usr/share/fonts/type1/urw-base35/NimbusMonoPS-BoldItalic.t1: Nimbus Mono PS:style=Bold Italic
+/usr/share/fonts/type1/urw-base35/StandardSymbolsPS.t1: Standard Symbols PS:style=Regular
+/usr/share/fonts/opentype/urw-base35/URWGothic-Demi.otf: URW Gothic:style=Demi
+/usr/share/fonts/type1/gsfonts/a010033l.pfb: URW Gothic L:style=Book Oblique
+/usr/share/fonts/type1/gsfonts/n021003l.pfb: Nimbus Roman No9 L:style=Regular
+/usr/share/fonts/type1/gsfonts/s050000l.pfb: Standard Symbols L:style=Regular
+/usr/share/fonts/opentype/urw-base35/NimbusSansNarrow-Bold.otf: Nimbus Sans Narrow:style=Bold
+/usr/share/fonts/opentype/urw-base35/URWBookman-DemiItalic.otf: URW Bookman:style=Demi Italic
+/usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf: Liberation Mono:style=Italic
+/usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf: Liberation Sans:style=Bold Italic
+/usr/share/fonts/opentype/urw-base35/URWGothic-BookOblique.otf: URW Gothic:style=Book Oblique
+/usr/share/fonts/type1/gsfonts/b018035l.pfb: URW Bookman L:style=Demi Bold Italic
+/usr/share/fonts/X11/Type1/c0632bt_.pfb: Bitstream Charter:style=Bold
+/usr/share/fonts/type1/gsfonts/c059033l.pfb: Century Schoolbook L:style=Italic
+/usr/share/fonts/X11/Type1/c0582bt_.pfb: Courier 10 Pitch:style=Italic
+/usr/share/fonts/X11/Type1/c0583bt_.pfb: Courier 10 Pitch:style=Bold
+/usr/share/fonts/type1/urw-base35/Z003-MediumItalic.t1: Z003:style=Medium Italic
+/usr/share/fonts/type1/urw-base35/P052-BoldItalic.t1: P052:style=Bold Italic
+/usr/share/fonts/type1/urw-base35/C059-Italic.t1: C059:style=Italic
+/usr/share/fonts/type1/gsfonts/a010035l.pfb: URW Gothic L:style=Demi Oblique
+/usr/share/fonts/type1/urw-base35/P052-Roman.t1: P052:style=Roman
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans Mono CJK TC:style=Bold
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans Mono CJK SC:style=Bold
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans Mono CJK KR:style=Bold
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans Mono CJK HK:style=Bold
+/usr/share/fonts/type1/urw-base35/NimbusRoman-Bold.t1: Nimbus Roman:style=Bold
+/usr/share/fonts/type1/urw-base35/NimbusSansNarrow-Oblique.t1: Nimbus Sans Narrow:style=Oblique
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans Mono CJK JP:style=Bold
+/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf: Liberation Serif:style=Regular
+/usr/share/fonts/opentype/urw-base35/P052-BoldItalic.otf: P052:style=Bold Italic
+/usr/share/fonts/type1/urw-base35/D050000L.t1: D050000L:style=Regular
+/usr/share/fonts/opentype/urw-base35/StandardSymbolsPS.otf: Standard Symbols PS:style=Regular
+/usr/share/fonts/type1/gsfonts/n019023l.pfb: Nimbus Sans L:style=Regular Italic
+/usr/share/fonts/type1/gsfonts/b018012l.pfb: URW Bookman L:style=Light
+/usr/share/fonts/type1/urw-base35/URWGothic-Demi.t1: URW Gothic:style=Demi
+/usr/share/fonts/type1/urw-base35/NimbusSans-Italic.t1: Nimbus Sans:style=Italic
+/usr/share/fonts/type1/urw-base35/C059-BdIta.t1: C059:style=Bold Italic
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans Mono CJK SC:style=Regular
+/usr/share/fonts/type1/urw-base35/NimbusMonoPS-Bold.t1: Nimbus Mono PS:style=Bold
+/usr/share/fonts/type1/gsfonts/c059016l.pfb: Century Schoolbook L:style=Bold
+/usr/share/fonts/type1/gsfonts/n022004l.pfb: Nimbus Mono L:style=Bold
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans Mono CJK TC:style=Regular
+/usr/share/fonts/type1/gsfonts/n019024l.pfb: Nimbus Sans L:style=Bold Italic
+/usr/share/fonts/type1/gsfonts/b018032l.pfb: URW Bookman L:style=Light Italic
+/usr/share/fonts/type1/gsfonts/p052003l.pfb: URW Palladio L:style=Roman
+/usr/share/fonts/truetype/liberation/LiberationSansNarrow-Bold.ttf: Liberation Sans Narrow:style=Bold
+/usr/share/fonts/opentype/urw-base35/URWGothic-DemiOblique.otf: URW Gothic:style=Demi Oblique
+/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf: Liberation Sans:style=Bold
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans Mono CJK HK:style=Regular
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans Mono CJK KR:style=Regular
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans Mono CJK JP:style=Regular
+/usr/share/fonts/type1/urw-base35/P052-Bold.t1: P052:style=Bold
+/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: Noto Color Emoji:style=Regular
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK JP:style=Bold
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK KR:style=Bold
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK HK:style=Bold
+/usr/share/fonts/type1/gsfonts/n019004l.pfb: Nimbus Sans L:style=Bold
+/usr/share/fonts/type1/gsfonts/b018015l.pfb: URW Bookman L:style=Demi Bold
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK TC:style=Bold
+/usr/share/fonts/type1/gsfonts/n022024l.pfb: Nimbus Mono L:style=Bold Oblique
+/usr/share/fonts/type1/urw-base35/P052-Italic.t1: P052:style=Italic
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK SC:style=Bold
+/usr/share/fonts/type1/urw-base35/NimbusSansNarrow-Regular.t1: Nimbus Sans Narrow:style=Regular
+/usr/share/fonts/type1/urw-base35/C059-Bold.t1: C059:style=Bold
+/usr/share/fonts/type1/gsfonts/c059036l.pfb: Century Schoolbook L:style=Bold Italic
+/usr/share/fonts/type1/gsfonts/p052024l.pfb: URW Palladio L:style=Bold Italic
+/usr/share/fonts/type1/urw-base35/URWBookman-Light.t1: URW Bookman:style=Light
+/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf: DejaVu Serif:style=Book
+/usr/share/fonts/opentype/urw-base35/P052-Roman.otf: P052:style=Roman
+/usr/share/fonts/opentype/urw-base35/C059-Bold.otf: C059:style=Bold
+/usr/share/fonts/opentype/urw-base35/P052-Bold.otf: P052:style=Bold
+/usr/share/fonts/opentype/urw-base35/NimbusRoman-Italic.otf: Nimbus Roman:style=Italic
+/usr/share/fonts/type1/gsfonts/n019003l.pfb: Nimbus Sans L:style=Regular
+
+### fontconfig
++ /etc/fonts/conf.d/10-antialias.conf: No description
++ /etc/fonts/conf.d/10-hinting-slight.conf: Set hintslight to hintstyle
++ /etc/fonts/conf.d/10-scale-bitmap-fonts.conf: Bitmap scaling
++ /etc/fonts/conf.d/11-lcdfilter-default.conf: Use lcddefault as default for LCD filter
++ /etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans-mono.conf: No description
++ /etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans.conf: No description
++ /etc/fonts/conf.d/20-unhint-small-dejavu-lgc-serif.conf: No description
++ /etc/fonts/conf.d/20-unhint-small-dejavu-sans-mono.conf: No description
++ /etc/fonts/conf.d/20-unhint-small-dejavu-sans.conf: No description
++ /etc/fonts/conf.d/20-unhint-small-dejavu-serif.conf: No description
++ /etc/fonts/conf.d/20-unhint-small-vera.conf: Disable hinting for Bitstream Vera fonts when the size is less than 8ppem
++ /etc/fonts/conf.d/30-metric-aliases.conf: Set substitutions for similar/metric-compatible families
++ /etc/fonts/conf.d/40-nonlatin.conf: Set substitutions for non-Latin fonts
++ /etc/fonts/conf.d/45-generic.conf: Set substitutions for emoji/math fonts
++ /etc/fonts/conf.d/45-latin.conf: Set substitutions for Latin fonts
++ /etc/fonts/conf.d/49-sansserif.conf: Add sans-serif to the family when no generic name
++ /etc/fonts/conf.d/50-user.conf: Load per-user customization files
++ /etc/fonts/conf.d/51-local.conf: Load local customization file
++ /etc/fonts/conf.d/57-dejavu-sans-mono.conf: No description
++ /etc/fonts/conf.d/57-dejavu-sans.conf: No description
++ /etc/fonts/conf.d/57-dejavu-serif.conf: No description
++ /etc/fonts/conf.d/58-dejavu-lgc-sans-mono.conf: No description
++ /etc/fonts/conf.d/58-dejavu-lgc-sans.conf: No description
++ /etc/fonts/conf.d/58-dejavu-lgc-serif.conf: No description
++ /etc/fonts/conf.d/60-generic.conf: Set preferable fonts for emoji/math fonts
++ /etc/fonts/conf.d/60-latin.conf: Set preferable fonts for Latin
++ /etc/fonts/conf.d/61-urw-bookman.conf: No description
++ /etc/fonts/conf.d/61-urw-c059.conf: No description
++ /etc/fonts/conf.d/61-urw-d050000l.conf: No description
++ /etc/fonts/conf.d/61-urw-fallback-backwards.conf: No description
++ /etc/fonts/conf.d/61-urw-fallback-generics.conf: No description
++ /etc/fonts/conf.d/61-urw-gothic.conf: No description
++ /etc/fonts/conf.d/61-urw-nimbus-mono-ps.conf: No description
++ /etc/fonts/conf.d/61-urw-nimbus-roman.conf: No description
++ /etc/fonts/conf.d/61-urw-nimbus-sans.conf: No description
++ /etc/fonts/conf.d/61-urw-p052.conf: No description
++ /etc/fonts/conf.d/61-urw-standard-symbols-ps.conf: No description
++ /etc/fonts/conf.d/61-urw-z003.conf: No description
++ /etc/fonts/conf.d/65-fonts-persian.conf: No description
++ /etc/fonts/conf.d/65-nonlatin.conf: Set preferable fonts for non-Latin
++ /etc/fonts/conf.d/69-unifont.conf: No description
++ /etc/fonts/conf.d/70-fonts-noto-cjk.conf: No description
++ /etc/fonts/conf.d/70-no-bitmaps.conf: Reject bitmap fonts
++ /etc/fonts/conf.d/80-delicious.conf: No description
++ /etc/fonts/conf.d/90-synthetic.conf: No description
++ /etc/fonts/fonts.conf: Default configuration file
+- /etc/fonts/conf.avail/10-autohint.conf: Enable autohinter
+- /etc/fonts/conf.avail/10-hinting-full.conf: Set hintfull to hintstyle
+- /etc/fonts/conf.avail/10-hinting-medium.conf: Set hintmedium to hintstyle
+- /etc/fonts/conf.avail/10-hinting-none.conf: Set hintnone to hintstyle
+- /etc/fonts/conf.avail/10-no-sub-pixel.conf: Disable sub-pixel rendering
+- /etc/fonts/conf.avail/10-sub-pixel-bgr.conf: Enable sub-pixel rendering with the BGR stripes layout
+- /etc/fonts/conf.avail/10-sub-pixel-rgb.conf: Enable sub-pixel rendering with the RGB stripes layout
+- /etc/fonts/conf.avail/10-sub-pixel-vbgr.conf: Enable sub-pixel rendering with the vertical BGR stripes layout
+- /etc/fonts/conf.avail/10-sub-pixel-vrgb.conf: Enable sub-pixel rendering with the vertical RGB stripes layout
+- /etc/fonts/conf.avail/10-unhinted.conf: Disable hinting
+- /etc/fonts/conf.avail/11-lcdfilter-legacy.conf: Use lcdlegacy as default for LCD filter
+- /etc/fonts/conf.avail/11-lcdfilter-light.conf: Use lcdlight as default for LCD filter
+- /etc/fonts/conf.avail/25-unhint-nonlatin.conf: Disable hinting for CJK fonts
+- /etc/fonts/conf.avail/30-droid-noto-mono.conf: No description
+- /etc/fonts/conf.avail/53-monospace-lcd-filter.conf: No description
+- /etc/fonts/conf.avail/65-khmer.conf: No description
+- /etc/fonts/conf.avail/70-force-bitmaps.conf: Accept bitmap fonts
+- /etc/fonts/conf.avail/70-yes-bitmaps.conf: No description
+
+### locale archive
+en_US.utf8
+
+### input methods
+ii  libusb-1.0-0:amd64                   2:1.0.25-1ubuntu2                       amd64        userspace USB programming library
+
+### fonts packages
+fonts-dejavu-core 2.37-2build1
+fonts-liberation 1:1.07.4-11
+fonts-noto-cjk 1:20220127+repack1-1
+fonts-noto-color-emoji 2.047-0ubuntu0.22.04.1
+fonts-noto-mono 20201225-1build1
+fonts-ubuntu-console 0.83-6ubuntu1
+fonts-urw-base35 20200910-1
+xfonts-base 1:1.0.5
+xfonts-encodings 1:1.0.5-0ubuntu2
+xfonts-scalable 1:1.0.3-1.2ubuntu1
+xfonts-utils 1:7.7+6build2

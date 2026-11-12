@@ -1,0 +1,107 @@
+### compilers
+gcc          gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0
+g++          g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0
+clang        -
+clang++      -
+cmake        -
+ninja        -
+make         GNU Make 4.3
+pkg-config   -
+
+### languages
+python3  Python 3.10.12
+pip3     pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
+node     -
+npm      -
+pnpm     -
+yarn     -
+rustc    -
+cargo    -
+go       -
+java     -
+javac    -
+
+### python packages
+Package             Version
+------------------- ----------------
+attrs               21.2.0
+Babel               2.8.0
+blinker             1.4
+certifi             2020.6.20
+chardet             4.0.0
+cloud-init          26.1
+configobj           5.0.6
+cryptography        3.4.8
+dbus-python         1.2.18
+distro              1.7.0
+distro-info         1.1+ubuntu0.2
+fail2ban            0.11.2
+httplib2            0.20.2
+idna                3.3
+importlib-metadata  4.6.4
+jeepney             0.7.1
+Jinja2              3.0.3
+jsonpatch           1.32
+jsonpointer         2.0
+jsonschema          3.2.0
+keyring             23.5.0
+launchpadlib        1.10.16
+lazr.restfulclient  0.14.4
+lazr.uri            1.0.6
+MarkupSafe          2.0.1
+more-itertools      8.10.0
+netifaces           0.11.0
+oauthlib            3.2.0
+packaging           21.3
+pexpect             4.8.0
+pip                 22.0.2
+pproxy              2.7.9
+ptyprocess          0.7.0
+PyGObject           3.42.1
+pyinotify           0.9.6
+PyJWT               2.3.0
+pyOpenSSL           21.0.0
+pyparsing           2.4.7
+pyrsistent          0.18.1
+pyserial            3.5
+python-apt          2.4.0+ubuntu4.1
+python-debian       0.1.43+ubuntu1.1
+python-magic        0.4.24
+pytz                2022.1
+PyYAML              5.4.1
+requests            2.25.1
+SecretStorage       3.3.1
+setuptools          59.6.0
+six                 1.16.0
+sos                 4.11.2
+ssh-import-id       5.11
+systemd-python      234
+ubuntu-pro-client   8001
+ufw                 0.36.1
+unattended-upgrades 0.1
+urllib3             1.26.5
+wadllib             1.3.6
+wheel               0.37.1
+zipp                1.0.0
+
+### node global
+/tmp/collect_container.sh: line 281: npm: command not found
+
+### chromium build deps check
+libnss3              2:3.98-0ubuntu0.22.04.5
+libgbm1              23.2.1-1ubuntu3.1~22.04.4
+libasound2           198.51.100.99-1ubuntu1.2
+libatk1.0-0          2.36.0-3build1
+libcups2             2.4.1op1-1ubuntu4.21
+libdrm2              2.4.113-2~ubuntu0.22.04.1
+libxkbcommon0        1.4.0-1
+libxcomposite1       1:0.4.5-1build2
+libxdamage1          1:1.1.5-2build2
+libxrandr2           2:1.5.2-1build1
+libpango-1.0-0       1.50.6+ds-2ubuntu1
+libcairo2            1.16.0-5ubuntu2.1
+
+### disk budget
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda1        22G   20G  2.2G  91% /
+Chromium build typically needs 100GB+ free and 16GB+ RAM.

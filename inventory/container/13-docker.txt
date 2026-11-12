@@ -1,0 +1,160 @@
+### docker version
+Client: Docker Engine - Community
+ Version:           29.9.3
+ API version:       1.56
+ Go version:        go1.26.10
+ Git commit:        5457199
+ Built:             Tue Nov  3 21:42:17 2026
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          29.9.3
+  API version:      1.56 (minimum version 1.40)
+  Go version:       go1.26.10
+  Git commit:       70efc0e
+  Built:            Tue Nov  3 21:42:17 2026
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          v2.4.2
+  GitCommit:        b7a25261e029d68978bbf290df0a62fc819b3c51
+ runc-1.1:
+  Version:          1.1.15
+  GitCommit:        v1.1.15-0-gbc20cb44
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+
+### docker info
+Client: Docker Engine - Community
+ Version:    29.9.3
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.38.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v5.7.0
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 8
+  Running: 6
+  Paused: 0
+  Stopped: 2
+ Images: 27
+ Server Version: 29.9.3
+ Storage Driver: overlayfs
+  driver-type: io.containerd.snapshotter.v1
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 1
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc runc-1.1
+ Default Runtime: runc-1.1
+ Init Binary: docker-init
+ containerd version: b7a25261e029d68978bbf290df0a62fc819b3c51
+ runc version: v1.1.15-0-gbc20cb44
+ init version: de40ad0
+ Security Options:
+  apparmor
+   Profile: default
+  seccomp
+   Profile: builtin
+ Kernel Version: 5.4.0-216-generic
+ Operating System: Ubuntu 22.04.5 LTS
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 2
+ Total Memory: 3.797GiB
+ Name: vps
+ ID: REDACTED-UUID
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+  ::1/128
+ Live Restore Enabled: true
+ Firewall Backend: iptables
+  EnableUserlandProxy: true
+  UserlandProxyPath: /usr/bin/docker-proxy
+
+WARNING: No swap limit support
+WARNING: Support for cgroup v1 is deprecated and planned to be removed by no later than May 2029 (https://github.com/moby/moby/issues/51111)
+
+### docker ps
+CONTAINER ID   IMAGE                                   COMMAND                  CREATED        STATUS                    PORTS                                                                             NAMES
+71a8ab2fe9f0   ghcr.io/arifulcrypto/goods24-web:main   "caddy run --config …"   36 hours ago   Up 36 hours (healthy)     80/tcp, 443/tcp, 2019/tcp, 443/udp, 0.0.0.0:8088->8088/tcp, [::]:8088->8088/tcp   goods24-web-1
+6a3350c5f00d   ghcr.io/arifulcrypto/goods24-api:main   "python -m app.deliv…"   36 hours ago   Up 36 hours (healthy)     8000-8002/tcp, 8081/tcp                                                           goods24-delivery-1
+15d49e5470f7   ghcr.io/arifulcrypto/goods24-api:main   "python -m app.serve"    36 hours ago   Up 36 hours (healthy)     8000-8002/tcp, 8081/tcp                                                           goods24-api-1
+3cbd8a44f6a9   ghcr.io/arifulcrypto/goods24-api:main   "python -m app.devto…"   36 hours ago   Exited (0) 36 hours ago                                                                                     goods24-seed-1
+df2a243d5f4f   ghcr.io/arifulcrypto/goods24-api:main   "alembic upgrade head"   36 hours ago   Exited (0) 36 hours ago                                                                                     goods24-migrate-1
+c90771a2681c   redis:7-alpine                          "docker-entrypoint.s…"   47 hours ago   Up 47 hours (healthy)     6379/tcp                                                                          goods24-redis-1
+90f995984ca7   postgres:17-alpine                      "docker-entrypoint.s…"   47 hours ago   Up 47 hours (healthy)     5432/tcp                                                                          goods24-postgres-1
+ce866d3035c7   v03413/bepusdt:0716485                  "bepusdt start"          4 days ago     Up 3 days                 8080/tcp                                                                          goods24-bepusdt-1
+
+### docker images
+IMAGE                                                                                    ID             DISK USAGE   CONTENT SIZE   EXTRA
+alpine:3.22                                                                              bfe7ceb9f09e       12.9MB         3.88MB        
+ghcr.io/arifulcrypto/goods24-api:main                                                    bfb244ea6705        438MB          121MB   U    
+ghcr.io/arifulcrypto/goods24-api:rollback-1528264                                        06d16f78539e        437MB          121MB        
+ghcr.io/arifulcrypto/goods24-api:rollback-42de235                                        f5273000a712        437MB          120MB        
+ghcr.io/arifulcrypto/goods24-api:rollback-5f709d3                                        ff51780ef38a        438MB          121MB        
+ghcr.io/arifulcrypto/goods24-api:rollback-7f36926                                        3865a0afdd4a        436MB          120MB        
+ghcr.io/arifulcrypto/goods24-api:rollback-84b4dc0                                        53b3ca9538c1        437MB          120MB        
+ghcr.io/arifulcrypto/goods24-api:rollback-8fd634b                                        0dcf9db438c6        437MB          120MB        
+ghcr.io/arifulcrypto/goods24-api:rollback-942f19d                                        a3d626737b6d        437MB          120MB        
+ghcr.io/arifulcrypto/goods24-api:rollback-a8160cb                                        dd0d85a62fd1        437MB          120MB        
+ghcr.io/arifulcrypto/goods24-api:rollback-e1fb9e7                                        188602e3d653        437MB          120MB        
+ghcr.io/arifulcrypto/goods24-web:main                                                    cd33b9873968        165MB         43.8MB   U    
+ghcr.io/arifulcrypto/goods24-web:rollback-1528264                                        0dde52fbfac6        165MB         43.8MB        
+ghcr.io/arifulcrypto/goods24-web:rollback-42de235                                        f30d64da6a20        165MB         43.8MB        
+ghcr.io/arifulcrypto/goods24-web:rollback-5f709d3                                        0df7ae3a8d42        165MB         43.8MB        
+ghcr.io/arifulcrypto/goods24-web:rollback-7f36926                                        99d630361e1a        165MB         43.7MB        
+ghcr.io/arifulcrypto/goods24-web:rollback-84b4dc0                                        e77d6ae050e1        165MB         43.8MB        
+ghcr.io/arifulcrypto/goods24-web:rollback-8fd634b                                        feff201d6f50        165MB         43.8MB        
+ghcr.io/arifulcrypto/goods24-web:rollback-942f19d                                        b83a22ebfb26        165MB         43.8MB        
+ghcr.io/arifulcrypto/goods24-web:rollback-a8160cb                                        d626498b5ec5        165MB         43.8MB        
+ghcr.io/arifulcrypto/goods24-web:rollback-e1fb9e7                                        cc3c18051b52        165MB         43.8MB        
+goods24-api:v4-rollback                                                                  c72ad26d6e89        432MB          119MB        
+goods24-web:v4-rollback                                                                  286f9c752a5b        164MB         43.6MB        
+hello-world:latest                                                                       c567b231f656       25.9kB         9.49kB        
+postgres:17-alpine                                                                       3540c0362c80        424MB          118MB   U    
+redis:7-alpine                                                                           c5d34a98396a       57.8MB         16.7MB   U    
+v03413/bepusdt@sha256:0a7d859e4f5022c9b53a9ed2fc06db1f3ca254ee40db0bfd72207e26517d0c69   0a7d859e4f50       85.6MB         23.5MB   U    
+
+### docker networks
+NETWORK ID     NAME                  DRIVER    SCOPE
+c20501075fdc   bridge                bridge    local
+20bd22c3dc50   goods24_backend       bridge    local
+7e79ca610495   goods24_edge          bridge    local
+45b3d09a4a4c   goods24_usdt          bridge    local
+ef69b38fd4ad   goods24_usdt_egress   bridge    local
+d49f39225049   host                  host      local
+731a7f445de3   none                  null      local
+
+### docker volumes
+DRIVER    VOLUME NAME
+local     90976b858483d94883345ee9777ab57c03bb84d7a035270bf860a7b79279fce5
+local     bc6b6c421c892a4eff2c479dcccbb11e10b75e6fc9a03908a68289ca167e061b
+local     goods24_bepusdt_data
+local     goods24_caddy_config
+local     goods24_caddy_data
+local     goods24_pgdata
+local     goods24_redisdata
+local     goods24_uploads
+
+### docker compose projects
+NAME                STATUS              CONFIG FILES
+goods24             running(6)          /opt/kesiv/deploy/docker-compose.yml,/opt/kesiv/deploy/docker-compose.prod.yml

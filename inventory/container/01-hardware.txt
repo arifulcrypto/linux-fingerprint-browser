@@ -1,0 +1,266 @@
+### cpu
+Architecture:                       x86_64
+CPU op-mode(s):                     32-bit, 64-bit
+Address sizes:                      40 bits physical, 48 bits virtual
+Byte Order:                         Little Endian
+CPU(s):                             2
+On-line CPU(s) list:                0,1
+Vendor ID:                          AuthenticAMD
+Model name:                         AMD EPYC-Rome Processor
+CPU family:                         23
+Model:                              49
+Thread(s) per core:                 1
+Core(s) per socket:                 1
+Socket(s):                          2
+Stepping:                           0
+BogoMIPS:                           4591.37
+Flags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat npt lbrv nrip_save tsc_scale vmcb_clean flushbyasid pausefilter pfthreshold v_vmsave_vmload vgif umip rdpid overflow_recov succor arch_capabilities
+Virtualization:                     AMD-V
+Hypervisor vendor:                  KVM
+Virtualization type:                full
+L1d cache:                          64 KiB (2 instances)
+L1i cache:                          64 KiB (2 instances)
+L2 cache:                           1 MiB (2 instances)
+L3 cache:                           32 MiB (2 instances)
+NUMA node(s):                       1
+NUMA node0 CPU(s):                  0,1
+Vulnerability Gather data sampling: Not affected
+Vulnerability Itlb multihit:        Not affected
+Vulnerability L1tf:                 Not affected
+Vulnerability Mds:                  Not affected
+Vulnerability Meltdown:             Not affected
+Vulnerability Mmio stale data:      Not affected
+Vulnerability Retbleed:             Vulnerable
+Vulnerability Spec store bypass:    Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:           Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:           Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                Not affected
+Vulnerability Tsx async abort:      Not affected
+
+### nproc
+2
+
+### meminfo
+MemTotal:        3981712 kB
+MemFree:         1436008 kB
+MemAvailable:    1838724 kB
+Buffers:               0 kB
+Cached:           402716 kB
+SwapCached:            0 kB
+Active:          1422480 kB
+Inactive:         868012 kB
+Active(anon):    1223568 kB
+Inactive(anon):   724444 kB
+Active(file):     198912 kB
+Inactive(file):   143568 kB
+Unevictable:           0 kB
+Mlocked:           18576 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               792 kB
+Writeback:           660 kB
+AnonPages:       1889600 kB
+Mapped:           233244 kB
+Shmem:             58412 kB
+KReclaimable:     156056 kB
+Slab:                  0 kB
+SReclaimable:          0 kB
+SUnreclaim:            0 kB
+KernelStack:       31888 kB
+PageTables:        74368 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6185152 kB
+Committed_AS:   24512304 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       67228 kB
+VmallocChunk:          0 kB
+Percpu:           213504 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:     3100516 kB
+DirectMap2M:     1093632 kB
+DirectMap1G:     2097152 kB
+
+### free
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       2.0Gi       1.4Gi        57Mi       393Mi       1.8Gi
+Swap:             0B          0B          0B
+
+### df
+Filesystem     Type     Size  Used Avail Use% Mounted on
+/dev/vda1      ext4      22G   20G  2.2G  91% /
+none           tmpfs    492K  4.0K  488K   1% /dev
+tmpfs          tmpfs    1.0M     0  1.0M   0% /dev/lxd
+tmpfs          tmpfs    100K     0  100K   0% /dev/.lxd-mounts
+tmpfs          tmpfs    1.9G     0  1.9G   0% /dev/shm
+tmpfs          tmpfs    778M  828K  777M   1% /run
+tmpfs          tmpfs    5.0M     0  5.0M   0% /run/lock
+tmpfs          tmpfs    4.0M     0  4.0M   0% /sys/fs/cgroup
+tmpfs          tmpfs    389M   16K  389M   1% /run/user/0
+overlay        overlay   22G   20G  2.2G  91% /var/lib/docker/rootfs/overlayfs/ce866d3035c782f4193188e544d568dd9268a457bf42c859e16cdc63fa4b22d4
+overlay        overlay   22G   20G  2.2G  91% /var/lib/docker/rootfs/overlayfs/90f995984ca7c8b2c8821c45633e967d66c98d9ff467001f79f7b38bcb526596
+overlay        overlay   22G   20G  2.2G  91% /var/lib/docker/rootfs/overlayfs/c90771a2681c33239c7f92d293c9184517ff7415081c348b4c60935fb860f2f3
+overlay        overlay   22G   20G  2.2G  91% /var/lib/docker/rootfs/overlayfs/15d49e5470f77944d69a8d00b1b123d6fc10e329d96d2655b877b34bf4b692e0
+overlay        overlay   22G   20G  2.2G  91% /var/lib/docker/rootfs/overlayfs/71a8ab2fe9f0d0ca84f6bc7e030f8144375b695cff0f3775501af2283351e6d1
+overlay        overlay   22G   20G  2.2G  91% /var/lib/docker/rootfs/overlayfs/6a3350c5f00d1d134de8498b67b70cc191c9f622dd67997a9f443a0cd267381e
+
+### lsblk
+NAME     SIZE TYPE FSTYPE MOUNTPOINT
+loop0   63.8M loop        
+loop1   63.8M loop        
+loop2   50.9M loop        
+loop3   32.5M loop        
+loop4   92.2M loop        
+loop5   44.7M loop        
+loop6   66.8M loop        
+loop7    118M loop        
+sda      368K disk        
+sr0     1024M rom         
+vda       22G disk        
+├─vda1  21.9G part        /
+├─vda14    4M part        
+└─vda15  106M part        
+
+### mounts
+/dev/vda1 / ext4 rw,relatime 0 0
+none /dev tmpfs rw,relatime,size=492k,mode=755,uid=1000000,gid=1000000 0 0
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+sysfs /sys sysfs rw,relatime 0 0
+udev /dev/fuse devtmpfs rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755 0 0
+udev /dev/net/tun devtmpfs rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755 0 0
+fusectl /sys/fs/fuse/connections fusectl rw,nosuid,nodev,noexec,relatime 0 0
+pstore /sys/fs/pstore pstore rw,nosuid,nodev,noexec,relatime 0 0
+configfs /sys/kernel/config configfs rw,nosuid,nodev,noexec,relatime 0 0
+debugfs /sys/kernel/debug debugfs rw,nosuid,nodev,noexec,relatime 0 0
+securityfs /sys/kernel/security securityfs rw,nosuid,nodev,noexec,relatime 0 0
+tracefs /sys/kernel/tracing tracefs rw,nosuid,nodev,noexec,relatime 0 0
+binfmt_misc /proc/sys/fs/binfmt_misc binfmt_misc rw,nosuid,nodev,noexec,relatime 0 0
+mqueue /dev/mqueue mqueue rw,nosuid,nodev,noexec,relatime 0 0
+proc /dev/.lxc/proc proc rw,relatime 0 0
+sys /dev/.lxc/sys sysfs rw,relatime 0 0
+tmpfs /dev/lxd tmpfs rw,relatime,size=1024k,mode=711 0 0
+tmpfs /dev/.lxd-mounts tmpfs rw,relatime,size=100k,mode=711 0 0
+lxcfs /proc/cpuinfo fuse.lxcfs rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other 0 0
+lxcfs /proc/diskstats fuse.lxcfs rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other 0 0
+lxcfs /proc/loadavg fuse.lxcfs rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other 0 0
+lxcfs /proc/meminfo fuse.lxcfs rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other 0 0
+lxcfs /proc/stat fuse.lxcfs rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other 0 0
+lxcfs /proc/swaps fuse.lxcfs rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other 0 0
+lxcfs /proc/uptime fuse.lxcfs rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other 0 0
+lxcfs /sys/devices/system/cpu/online fuse.lxcfs rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other 0 0
+udev /dev/full devtmpfs rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755 0 0
+udev /dev/null devtmpfs rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755 0 0
+udev /dev/random devtmpfs rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755 0 0
+udev /dev/tty devtmpfs rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755 0 0
+udev /dev/urandom devtmpfs rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755 0 0
+udev /dev/zero devtmpfs rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755 0 0
+/proc/self/fd/43 /dev/pts devpts rw,nosuid,noexec,relatime,gid=1000005,mode=620,ptmxmode=666,max=1024 0 0
+/proc/self/fd/43 /dev/ptmx devpts rw,nosuid,noexec,relatime,gid=1000005,mode=620,ptmxmode=666,max=1024 0 0
+/proc/self/fd/43 /dev/console devpts rw,nosuid,noexec,relatime,gid=1000005,mode=620,ptmxmode=666,max=1024 0 0
+none /proc/sys/kernel/random/boot_id tmpfs ro,nosuid,nodev,noexec,relatime,size=492k,mode=755,uid=1000000,gid=1000000 0 0
+tmpfs /dev/shm tmpfs rw,nosuid,nodev,uid=1000000,gid=1000000 0 0
+tmpfs /run tmpfs rw,nosuid,nodev,size=796344k,nr_inodes=819200,mode=755,uid=1000000,gid=1000000 0 0
+tmpfs /run/lock tmpfs rw,nosuid,nodev,noexec,relatime,size=5120k,uid=1000000,gid=1000000 0 0
+tmpfs /sys/fs/cgroup tmpfs ro,nosuid,nodev,noexec,size=4096k,nr_inodes=1024,mode=755,uid=1000000,gid=1000000 0 0
+cgroup2 /sys/fs/cgroup/unified cgroup2 rw,nosuid,nodev,noexec,relatime 0 0
+cgroup /sys/fs/cgroup/systemd cgroup rw,nosuid,nodev,noexec,relatime,xattr,name=systemd 0 0
+cgroup /sys/fs/cgroup/freezer cgroup rw,nosuid,nodev,noexec,relatime,freezer 0 0
+cgroup /sys/fs/cgroup/net_cls,net_prio cgroup rw,nosuid,nodev,noexec,relatime,net_cls,net_prio 0 0
+cgroup /sys/fs/cgroup/devices cgroup rw,nosuid,nodev,noexec,relatime,devices 0 0
+cgroup /sys/fs/cgroup/blkio cgroup rw,nosuid,nodev,noexec,relatime,blkio 0 0
+cgroup /sys/fs/cgroup/cpuset cgroup rw,nosuid,nodev,noexec,relatime,cpuset,clone_children 0 0
+cgroup /sys/fs/cgroup/pids cgroup rw,nosuid,nodev,noexec,relatime,pids 0 0
+cgroup /sys/fs/cgroup/perf_event cgroup rw,nosuid,nodev,noexec,relatime,perf_event 0 0
+cgroup /sys/fs/cgroup/memory cgroup rw,nosuid,nodev,noexec,relatime,memory 0 0
+cgroup /sys/fs/cgroup/cpu,cpuacct cgroup rw,nosuid,nodev,noexec,relatime,cpu,cpuacct 0 0
+cgroup /sys/fs/cgroup/hugetlb cgroup rw,nosuid,nodev,noexec,relatime,hugetlb 0 0
+cgroup /sys/fs/cgroup/rdma cgroup rw,nosuid,nodev,noexec,relatime,rdma 0 0
+none /run/credentials/systemd-sysusers.service ramfs ro,nosuid,nodev,noexec,relatime,mode=700 0 0
+tmpfs /run/user/0 tmpfs rw,nosuid,nodev,relatime,size=398168k,nr_inodes=99542,mode=700,uid=1000000,gid=1000000 0 0
+overlay /var/lib/docker/rootfs/overlayfs/ce866d3035c782f4193188e544d568dd9268a457bf42c859e16cdc63fa4b22d4 overlay rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/120/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/119/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/118/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/117/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/116/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/121/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/121/work,xino=off 0 0
+nsfs /run/docker/netns/18147909fff8 nsfs rw 0 0
+overlay /var/lib/docker/rootfs/overlayfs/90f995984ca7c8b2c8821c45633e967d66c98d9ff467001f79f7b38bcb526596 overlay rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/283/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/54/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/53/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/52/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/51/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/50/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/49/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/48/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/47/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/46/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/36/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/285/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/285/work,xino=off 0 0
+nsfs /run/docker/netns/1c526f222f04 nsfs rw 0 0
+overlay /var/lib/docker/rootfs/overlayfs/c90771a2681c33239c7f92d293c9184517ff7415081c348b4c60935fb860f2f3 overlay rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/282/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/61/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/60/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/59/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/58/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/57/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/56/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/55/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/284/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/284/work,xino=off 0 0
+nsfs /run/docker/netns/4780fc411271 nsfs rw 0 0
+overlay /var/lib/docker/rootfs/overlayfs/15d49e5470f77944d69a8d00b1b123d6fc10e329d96d2655b877b34bf4b692e0 overlay rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/343/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/336/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/316/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/315/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/314/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/310/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/156/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/29/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/28/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/27/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/26/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/345/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/345/work,xino=off 0 0
+nsfs /run/docker/netns/390360898d58 nsfs rw 0 0
+overlay /var/lib/docker/rootfs/overlayfs/71a8ab2fe9f0d0ca84f6bc7e030f8144375b695cff0f3775501af2283351e6d1 overlay rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/347/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/313/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/312/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/311/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/158/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/157/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/40/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/39/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/38/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/37/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/36/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/348/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/348/work,xino=off 0 0
+nsfs /run/docker/netns/5d384b004a14 nsfs rw 0 0
+overlay /var/lib/docker/rootfs/overlayfs/6a3350c5f00d1d134de8498b67b70cc191c9f622dd67997a9f443a0cd267381e overlay rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/344/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/336/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/316/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/315/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/314/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/310/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/156/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/29/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/28/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/27/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/26/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/346/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/346/work,xino=off 0 0
+nsfs /run/docker/netns/4136bf25653c nsfs rw 0 0
+
+### dmi
+/sys/class/dmi/id/sys_vendor: QEMU
+/sys/class/dmi/id/product_name: Standard PC (i440FX + PIIX, 1996)
+/sys/class/dmi/id/product_version: pc-i440fx-10.0
+/sys/class/dmi/id/bios_vendor: SeaBIOS
+/sys/class/dmi/id/bios_version: 1.16.3-debian-1.16.3-2
+
+### devices
+total 8
+drwxr-xr-x  9 root   root         520 Nov  8 09:28 .
+drwxr-xr-x 18 root   root        4096 Oct 28 23:50 ..
+crw--w----  1 root   tty     136,   0 Nov  8 09:28 console
+lrwxrwxrwx  1 root   root          11 Nov  8 09:28 core -> /proc/kcore
+lrwxrwxrwx  1 root   root          13 Nov  8 09:28 fd -> /proc/self/fd
+crw-rw-rw-  1 nobody nogroup   1,   7 Nov 10 10:23 full
+crw-rw-rw-  1 nobody nogroup  10, 229 Nov 10 10:23 fuse
+lrwxrwxrwx  1 root   root          12 Nov  8 09:28 initctl -> /run/initctl
+lrwxrwxrwx  1 root   root          28 Nov  8 09:28 log -> /run/systemd/journal/dev-log
+drwxr-xr-x  4 root   root          80 Nov  8 09:28 .lxc
+-r--r--r--  1 root   root          37 Nov  8 09:28 .lxc-boot-id
+drwxr-xr-x  2 nobody nogroup       60 Nov  8 09:26 lxd
+drwx--x--x  2 nobody nogroup       40 Nov  1 13:20 .lxd-mounts
+drwxrwxrwt  2 nobody nogroup       40 Nov  1 13:20 mqueue
+drwxr-xr-x  2 root   root          60 Nov  8 09:28 net
+crw-rw-rw-  1 nobody nogroup   1,   3 Nov 10 10:23 null
+crw-rw-rw-  1 root   root      5,   2 Nov 10 16:02 ptmx
+drwxr-xr-x  2 root   root           0 Nov  8 09:28 pts
+crw-rw-rw-  1 nobody nogroup   1,   8 Nov 10 10:23 random
+drwxrwxrwt  2 root   root          40 Nov  8 09:28 shm
+lrwxrwxrwx  1 root   root          15 Nov  8 09:28 stderr -> /proc/self/fd/2
+lrwxrwxrwx  1 root   root          15 Nov  8 09:28 stdin -> /proc/self/fd/0
+lrwxrwxrwx  1 root   root          15 Nov  8 09:28 stdout -> /proc/self/fd/1
+crw-rw-rw-  1 nobody nogroup   5,   0 Nov 11 08:32 tty
+crw-rw-rw-  1 nobody nogroup   1,   9 Nov 10 10:23 urandom
+crw-rw-rw-  1 nobody nogroup   1,   5 Nov 10 10:23 zero
+
+### dri
+ls: cannot access '/dev/dri': No such file or directory
+
+### snd
+ls: cannot access '/dev/snd': No such file or directory
+
+### lspci
+/tmp/collect_container.sh: line 39: lspci: command not found
+lspci not installed
+
+### lsusb
+/tmp/collect_container.sh: line 40: lsusb: command not found
+lsusb not installed
+
+### capabilities
+CapInh:	0000000000000000
+CapPrm:	0000003fffffffff
+CapEff:	0000003fffffffff
+CapBnd:	0000003fffffffff
+CapAmb:	0000000000000000
+
+### seccomp/status
+NoNewPrivs:	0
+Seccomp:	2

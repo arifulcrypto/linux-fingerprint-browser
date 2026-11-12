@@ -1,0 +1,19 @@
+### 1panel binary
+ls: cannot access '/usr/local/bin/1pctl': No such file or directory
+ls: cannot access '/opt/1panel': No such file or directory
+
+### 1panel version
+/tmp/collect_container.sh: line 300: 1pctl: command not found
+
+### 1panel status
+/tmp/collect_container.sh: line 301: 1pctl: command not found
+
+### 1panel dirs
+du: cannot access '/opt/1panel': No such file or directory
+ls: cannot access '/opt/1panel': No such file or directory
+
+### 1panel ports
+LISTEN 0      4096         0.0.0.0:8088       0.0.0.0:*    users:(("docker-proxy",pid=2175115,fd=9))
+LISTEN 0      4096            [::]:8088          [::]:*    users:(("docker-proxy",pid=2175121,fd=9))
+
+### 1panel db (tables only)

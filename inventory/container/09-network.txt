@@ -1,0 +1,541 @@
+### ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:xx:xx:xx brd 00:00:00:xx:xx:xx
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: br-7e79ca610495: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 6e:b7:1d:xx:xx:xx brd ff:ff:ff:xx:xx:xx
+    inet 10.89.10.1/24 brd 10.89.10.255 scope global br-7e79ca610495
+       valid_lft forever preferred_lft forever
+    inet6 fe80::6cb7:1dff:fe1b:4773/64 scope link 
+       valid_lft forever preferred_lft forever
+3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 76:5a:74:xx:xx:xx brd ff:ff:ff:xx:xx:xx
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::745a:74ff:fe8d:bde2/64 scope link 
+       valid_lft forever preferred_lft forever
+4: br-ef69b38fd4ad: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether ae:b9:9b:xx:xx:xx brd ff:ff:ff:xx:xx:xx
+    inet 10.89.13.1/24 brd 10.89.13.255 scope global br-ef69b38fd4ad
+       valid_lft forever preferred_lft forever
+    inet6 fe80::acb9:9bff:fed5:16f2/64 scope link 
+       valid_lft forever preferred_lft forever
+5: br-20bd22c3dc50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 6e:06:36:xx:xx:xx brd ff:ff:ff:xx:xx:xx
+    inet 10.89.11.1/24 brd 10.89.11.255 scope global br-20bd22c3dc50
+       valid_lft forever preferred_lft forever
+    inet6 fe80::6c06:36ff:fe48:4210/64 scope link 
+       valid_lft forever preferred_lft forever
+6: br-45b3d09a4a4c: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 16:a0:c1:xx:xx:xx brd ff:ff:ff:xx:xx:xx
+    inet 10.89.12.1/24 brd 10.89.12.255 scope global br-45b3d09a4a4c
+       valid_lft forever preferred_lft forever
+    inet6 fe80::14a0:c1ff:fe66:b9c0/64 scope link 
+       valid_lft forever preferred_lft forever
+12: eth0@if13: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 00:16:3e:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 0
+    inet 10.0.43.40/24 metric 100 brd 10.0.43.255 scope global dynamic eth0
+       valid_lft 3554sec preferred_lft 3554sec
+    inet6 fd42:43::216:3eff:fe41:db37/64 scope global mngtmpaddr noprefixroute 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::216:3eff:fe41:db37/64 scope link 
+       valid_lft forever preferred_lft forever
+35: vethaef0cca@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-45b3d09a4a4c state UP group default 
+    link/ether 6e:14:d6:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 5
+    inet6 fe80::6c14:d6ff:fe99:da7c/64 scope link 
+       valid_lft forever preferred_lft forever
+36: veth84a2195@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-ef69b38fd4ad state UP group default 
+    link/ether c2:67:39:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 5
+    inet6 fe80::c067:39ff:fee3:22df/64 scope link 
+       valid_lft forever preferred_lft forever
+148: vethbb18e89@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-20bd22c3dc50 state UP group default 
+    link/ether 4e:dd:af:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 2
+    inet6 fe80::4cdd:afff:fe2e:4247/64 scope link 
+       valid_lft forever preferred_lft forever
+149: veth5ebc58d@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-20bd22c3dc50 state UP group default 
+    link/ether f2:17:e7:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 3
+    inet6 fe80::f017:e7ff:fe78:50d8/64 scope link 
+       valid_lft forever preferred_lft forever
+200: veth8244133@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-20bd22c3dc50 state UP group default 
+    link/ether 82:47:ca:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 1
+    inet6 fe80::8047:caff:feb4:71b7/64 scope link 
+       valid_lft forever preferred_lft forever
+201: veth1331743@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-7e79ca610495 state UP group default 
+    link/ether 4a:b8:a8:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 1
+    inet6 fe80::48b8:a8ff:fe24:67ca/64 scope link 
+       valid_lft forever preferred_lft forever
+202: veth5212f34@if4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-45b3d09a4a4c state UP group default 
+    link/ether 76:83:62:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 1
+    inet6 fe80::7483:62ff:fe4f:c02e/64 scope link 
+       valid_lft forever preferred_lft forever
+203: veth8d7d296@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-7e79ca610495 state UP group default 
+    link/ether 9e:22:9e:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 6
+    inet6 fe80::9c22:9eff:febe:de7c/64 scope link 
+       valid_lft forever preferred_lft forever
+204: veth2306e58@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-20bd22c3dc50 state UP group default 
+    link/ether d2:bd:31:xx:xx:xx brd ff:ff:ff:xx:xx:xx link-netnsid 7
+    inet6 fe80::d0bd:31ff:fe81:a8e9/64 scope link 
+       valid_lft forever preferred_lft forever
+
+### ip route
+default via 10.0.43.1 dev eth0 proto dhcp src 10.0.43.40 metric 100 
+10.0.43.0/24 dev eth0 proto kernel scope link src 10.0.43.40 metric 100 
+10.0.43.1 dev eth0 proto dhcp scope link src 10.0.43.40 metric 100 
+10.89.10.0/24 dev br-7e79ca610495 proto kernel scope link src 10.89.10.1 
+10.89.11.0/24 dev br-20bd22c3dc50 proto kernel scope link src 10.89.11.1 
+10.89.12.0/24 dev br-45b3d09a4a4c proto kernel scope link src 10.89.12.1 
+10.89.13.0/24 dev br-ef69b38fd4ad proto kernel scope link src 10.89.13.1 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+
+### ip -6 route
+fd42:43::/64 dev eth0 proto ra metric 100 pref medium
+fe80::/64 dev eth0 proto kernel metric 256 pref medium
+fe80::/64 dev br-20bd22c3dc50 proto kernel metric 256 pref medium
+fe80::/64 dev br-ef69b38fd4ad proto kernel metric 256 pref medium
+fe80::/64 dev br-7e79ca610495 proto kernel metric 256 pref medium
+fe80::/64 dev br-45b3d09a4a4c proto kernel metric 256 pref medium
+fe80::/64 dev docker0 proto kernel metric 256 linkdown pref medium
+fe80::/64 dev vethaef0cca proto kernel metric 256 pref medium
+fe80::/64 dev veth84a2195 proto kernel metric 256 pref medium
+fe80::/64 dev vethbb18e89 proto kernel metric 256 pref medium
+fe80::/64 dev veth5ebc58d proto kernel metric 256 pref medium
+fe80::/64 dev veth8244133 proto kernel metric 256 pref medium
+fe80::/64 dev veth1331743 proto kernel metric 256 pref medium
+fe80::/64 dev veth5212f34 proto kernel metric 256 pref medium
+fe80::/64 dev veth8d7d296 proto kernel metric 256 pref medium
+fe80::/64 dev veth2306e58 proto kernel metric 256 pref medium
+default via fe80::216:3eff:fed8:d793 dev eth0 proto ra metric 100 expires 1373sec mtu 1500 pref medium
+
+### resolv.conf
+# This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).
+# Do not edit.
+#
+# This file might be symlinked as /etc/resolv.conf. If you're looking at
+# /etc/resolv.conf and seeing this text, you have followed the symlink.
+#
+# This is a dynamic resolv.conf file for connecting local clients to the
+# internal DNS stub resolver of systemd-resolved. This file lists all
+# configured search domains.
+#
+# Run "resolvectl status" to see details about the uplink DNS servers
+# currently in use.
+#
+# Third party programs should typically not access this file directly, but only
+# through the symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a
+# different way, replace this symlink by a static file or a different symlink.
+#
+# See man:systemd-resolved.service(8) for details about the supported modes of
+# operation for /etc/resolv.conf.
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+search lxd
+
+### resolvectl
+Global
+       Protocols: -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+resolv.conf mode: stub
+
+Link 2 (br-7e79ca610495)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+Link 3 (docker0)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+Link 4 (br-ef69b38fd4ad)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+Link 5 (br-20bd22c3dc50)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+Link 6 (br-45b3d09a4a4c)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+Link 12 (eth0)
+    Current Scopes: DNS
+         Protocols: +DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+Current DNS Server: 10.0.43.1
+       DNS Servers: 10.0.43.1 fe80::216:3eff:fed8:d793%21871
+        DNS Domain: lxd
+
+Link 35 (vethaef0cca)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+Link 36 (veth84a2195)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+Link 148 (vethbb18e89)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+Link 149 (veth5ebc58d)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+Link 200 (veth8244133)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+Link 201 (veth1331743)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+Link 202 (veth5212f34)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+Link 203 (veth8d7d296)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+Link 204 (veth2306e58)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+
+### hosts
+127.0.0.1 localhost
+
+# The following lines are desirable for IPv6 capable hosts
+::1 ip6-localhost ip6-loopback
+2001:db8::99 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+127.0.1.1 vps
+
+### listening sockets
+Netid State  Recv-Q Send-Q                   Local Address:Port  Peer Address:PortProcess                                   
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=3258480,fd=78))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=3258480,fd=74))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=3258480,fd=62))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=3258480,fd=48))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=3258480,fd=46))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=2158412,fd=92))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=2158412,fd=90))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=2158412,fd=87))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=2158412,fd=84))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=2158412,fd=79))     
+udp   UNCONN 0      0                        127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=103,fd=13))
+udp   UNCONN 0      0                      10.0.43.40%eth0:68         0.0.0.0:*    users:(("systemd-network",pid=101,fd=15))
+udp   UNCONN 0      0                                    *:10042            *:*    users:(("hysteria",pid=3232619,fd=5))    
+udp   UNCONN 0      0      [fe80::216:3eff:fe41:db37]%eth0:546           [::]:*    users:(("systemd-network",pid=101,fd=21))
+tcp   LISTEN 0      4096                     127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=103,fd=14))
+tcp   LISTEN 0      128                            0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=160,fd=3))            
+tcp   LISTEN 0      4096                           0.0.0.0:8088       0.0.0.0:*    users:(("docker-proxy",pid=2175115,fd=9))
+tcp   LISTEN 0      128                          127.0.0.1:2080       0.0.0.0:*    users:(("xray",pid=2157613,fd=5))        
+tcp   LISTEN 0      100                          127.0.0.1:18080      0.0.0.0:*    users:(("pproxy",pid=111662,fd=6))       
+tcp   LISTEN 0      100                          127.0.0.1:18081      0.0.0.0:*    users:(("pproxy",pid=3232992,fd=6))      
+tcp   LISTEN 0      128                          127.0.0.1:2081       0.0.0.0:*    users:(("xray",pid=2157613,fd=8))        
+tcp   LISTEN 0      128                               [::]:22            [::]:*    users:(("sshd",pid=160,fd=4))            
+tcp   LISTEN 0      2                                [::1]:3350          [::]:*    users:(("xrdp-sesman",pid=143,fd=7))     
+tcp   LISTEN 0      4096                              [::]:8088          [::]:*    users:(("docker-proxy",pid=2175121,fd=9))
+tcp   LISTEN 0      128                                  *:10041            *:*    users:(("xray-26.6.27",pid=3232274,fd=5))
+tcp   LISTEN 0      2                                    *:3389             *:*    users:(("xrdp",pid=155,fd=11))           
+
+### all sockets summary
+Total: 1391
+TCP:   877 (estab 717, closed 147, orphaned 1, timewait 8)
+
+Transport Total     IP        IPv6
+RAW	  1         0         1        
+UDP	  14        12        2        
+TCP	  730       42        688      
+INET	  745       54        691      
+FRAG	  0         0         0        
+
+
+### iptables
+# Generated by iptables-save v1.8.7 on Thu Nov 12 04:07:33 2026
+*raw
+:PREROUTING ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+-A PREROUTING -d 10.89.13.2/32 ! -i br-ef69b38fd4ad -j DROP
+-A PREROUTING -d 10.89.10.2/32 ! -i br-7e79ca610495 -j DROP
+-A PREROUTING -d 10.89.10.10/32 ! -i br-7e79ca610495 -j DROP
+COMMIT
+# Completed on Thu Nov 12 04:07:33 2026
+# Generated by iptables-save v1.8.7 on Thu Nov 12 04:07:33 2026
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:DOCKER - [0:0]
+:DOCKER-BRIDGE - [0:0]
+:DOCKER-CT - [0:0]
+:DOCKER-FORWARD - [0:0]
+:DOCKER-INTERNAL - [0:0]
+:DOCKER-USER - [0:0]
+-A FORWARD -j DOCKER-USER
+-A FORWARD -j DOCKER-FORWARD
+-A OUTPUT -p udp -m multiport --dports 3478,5349,19302 -j REJECT --reject-with icmp-port-unreachable
+-A DOCKER -d 10.89.10.10/32 ! -i br-7e79ca610495 -o br-7e79ca610495 -p tcp -m tcp --dport 8088 -j ACCEPT
+-A DOCKER ! -i br-7e79ca610495 -o br-7e79ca610495 -j DROP
+-A DOCKER ! -i br-ef69b38fd4ad -o br-ef69b38fd4ad -j DROP
+-A DOCKER ! -i docker0 -o docker0 -j DROP
+-A DOCKER-BRIDGE -o br-7e79ca610495 -j DOCKER
+-A DOCKER-BRIDGE -o br-ef69b38fd4ad -j DOCKER
+-A DOCKER-BRIDGE -o docker0 -j DOCKER
+-A DOCKER-CT -o br-7e79ca610495 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A DOCKER-CT -o br-ef69b38fd4ad -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A DOCKER-CT -o docker0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A DOCKER-FORWARD -j DOCKER-CT
+-A DOCKER-FORWARD -j DOCKER-INTERNAL
+-A DOCKER-FORWARD -j DOCKER-BRIDGE
+-A DOCKER-FORWARD -i br-7e79ca610495 -j ACCEPT
+-A DOCKER-FORWARD -i br-ef69b38fd4ad -j ACCEPT
+-A DOCKER-FORWARD -i br-20bd22c3dc50 -o br-20bd22c3dc50 -j ACCEPT
+-A DOCKER-FORWARD -i br-45b3d09a4a4c -o br-45b3d09a4a4c -j ACCEPT
+-A DOCKER-FORWARD -i docker0 -j ACCEPT
+-A DOCKER-INTERNAL ! -s 10.89.12.0/24 -o br-45b3d09a4a4c -j DROP
+-A DOCKER-INTERNAL ! -d 10.89.12.0/24 -i br-45b3d09a4a4c -j DROP
+-A DOCKER-INTERNAL ! -s 10.89.11.0/24 -o br-20bd22c3dc50 -j DROP
+-A DOCKER-INTERNAL ! -d 10.89.11.0/24 -i br-20bd22c3dc50 -j DROP
+COMMIT
+# Completed on Thu Nov 12 04:07:33 2026
+# Generated by iptables-save v1.8.7 on Thu Nov 12 04:07:33 2026
+*nat
+:PREROUTING ACCEPT [0:0]
+:INPUT ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+:DOCKER - [0:0]
+-A PREROUTING -m addrtype --dst-type LOCAL -j DOCKER
+-A OUTPUT ! -d 127.0.0.0/8 -m addrtype --dst-type LOCAL -j DOCKER
+-A POSTROUTING -s 172.17.0.0/16 ! -o docker0 -j MASQUERADE
+-A POSTROUTING -s 10.89.13.0/24 ! -o br-ef69b38fd4ad -j MASQUERADE
+-A POSTROUTING -s 10.89.10.0/24 ! -o br-7e79ca610495 -j MASQUERADE
+-A DOCKER ! -i br-7e79ca610495 -p tcp -m tcp --dport 8088 -j DNAT --to-destination 10.89.10.10:8088
+COMMIT
+# Completed on Thu Nov 12 04:07:33 2026
+
+### nft
+table ip nat {
+	chain DOCKER {
+		iifname != "br-7e79ca610495" meta l4proto tcp tcp dport 8088 counter packets 1132 bytes 67444 dnat to 10.89.10.10:8088
+	}
+
+	chain PREROUTING {
+		type nat hook prerouting priority dstnat; policy accept;
+		fib daddr type local counter packets 291107 bytes 16955027 jump DOCKER
+	}
+
+	chain OUTPUT {
+		type nat hook output priority -100; policy accept;
+		ip daddr != 127.0.0.0/8 fib daddr type local counter packets 0 bytes 0 jump DOCKER
+	}
+
+	chain POSTROUTING {
+		type nat hook postrouting priority srcnat; policy accept;
+		oifname != "docker0" ip saddr 172.17.0.0/16 counter packets 0 bytes 0 masquerade 
+		oifname != "br-ef69b38fd4ad" ip saddr 10.89.13.0/24 counter packets 1653 bytes 99180 masquerade 
+		oifname != "br-7e79ca610495" ip saddr 10.89.10.0/24 counter packets 2522 bytes 151320 masquerade 
+	}
+}
+table ip filter {
+	chain DOCKER {
+		iifname != "br-7e79ca610495" oifname "br-7e79ca610495" meta l4proto tcp ip daddr 10.89.10.10 tcp dport 8088 counter packets 1132 bytes 67444 accept
+		iifname != "br-7e79ca610495" oifname "br-7e79ca610495" counter packets 0 bytes 0 drop
+		iifname != "br-ef69b38fd4ad" oifname "br-ef69b38fd4ad" counter packets 0 bytes 0 drop
+		iifname != "docker0" oifname "docker0" counter packets 0 bytes 0 drop
+	}
+
+	chain DOCKER-FORWARD {
+		counter packets 38824910 bytes 9193776300 jump DOCKER-CT
+		counter packets 16855152 bytes 6580528027 jump DOCKER-INTERNAL
+		counter packets 16855152 bytes 6580528027 jump DOCKER-BRIDGE
+		iifname "br-7e79ca610495" counter packets 195491 bytes 49178010 accept
+		iifname "br-ef69b38fd4ad" counter packets 16651165 bytes 6530841142 accept
+		iifname "br-20bd22c3dc50" oifname "br-20bd22c3dc50" counter packets 0 bytes 0 accept
+		iifname "br-45b3d09a4a4c" oifname "br-45b3d09a4a4c" counter packets 0 bytes 0 accept
+		iifname "docker0" counter packets 0 bytes 0 accept
+	}
+
+	chain DOCKER-BRIDGE {
+		oifname "br-7e79ca610495" counter packets 8496 bytes 508875 jump DOCKER
+		oifname "br-ef69b38fd4ad" counter packets 0 bytes 0 jump DOCKER
+		oifname "docker0" counter packets 0 bytes 0 jump DOCKER
+	}
+
+	chain DOCKER-CT {
+		oifname "br-7e79ca610495" ct state related,established counter packets 183429 bytes 33249701 accept
+		oifname "br-ef69b38fd4ad" ct state related,established counter packets 21786329 bytes 2579998572 accept
+		oifname "docker0" ct state related,established counter packets 0 bytes 0 accept
+	}
+
+	chain DOCKER-INTERNAL {
+		oifname "br-45b3d09a4a4c" ip saddr != 10.89.12.0/24 counter packets 0 bytes 0 drop
+		iifname "br-45b3d09a4a4c" ip daddr != 10.89.12.0/24 counter packets 0 bytes 0 drop
+		oifname "br-20bd22c3dc50" ip saddr != 10.89.11.0/24 counter packets 0 bytes 0 drop
+		iifname "br-20bd22c3dc50" ip daddr != 10.89.11.0/24 counter packets 0 bytes 0 drop
+	}
+
+	chain FORWARD {
+		type filter hook forward priority filter; policy accept;
+		counter packets 38824910 bytes 9193776300 jump DOCKER-USER
+		counter packets 38824910 bytes 9193776300 jump DOCKER-FORWARD
+	}
+
+	chain DOCKER-USER {
+	}
+
+	chain OUTPUT {
+		type filter hook output priority filter; policy accept;
+		meta l4proto udp udp dport { 3478,5349,19302} counter packets 2 bytes 96 reject
+	}
+}
+table ip6 nat {
+	chain DOCKER {
+	}
+
+	chain PREROUTING {
+		type nat hook prerouting priority dstnat; policy accept;
+		fib daddr type local counter packets 0 bytes 0 jump DOCKER
+	}
+
+	chain OUTPUT {
+		type nat hook output priority -100; policy accept;
+		ip6 daddr != ::1 fib daddr type local counter packets 0 bytes 0 jump DOCKER
+	}
+}
+table ip6 filter {
+	chain DOCKER {
+	}
+
+	chain DOCKER-FORWARD {
+		counter packets 0 bytes 0 jump DOCKER-CT
+		counter packets 0 bytes 0 jump DOCKER-INTERNAL
+		counter packets 0 bytes 0 jump DOCKER-BRIDGE
+	}
+
+	chain DOCKER-BRIDGE {
+	}
+
+	chain DOCKER-CT {
+	}
+
+	chain DOCKER-INTERNAL {
+	}
+
+	chain FORWARD {
+		type filter hook forward priority filter; policy accept;
+		counter packets 0 bytes 0 jump DOCKER-USER
+		counter packets 0 bytes 0 jump DOCKER-FORWARD
+	}
+
+	chain DOCKER-USER {
+	}
+}
+table ip raw {
+	chain PREROUTING {
+		type filter hook prerouting priority raw; policy accept;
+		iifname != "br-ef69b38fd4ad" ip daddr 10.89.13.2 counter packets 0 bytes 0 drop
+		iifname != "br-7e79ca610495" ip daddr 10.89.10.2 counter packets 0 bytes 0 drop
+		iifname != "br-7e79ca610495" ip daddr 10.89.10.10 counter packets 0 bytes 0 drop
+	}
+}
+
+### sysctl network
+net.ipv4.conf.all.accept_local = 0
+net.ipv4.conf.all.accept_redirects = 0
+net.ipv4.conf.all.accept_source_route = 0
+net.ipv4.conf.all.arp_accept = 0
+net.ipv4.conf.all.arp_announce = 0
+net.ipv4.conf.all.arp_filter = 0
+net.ipv4.conf.all.arp_ignore = 0
+net.ipv4.conf.all.arp_notify = 0
+net.ipv4.conf.all.bc_forwarding = 0
+net.ipv4.conf.all.bootp_relay = 0
+net.ipv4.conf.all.disable_policy = 0
+net.ipv4.conf.all.disable_xfrm = 0
+net.ipv4.conf.all.drop_gratuitous_arp = 0
+net.ipv4.conf.all.drop_unicast_in_l2_multicast = 0
+net.ipv4.conf.all.force_igmp_version = 0
+net.ipv4.conf.all.forwarding = 1
+net.ipv4.conf.all.igmpv2_unsolicited_report_interval = 10000
+net.ipv4.conf.all.igmpv3_unsolicited_report_interval = 1000
+net.ipv4.conf.all.ignore_routes_with_linkdown = 0
+net.ipv4.conf.all.log_martians = 0
+net.ipv4.conf.all.mc_forwarding = 0
+net.ipv4.conf.all.medium_id = 0
+net.ipv4.conf.all.promote_secondaries = 0
+net.ipv4.conf.all.proxy_arp = 0
+net.ipv4.conf.all.proxy_arp_pvlan = 0
+net.ipv4.conf.all.route_localnet = 0
+net.ipv4.conf.all.rp_filter = 2
+net.ipv4.conf.all.secure_redirects = 1
+net.ipv4.conf.all.send_redirects = 1
+net.ipv4.conf.all.shared_media = 1
+net.ipv4.conf.all.src_valid_mark = 0
+net.ipv4.conf.all.tag = 0
+net.ipv4.ip_forward = 1
+net.ipv4.ip_forward_update_priority = 1
+net.ipv4.ip_forward_use_pmtu = 0
+net.ipv4.tcp_abort_on_overflow = 0
+net.ipv4.tcp_adv_win_scale = 1
+net.ipv4.tcp_app_win = 31
+net.ipv4.tcp_autocorking = 1
+net.ipv4.tcp_base_mss = 1024
+net.ipv4.tcp_challenge_ack_limit = 1000
+net.ipv4.tcp_comp_sack_delay_ns = 1000000
+net.ipv4.tcp_comp_sack_nr = 44
+net.ipv4.tcp_congestion_control = bbr
+net.ipv4.tcp_dsack = 1
+net.ipv4.tcp_early_demux = 1
+net.ipv4.tcp_early_retrans = 3
+net.ipv4.tcp_ecn = 2
+net.ipv4.tcp_ecn_fallback = 1
+net.ipv4.tcp_fack = 0
+net.ipv4.tcp_fastopen = 1
+net.ipv4.tcp_fastopen_blackhole_timeout_sec = 3600
+net.ipv4.tcp_fastopen_key = b47d3a29-67e0f29b-3dbeba93-6a3aae1f
+net.ipv4.tcp_fin_timeout = 60
+net.ipv4.tcp_frto = 2
+net.ipv4.tcp_fwmark_accept = 0
+net.ipv4.tcp_invalid_ratelimit = 500
+net.ipv4.tcp_keepalive_intvl = 75
+net.ipv4.tcp_keepalive_probes = 9
+net.ipv4.tcp_keepalive_time = 7200
+net.ipv4.tcp_l3mdev_accept = 0
+net.ipv4.tcp_limit_output_bytes = 1048576
+net.ipv4.tcp_max_reordering = 300
+net.ipv4.tcp_max_syn_backlog = 256
+net.ipv4.tcp_max_tw_buckets = 16384
+net.ipv4.tcp_min_rtt_wlen = 300
+net.ipv4.tcp_min_snd_mss = 48
+net.ipv4.tcp_min_tso_segs = 2
+net.ipv4.tcp_moderate_rcvbuf = 1
+net.ipv4.tcp_mtu_probe_floor = 48
+net.ipv4.tcp_mtu_probing = 0
+net.ipv4.tcp_no_metrics_save = 0
+net.ipv4.tcp_notsent_lowat = 4294967295
+net.ipv4.tcp_orphan_retries = 0
+net.ipv4.tcp_pacing_ca_ratio = 120
+net.ipv4.tcp_pacing_ss_ratio = 200
+net.ipv4.tcp_probe_interval = 600
+net.ipv4.tcp_probe_threshold = 8
+net.ipv4.tcp_recovery = 1
+net.ipv4.tcp_reordering = 3
+
+### proxy env
+none
+
+### DNS test
+198.51.100.99   STREAM proxy.example-provider.net
+198.51.100.99   DGRAM  
+198.51.100.99   RAW    
+198.51.100.99 STREAM www.google.com
+198.51.100.99 DGRAM  
+198.51.100.99 RAW    
+198.51.100.99 STREAM 
+198.51.100.99 DGRAM  

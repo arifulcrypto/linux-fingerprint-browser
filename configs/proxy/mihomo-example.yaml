@@ -1,0 +1,62 @@
+# Mihomo (Clash Meta) client example.
+# No url-test/fallback group: residential bandwidth is metered and probing
+# continuously burns quota. Select nodes manually.
+
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: warning
+ipv6: false
+
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  # In a fingerprint profile, DNS must follow the proxy path.
+  # Use proxy-server-nameserver only for resolving the proxy endpoint itself.
+  proxy-server-nameserver:
+    - https://1.1.1.1/dns-query
+
+proxies:
+  - name: residential-tr-vless
+    type: vless
+    server: 198.51.100.20
+    port: 10041
+    uuid: REDACTED-UUID
+    network: tcp
+    tls: true
+    udp: false
+    flow: xtls-rprx-vision
+    servername: addons.mozilla.org
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: REDACTED-REALITY-PUBLIC-KEY
+      short-id: REDACTED-SHORT-ID
+
+  - name: residential-tr-hy2
+    type: hysteria2
+    server: 198.51.100.20
+    port: 10042
+    password: REDACTED-HY2-PASSWORD
+    sni: www.bing.com
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: REDACTED-OBFS-PASSWORD
+
+proxy-groups:
+  - name: residential
+    type: select
+    proxies:
+      - residential-tr-vless
+      - residential-tr-hy2
+      - DIRECT
+
+rules:
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - MATCH,residential

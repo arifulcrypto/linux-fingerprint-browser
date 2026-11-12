@@ -1,0 +1,756 @@
+### xrandr
+Screen 0: minimum 256 x 256, current 1280 x 720, maximum 16384 x 16384
+rdp0 connected 1280x720+0+0 (0x520) normal (normal) 0mm x 0mm
+	Identifier: 0x522
+	Timestamp:  590911086
+	Subpixel:   unknown
+	Gamma:      1.0:1.0:1.0
+	Brightness: 1.0
+	Clones:    
+	CRTC:       0
+	CRTCs:      0
+	Transform:  1.000000 0.000000 0.000000
+	            0.000000 1.000000 0.000000
+	            0.000000 0.000000 1.000000
+	           filter: 
+	non-desktop: 0 
+		supported: 0, 1
+  1280x720 (0x520) 46.080MHz *current
+        h: width  1280 start    0 end    0 total 1280 skew    0 clock  36.00KHz
+        v: height  720 start    0 end    0 total  720           clock  50.00Hz
+
+### xdpyinfo
+name of display:    :10
+version number:    11.0
+vendor string:    The X.Org Foundation
+vendor release number:    12101004
+X.Org version: 1.21.1.4
+maximum request size:  16777212 bytes
+motion buffer size:  256
+bitmap unit, bit order, padding:    32, LSBFirst, 32
+image byte order:    LSBFirst
+number of supported pixmap formats:    7
+supported pixmap formats:
+    depth 1, bits_per_pixel 1, scanline_pad 32
+    depth 4, bits_per_pixel 8, scanline_pad 32
+    depth 8, bits_per_pixel 8, scanline_pad 32
+    depth 15, bits_per_pixel 16, scanline_pad 32
+    depth 16, bits_per_pixel 16, scanline_pad 32
+    depth 24, bits_per_pixel 32, scanline_pad 32
+    depth 32, bits_per_pixel 32, scanline_pad 32
+keycode range:    minimum 8, maximum 255
+focus:  window 0x2e00003, revert to PointerRoot
+number of extensions:    26
+    BIG-REQUESTS
+    Composite
+    DAMAGE
+    DOUBLE-BUFFER
+    DRI2
+    GLX
+    Generic Event Extension
+    MIT-SCREEN-SAVER
+    MIT-SHM
+    Present
+    RANDR
+    RECORD
+    RENDER
+    SECURITY
+    SHAPE
+    SYNC
+    X-Resource
+    XC-MISC
+    XFIXES
+    XFree86-DGA
+    XFree86-VidModeExtension
+    XINERAMA
+    XInputExtension
+    XKEYBOARD
+    XTEST
+    XVideo
+default screen number:    0
+number of screens:    1
+
+screen #0:
+  dimensions:    1280x720 pixels (339x191 millimeters)
+  resolution:    96x96 dots per inch
+  depths (7):    24, 1, 4, 8, 15, 16, 32
+  root window id:    0x50f
+  depth of root window:    24 planes
+  number of colormaps:    minimum 1, maximum 1
+  default colormap:    0x20
+  default number of colormap cells:    256
+  preallocated pixels:    black 0, white 16777215
+  options:    backing-store WHEN MAPPED, save-unders NO
+  largest cursor:    1280x720
+  current input event mask:    0xfa800f
+    KeyPressMask             KeyReleaseMask           ButtonPressMask          
+    ButtonReleaseMask        ExposureMask             StructureNotifyMask      
+    SubstructureNotifyMask   SubstructureRedirectMask FocusChangeMask          
+    PropertyChangeMask       ColormapChangeMask       
+  number of visuals:    390
+  default visual id:  0x21
+  visual:
+    visual id:    0x21
+    class:    TrueColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x22
+    class:    DirectColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x38b
+    class:    TrueColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x38c
+    class:    TrueColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x38d
+    class:    TrueColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x38e
+    class:    TrueColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x38f
+    class:    TrueColor
+    depth:    24 planes
+    available colormap entries:    256 per subfield
+    red, green, blue masks:    0xff0000, 0xff00, 0xff
+    significant bits in color specification:    8 bits
+  visual:
+    visual id:    0x390
+
+### xrdb
+*customization:	-color
+Xft.hintstyle:	hintnone
+Xft.rgba:	none
+Xcursor.theme:	
+Xcursor.size:	0
+Xcursor.theme_core:	1
+
+### xset q
+Keyboard Control:
+  auto repeat:  off    key click percent:  0    LED mask:  00000002
+  XKB indicators:
+    00: Caps Lock:   off    01: Num Lock:    on     02: Scroll Lock: off
+    03: Shift Lock:  off    04: Group 2:     off    05: Mouse Keys:  off
+  auto repeat delay:  660    repeat rate:  25
+  auto repeating keys:  00feffffdffffbbf
+                        fadfffffffdfe5ef
+                        ffffffffffffffff
+                        ffffffffffffffff
+  bell percent:  50    bell pitch:  400    bell duration:  100
+Pointer Control:
+  acceleration:  2/1    threshold:  4
+Screen Saver:
+  prefer blanking:  yes    allow exposures:  yes
+  timeout:  600    cycle:  600
+Colors:
+  default colormap:  0x20    BlackPixel:  0x0    WhitePixel:  0xffffff
+Font Path:
+  /usr/share/fonts/X11/misc,/usr/share/fonts/X11/Type1,built-ins
+DPMS (Energy Star):
+  Server does not have the DPMS Extension
+
+### xinput
+⎡ Virtual core pointer                    	id=2	[master pointer  (3)]
+⎜   ↳ Virtual core XTEST pointer              	id=4	[slave  pointer  (2)]
+⎜   ↳ xrdpMouse                               	id=6	[slave  pointer  (2)]
+⎣ Virtual core keyboard                   	id=3	[master keyboard (2)]
+    ↳ Virtual core XTEST keyboard             	id=5	[slave  keyboard (3)]
+    ↳ xrdpKeyboard                            	id=7	[slave  keyboard (3)]
+
+### xprop root
+_XROOTPMAP_ID(PIXMAP): pixmap id # 0x50f
+XFDESKTOP_IMAGE_FILE_0(STRING) = "/usr/share/backgrounds/xfce/xfce-verticals.png"
+_NET_CLIENT_LIST_STACKING(WINDOW): window id # 0xe00028, 0x2400003, 0x2e00003, 0x100000c, 0x1000010, 0x1000003
+NAUTILUS_DESKTOP_WINDOW_ID(WINDOW): window id # 0xe00028
+XFCE_DESKTOP_WINDOW(WINDOW): window id # 0xe00028
+_NET_DESKTOP_LAYOUT(CARDINAL) = 0, 0, 1, 0
+_NET_CLIENT_LIST(WINDOW): window id # 0x1000003, 0x100000c, 0xe00028, 0x1000010, 0x2400003, 0x2e00003
+_NET_DESKTOP_NAMES(UTF8_STRING) = "Workspace 1", "Workspace 2", "Workspace 3", "Workspace 4", ""
+XKLAVIER_ALLOW_SECONDARY(INTEGER) = 0
+_NET_ACTIVE_WINDOW(WINDOW): window id # 0x2e00003, 0x0
+_NET_CURRENT_DESKTOP(CARDINAL) = 0
+_NET_DESKTOP_VIEWPORT(CARDINAL) = 0, 0
+_NET_DESKTOP_GEOMETRY(CARDINAL) = 1280, 720
+_NET_SUPPORTING_WM_CHECK(WINDOW): window id # 0xa00014
+_NET_SUPPORTED(ATOM) = _NET_ACTIVE_WINDOW, _NET_CLIENT_LIST, _NET_CLIENT_LIST_STACKING, _NET_CLOSE_WINDOW, _NET_CURRENT_DESKTOP, _NET_DESKTOP_GEOMETRY, _NET_DESKTOP_LAYOUT, _NET_DESKTOP_NAMES, _NET_DESKTOP_VIEWPORT, _NET_FRAME_EXTENTS, _NET_MOVERESIZE_WINDOW, _NET_NUMBER_OF_DESKTOPS, _NET_REQUEST_FRAME_EXTENTS, _NET_SHOWING_DESKTOP, _NET_SUPPORTED, _NET_SUPPORTING_WM_CHECK, _NET_SYSTEM_TRAY_OPCODE, _NET_WM_ACTION_ABOVE, _NET_WM_ACTION_BELOW, _NET_WM_ACTION_CHANGE_DESKTOP, _NET_WM_ACTION_CLOSE, _NET_WM_ACTION_FULLSCREEN, _NET_WM_ACTION_MAXIMIZE_HORZ, _NET_WM_ACTION_MAXIMIZE_VERT, _NET_WM_ACTION_MINIMIZE, _NET_WM_ACTION_MOVE, _NET_WM_ACTION_RESIZE, _NET_WM_ACTION_SHADE, _NET_WM_ACTION_STICK, _NET_WM_ALLOWED_ACTIONS, _NET_WM_BYPASS_COMPOSITOR, _NET_WM_CONTEXT_HELP, _NET_WM_DESKTOP, _NET_WM_FULLSCREEN_MONITORS, _NET_WM_ICON, _NET_WM_ICON_GEOMETRY, _NET_WM_ICON_NAME, _NET_WM_MOVERESIZE, _NET_WM_NAME, _NET_WM_OPAQUE_REGION, _NET_WM_PID, _NET_WM_PING, _NET_WM_STATE, _NET_WM_STATE_ABOVE, _NET_WM_STATE_BELOW, _NET_WM_STATE_DEMANDS_ATTENTION, _NET_WM_STATE_FOCUSED, _NET_WM_STATE_FULLSCREEN, _NET_WM_STATE_HIDDEN, _NET_WM_STATE_MAXIMIZED_HORZ, _NET_WM_STATE_MAXIMIZED_VERT, _NET_WM_STATE_MODAL, _NET_WM_STATE_SHADED, _NET_WM_STATE_SKIP_PAGER, _NET_WM_STATE_SKIP_TASKBAR, _NET_WM_STATE_STICKY, _NET_WM_STRUT, _NET_WM_STRUT_PARTIAL, _NET_WM_SYNC_REQUEST, _NET_WM_SYNC_REQUEST_COUNTER, _NET_WM_USER_TIME, _NET_WM_USER_TIME_WINDOW, _NET_WM_WINDOW_OPACITY, _NET_WM_WINDOW_OPACITY_LOCKED, _NET_WM_WINDOW_TYPE, _NET_WM_WINDOW_TYPE_DESKTOP, _NET_WM_WINDOW_TYPE_DIALOG, _NET_WM_WINDOW_TYPE_DOCK, _NET_WM_WINDOW_TYPE_MENU, _NET_WM_WINDOW_TYPE_NORMAL, _NET_WM_WINDOW_TYPE_SPLASH, _NET_WM_WINDOW_TYPE_TOOLBAR, _NET_WM_WINDOW_TYPE_UTILITY, _NET_WORKAREA, _GTK_FRAME_EXTENTS, _GTK_HIDE_TITLEBAR_WHEN_MAXIMIZED, _GTK_SHOW_WINDOW_MENU, _NET_STARTUP_ID
+_NET_WORKAREA(CARDINAL) = 0, 27, 1280, 693, 0, 27, 1280, 693, 0, 27, 1280, 693, 0, 27, 1280, 693
+_NET_NUMBER_OF_DESKTOPS(CARDINAL) = 4
+GDK_VISUALS(INTEGER) = 953, 1266
+RESOURCE_MANAGER(STRING) = "*customization:\t-color\nXft.hintstyle:\thintnone\nXft.rgba:\tnone\nXcursor.theme:\t\nXcursor.size:\t0\nXcursor.theme_core:\t1\n"
+_XKB_RULES_NAMES(STRING) = "base", "pc104", "us", "", ""
+
+### glxinfo
+/tmp/collect_container.sh: line 67: glxinfo: command not found
+glxinfo not installed
+
+### xorg log files
+-rw-r--r-- 1 root root     45024 Nov 12 04:07 /root/.xorgxrdp.10.log
+-rw-r--r-- 1 root root     17043 Nov  8 09:26 /root/.xorgxrdp.10.log.old
+-rw-r----- 1 xrdp adm  323198652 Nov 12 04:07 /var/log/xrdp.log
+-rw-r----- 1 root adm      25171 Nov 11 18:11 /var/log/xrdp-sesman.log
+
+### xorg conf
+
+Section "ServerLayout"
+    Identifier "X11 Server"
+    Screen "Screen (xrdpdev)"
+    InputDevice "xrdpMouse" "CorePointer"
+    InputDevice "xrdpKeyboard" "CoreKeyboard"
+EndSection
+
+Section "ServerFlags"
+    # This line prevents "ServerLayout" sections in xorg.conf.d files
+    # overriding the "X11 Server" layout (xrdp #1784)
+    Option "DefaultServerLayout" "X11 Server"
+    Option "DontVTSwitch" "on"
+    Option "AutoAddDevices" "off"
+EndSection
+
+Section "Module"
+    Load "dbe"
+    Load "ddc"
+    Load "extmod"
+    Load "glx"
+    Load "int10"
+    Load "record"
+    Load "vbe"
+    Load "glamoregl"
+    Load "xorgxrdp"
+    Load "fb"
+EndSection
+
+Section "InputDevice"
+    Identifier "xrdpKeyboard"
+    Driver "xrdpkeyb"
+EndSection
+
+Section "InputDevice"
+    Identifier "xrdpMouse"
+    Driver "xrdpmouse"
+EndSection
+
+Section "Monitor"
+    Identifier "Monitor"
+    Option "DPMS"
+    HorizSync 30-80
+    VertRefresh 60-75
+    ModeLine "1920x1080" 138.500 1920 1968 2000 2080 1080 1083 1088 1111 +hsync -vsync
+    ModeLine "1280x720" 74.25 1280 1720 1760 1980 720 725 730 750 +HSync +VSync
+    Modeline "1368x768" 72.25 1368 1416 1448 1528 768 771 781 790 +hsync -vsync
+    Modeline "1600x900" 119.00 1600 1696 1864 2128 900 901 904 932 -hsync +vsync
+EndSection
+
+Section "Device"
+    Identifier "Video Card (xrdpdev)"
+    Driver "xrdpdev"
+    Option "DRMDevice" "/dev/dri/renderD128"
+    Option "DRI3" "1"
+EndSection
+
+Section "Screen"
+    Identifier "Screen (xrdpdev)"
+    Device "Video Card (xrdpdev)"
+    Monitor "Monitor"
+    DefaultDepth 24
+    SubSection "Display"
+        Depth 24
+        Modes "640x480" "800x600" "1024x768" "1280x720" "1280x1024" "1600x900" "1920x1080"
+    EndSubSection
+EndSection
+
+### xrdp.ini (sanitized)
+[Globals]
+; xrdp.ini file version number
+ini_version=1
+
+; fork a new process for each incoming connection
+fork=true
+
+; ports to listen on, number alone means listen on all interfaces
+; 0.0.0.0 or :: if ipv6 is configured
+; space between multiple occurrences
+; ALL specified interfaces must be UP when xrdp starts, otherwise xrdp will fail to start
+;
+; Examples:
+;   port=3389
+;   port=unix://./tmp/xrdp.socket
+;   port=tcp://.:3389                           127.0.0.1:3389
+;   port=tcp://:3389                            *:3389
+;   port=tcp://<any ipv4 format addr>:3389      192.168.1.1:3389
+;   port=tcp6://.:3389                          2001:db8::99
+;   port=tcp6://:3389                           *:3389
+;   port=tcp6://{<any ipv6 format addr>}:3389   {FC00:0:0:0:0:0:0:1}:3389
+;   port=vsock://<cid>:<port>
+port=3389
+
+; 'port' above should be connected to with vsock instead of tcp
+; use this only with number alone in port above
+; prefer use vsock://<cid>:<port> above
+use_vsock=false
+
+; regulate if the listening socket use socket option tcp_nodelay
+; no buffering will be performed in the TCP stack
+tcp_nodelay=true
+
+; regulate if the listening socket use socket option keepalive
+; if the network connection disappear without close messages the connection will be closed
+tcp_keepalive=true
+
+; set tcp send/recv buffer (for experts)
+#tcp_send_buffer_bytes=32768
+#tcp_recv_buffer_bytes=32768
+
+; security layer can be 'tls', 'rdp' or 'negotiate'
+; for client compatible layer
+security_layer=negotiate
+
+; minimum security level allowed for client for classic RDP encryption
+; use tls_ciphers to configure TLS encryption
+; can be 'none', 'low', 'medium', 'high', 'fips'
+crypt_level=high
+
+; X.509 certificate and private key
+; openssl req -x509 -newkey rsa:2048 -nodes -keyout key.pem -out cert.pem -days 365
+; note this needs the user xrdp to be a member of the ssl-cert group, do with e.g.
+;$ sudo adduser xrdp ssl-cert
+certificate=
+key_file=
+
+; set SSL protocols
+; can be comma separated list of 'SSLv3', 'TLSv1', 'TLSv1.1', 'TLSv1.2', 'TLSv1.3'
+ssl_protocols=TLSv1.2, TLSv1.3
+; set TLS cipher suites
+#tls_ciphers=HIGH
+
+; concats the domain name to the user if set for authentication with the separator
+; for example when the server is multi homed with SSSd
+#domain_user_separator=@
+
+; The following options will override the keyboard layout settings.
+; These options are for DEBUG and are not recommended for regular use.
+#xrdp.override_keyboard_type=0x04
+#xrdp.override_keyboard_subtype=0x01
+#xrdp.override_keylayout=0x00000409
+
+; Section name to use for automatic login if the client sends username
+; and password. If empty, the domain name sent by the client is used.
+; If empty and no domain name is given, the first suitable section in
+; this file will be used.
+autorun=
+
+allow_channels=true
+allow_multimon=true
+bitmap_cache=true
+bitmap_compression=true
+bulk_compression=true
+#hidelogwindow=true
+max_bpp=32
+new_cursors=true
+; fastpath - can be 'input', 'output', 'both', 'none'
+use_fastpath=both
+; when true, userid/password *must* be passed on cmd line
+#require_credentials=true
+; when true, the userid will be used to try to authenticate
+#enable_token_login=true
+; You can set the PAM error text in a gateway setup (MAX 256 chars)
+#pamerrortxt=change your password according to policy at http://url
+
+;
+; colors used by windows in RGB format
+;
+blue=009cb5
+grey=dedede
+#black=000000
+#dark_grey=808080
+#blue=08246b
+#dark_blue=08246b
+#white=ffffff
+#red=ff0000
+#green=00ff00
+#background=626c72
+
+;
+; configure login screen
+;
+
+; Login Screen Window Title
+#ls_title=My Login Title
+
+; top level window background color in RGB format
+ls_top_window_bg_color=009cb5
+
+; width and height of login screen
+;
+; The default height allows for about 5 fields to be comfortably displayed
+; above the buttons at the bottom. To display more fields, make <ls_height>
+; larger, and also increase <ls_btn_ok_y_pos> and <ls_btn_cancel_y_pos>
+; below
+;
+ls_width=350
+ls_height=430
+
+; login screen background color in RGB format
+ls_bg_color=dedede
+
+; optional background image filename (bmp format).
+#ls_background_image=
+
+; logo
+; full path to bmp-file or file in shared folder
+ls_logo_filename=
+ls_logo_x_pos=55
+ls_logo_y_pos=50
+
+; for positioning labels such as username, password etc
+ls_label_x_pos=30
+ls_label_width=65
+
+; for positioning text and combo boxes next to above labels
+ls_input_x_pos=110
+ls_input_width=210
+
+; y pos for first label and combo box
+ls_input_y_pos=220
+
+; OK button
+ls_btn_ok_x_pos=142
+ls_btn_ok_y_pos=370
+ls_btn_ok_width=85
+ls_btn_ok_height=30
+
+; Cancel button
+ls_btn_cancel_x_pos=237
+ls_btn_cancel_y_pos=370
+ls_btn_cancel_width=85
+ls_btn_cancel_height=30
+
+[Logging]
+; Note: Log levels can be any of: core, error, warning, info, debug, or trace
+LogFile=xrdp.log
+LogLevel=INFO
+EnableSyslog=true
+#SyslogLevel=INFO
+#EnableConsole=false
+#ConsoleLevel=INFO
+#EnableProcessId=false
+
+[LoggingPerLogger]
+; Note: per logger configuration is only used if xrdp is built with
+; --enable-devel-logging
+#xrdp.c=INFO
+#main()=INFO
+
+[Channels]
+; Channel names not listed here will be blocked by XRDP.
+; You can block any channel by setting its value to false.
+; IMPORTANT! All channels are not supported in all use
+; cases even if you set all values to true.
+; You can override these settings on each session type
+; These settings are only used if allow_channels=true
+rdpdr=true
+rdpsnd=true
+drdynvc=true
+cliprdr=true
+rail=true
+xrdpvr=true
+tcutils=true
+
+; for debugging xrdp, in section xrdp1, change port=-1 to this:
+#port=/tmp/.xrdp/xrdp_display_10
+
+
+;
+; Session types
+;
+
+; Some session types such as Xorg, X11rdp and Xvnc start a display server.
+; Startup command-line parameters for the display server are configured
+; in sesman.ini. See and configure also sesman.ini.
+[Xorg]
+name=Xorg
+lib=libxup.so
+username=REDACTED
+password=REDACTED
+ip=127.0.0.1
+port=-1
+code=20
+
+[Xvnc]
+name=Xvnc
+lib=libvnc.so
+username=REDACTED
+password=REDACTED
+ip=127.0.0.1
+port=-1
+#xserverbpp=24
+#delay_ms=2000
+; Disable requested encodings to support buggy VNC servers
+; (1 = ExtendedDesktopSize)
+#disabled_encodings_mask=0
+; Use this to connect to a chansrv instance created outside of sesman
+; (e.g. as part of an x11vnc console session). Replace '0' with the
+; display number of the session
+#chansrvport=DISPLAY(0)
+
+; Generic VNC Proxy
+; Tailor this to specific hosts and VNC instances by specifying an ip
+; and port and setting a suitable name.
+[vnc-any]
+name=vnc-any
+lib=libvnc.so
+ip=ask
+port=ask5900
+username=REDACTED
+password=REDACTED
+#pamusername=asksame
+#pampassword=asksame
+#pamsessionmng=127.0.0.1
+#delay_ms=2000
+
+; Generic RDP proxy using NeutrinoRDP
+; Tailor this to specific hosts by specifying an ip and port and setting
+; a suitable name.
+[neutrinordp-any]
+name=neutrinordp-any
+; To use this section, you should build xrdp with configure option
+; --enable-neutrinordp.
+lib=libxrdpneutrinordp.so
+ip=ask
+port=ask3389
+username=REDACTED
+password=REDACTED
+; Uncomment the following lines to enable PAM authentication for proxy
+; connections.
+#pamusername=ask
+#pampassword=ask
+#pamsessionmng=127.0.0.1
+; Currently NeutrinoRDP doesn't support dynamic resizing. Uncomment
+; this line if you're using a client which does.
+#enable_dynamic_resizing=false
+; By default, performance settings requested by the RDP client are ignored
+; and chosen by NeutrinoRDP. Uncomment this line to allow the user to
+; select performance settings in the RDP client.
+#perf.allow_client_experiencesettings=true
+; Override any experience setting by uncommenting one or more of the
+; following lines.
+#perf.wallpaper=false
+#perf.font_smoothing=false
+#perf.desktop_composition=false
+#perf.full_window_drag=false
+#perf.menu_anims=false
+#perf.themes=false
+#perf.cursor_blink=false
+; By default NeutrinoRDP supports cursor shadows. If this is giving
+; you problems (e.g. cursor is a black rectangle) try disabling cursor
+; shadows by uncommenting the following line.
+#perf.cursor_shadow=false
+; By default, NeutrinoRDP uses the keyboard layout of the remote RDP Server.
+; If you want to tell the remote the keyboard layout of the RDP Client,
+; by uncommenting the following line.
+#neutrinordp.allow_client_keyboardLayout=true
+; The following options will override the remote keyboard layout settings.
+; These options are for DEBUG and are not recommended for regular use.
+#neutrinordp.override_keyboardLayout_mask=0x0000FFFF
+#neutrinordp.override_kbd_type=0x04
+#neutrinordp.override_kbd_subtype=0x01
+#neutrinordp.override_kbd_fn_keys=12
+#neutrinordp.override_kbd_layout=0x00000409
+
+; You can override the common channel settings for each session type
+#channel.rdpdr=true
+#channel.rdpsnd=true
+#channel.drdynvc=true
+#channel.cliprdr=true
+#channel.rail=true
+#channel.xrdpvr=true
+
+### sesman.ini
+;; See `man 5 sesman.ini` for details
+
+[Globals]
+ListenAddress=127.0.0.1
+ListenPort=3350
+EnableUserWindowManager=true
+; Give in relative path to user's home directory
+UserWindowManager=startwm.sh
+; Give in full path or relative path to /etc/xrdp
+DefaultWindowManager=startwm.sh
+; Give in full path or relative path to /etc/xrdp
+ReconnectScript=reconnectwm.sh
+
+[Security]
+AllowRootLogin=true
+MaxLoginRetry=4
+TerminalServerUsers=tsusers
+TerminalServerAdmins=tsadmins
+; When AlwaysGroupCheck=false access will be permitted
+; if the group TerminalServerUsers is not defined.
+AlwaysGroupCheck=false
+; When RestrictOutboundClipboard=true clipboard from the
+; server is not pushed to the client.
+RestrictOutboundClipboard=false
+
+[Sessions]
+;; X11DisplayOffset - x11 display number offset
+; Type: integer
+; Default: 10
+X11DisplayOffset=10
+
+;; MaxSessions - maximum number of connections to an xrdp server
+; Type: integer
+; Default: 0
+MaxSessions=50
+
+;; KillDisconnected - kill disconnected sessions
+; Type: boolean
+; Default: false
+; if 1, true, or yes, every session will be killed within DisconnectedTimeLimit
+; seconds after the user disconnects
+KillDisconnected=false
+
+;; DisconnectedTimeLimit (seconds) - wait before kill disconnected sessions
+; Type: integer
+; Default: 0
+; if KillDisconnected is set to false, this value is ignored
+DisconnectedTimeLimit=0
+
+;; IdleTimeLimit (seconds) - wait before disconnect idle sessions
+; Type: integer
+; Default: 0
+; Set to 0 to disable idle disconnection.
+IdleTimeLimit=0
+
+;; Policy - session allocation policy
+; Type: enum [ "Default" | "UBD" | "UBI" | "UBC" | "UBDI" | "UBDC" ]
+; "Default" session per <User,BitPerPixel>
+; "UBD" session per <User,BitPerPixel,DisplaySize>
+; "UBI" session per <User,BitPerPixel,IPAddr>
+; "UBC" session per <User,BitPerPixel,Connection>
+; "UBDI" session per <User,BitPerPixel,DisplaySize,IPAddr>
+; "UBDC" session per <User,BitPerPixel,DisplaySize,Connection>
+Policy=Default
+
+[Logging]
+; Note: Log levels can be any of: core, error, warning, info, debug, or trace
+LogFile=xrdp-sesman.log
+LogLevel=INFO
+EnableSyslog=true
+#SyslogLevel=INFO
+#EnableConsole=false
+#ConsoleLevel=INFO
+#EnableProcessId=false
+
+[LoggingPerLogger]
+; Note: per logger configuration is only used if xrdp is built with
+; --enable-devel-logging
+#sesman.c=INFO
+#main()=INFO
+
+;
+; Session definitions - startup command-line parameters for each session type
+;
+
+[Xorg]
+; Specify the path of non-suid Xorg executable. It might differ depending
+; on your distribution and version. Find out the appropreate path for your
+; environment. The typical path is known as follows:
+;
+; Fedora 26 or later    :  param=/usr/libexec/Xorg
+; Debian 9 or later     :  param=/usr/lib/xorg/Xorg
+; Ubuntu 16.04 or later :  param=/usr/lib/xorg/Xorg
+; Arch Linux            :  param=/usr/lib/Xorg
+; CentOS 7              :  param=/usr/bin/Xorg or param=Xorg
+; CentOS 8              :  param=/usr/libexec/Xorg
+;
+param=/usr/lib/xorg/Xorg
+; Leave the rest paramaters as-is unless you understand what will happen.
+param=-config
+param=xrdp/xorg.conf
+param=-noreset
+param=-nolisten
+param=tcp
+param=-logfile
+param=.xorgxrdp.%s.log
+
+[Xvnc]
+param=Xvnc
+param=-bs
+param=-nolisten
+param=tcp
+param=-localhost
+param=-dpi
+param=96
+
+[Chansrv]
+; drive redirection
+; See sesman.ini(5) for the format of this parameter
+#FuseMountName=/run/user/%u/thinclient_drives
+#FuseMountName=/media/thinclient_drives/%U/thinclient_drives
+FuseMountName=thinclient_drives
+; this value allows only the user to acess their own mapped drives.
+; Make this more permissive (e.g. 022) if required.
+FileUmask=077
+; Can be used to disable FUSE functionality - see sesman.ini(5)
+#EnableFuseMount=false
+
+[ChansrvLogging]
+; Note: one log file is created per display and the LogFile config value 
+; is ignored. The channel server log file names follow the naming convention: 
+; xrdp-chansrv.${DISPLAY}.log
+;
+; Note: Log levels can be any of: core, error, warning, info, debug, or trace
+LogLevel=INFO
+EnableSyslog=true
+#SyslogLevel=INFO
+#EnableConsole=false
+#ConsoleLevel=INFO
+#EnableProcessId=false
+
+[ChansrvLoggingPerLogger]
+; Note: per logger configuration is only used if xrdp is built with
+; --enable-devel-logging
+#chansrv.c=INFO
+#main()=INFO
+
+[SessionVariables]
+PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+
+### startwm
+#!/bin/sh
+# xrdp X session start script (c) 2015, 2017, 2021 mirabilos
+# published under The MirOS Licence
+
+# Rely on /etc/pam.d/xrdp-sesman using pam_env to load both
+# /etc/environment and /etc/default/locale to initialise the
+# locale and the user environment properly.
+
+if test -r /etc/profile; then
+	. /etc/profile
+fi
+
+test -x /etc/X11/Xsession && exec /etc/X11/Xsession
+exec /bin/sh /etc/X11/Xsession

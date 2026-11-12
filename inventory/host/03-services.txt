@@ -1,0 +1,52 @@
+### services
+accounts-daemon.service     loaded active running Accounts Service                            
+atd.service                 loaded active running Deferred execution scheduler                
+cron.service                loaded active running Regular background program processing daemon
+dbus.service                loaded active running D-Bus System Message Bus                    
+fail2ban.service            loaded active running Fail2Ban Service                            
+getty@tty1.service          loaded active running Getty on tty1                               
+irqbalance.service          loaded active running irqbalance daemon                           
+ModemManager.service        loaded active running Modem Manager                               
+multipathd.service          loaded active running Device-Mapper Multipath Device Controller   
+networkd-dispatcher.service loaded active running Dispatcher daemon for systemd-networkd      
+polkit.service              loaded active running Authorization Manager                       
+qemu-guest-agent.service    loaded active running QEMU Guest Agent                            
+rsyslog.service             loaded active running System Logging Service                      
+serial-getty@ttyS0.service  loaded active running Serial Getty on ttyS0                       
+snap.lxd.daemon.service     loaded active running Service for snap application lxd.daemon     
+snapd.service               loaded active running Snap Daemon                                 
+ssh.service                 loaded active running OpenBSD Secure Shell server                 
+systemd-hostnamed.service   loaded active running Hostname Service                            
+systemd-journald.service    loaded active running Journal Service                             
+systemd-logind.service      loaded active running Login Service                               
+systemd-networkd.service    loaded active running Network Service                             
+systemd-resolved.service    loaded active running Network Name Resolution                     
+systemd-timesyncd.service   loaded active running Network Time Synchronization                
+systemd-udevd.service       loaded active running udev Kernel Device Manager                  
+udisks2.service             loaded active running Disk Manager                                
+unattended-upgrades.service loaded active running Unattended Upgrades Shutdown                
+user@0.service              loaded active running User Manager for UID 0                      
+vnstat.service              loaded active running vnStat network traffic monitor              
+x-ui.service                loaded active running x-ui Service                                
+
+### versions
+docker   -
+lxc      5.21.9 LTS
+lxd      5.21.9 LTS
+snap     snap          2.78
+git      git version 2.25.1
+python3  Python 3.8.10
+
+### docker
+/tmp/collect_host.sh: line 43: docker: command not found
+/tmp/collect_host.sh: line 43: docker: command not found
+
+### gpu/dri
+total 0
+drwxr-xr-x  3 root root      80 Nov  1 13:20 .
+drwxr-xr-x 19 root root    4040 Nov 10 10:23 ..
+drwxr-xr-x  2 root root      60 Nov  1 13:20 by-path
+crw-rw----  1 root video 226, 0 Nov 10 10:23 card0
+
+### cron
+40 3,9,15,21 * * * "/root/.acme.sh"/acme.sh --cron --home "/root/.acme.sh" > /dev/null

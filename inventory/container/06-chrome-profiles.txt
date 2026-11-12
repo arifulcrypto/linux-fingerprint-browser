@@ -1,0 +1,199 @@
+### profile dirs
+177M	/root/.config/google-chrome
+4.0K	/root/.config/google-chrome-headless
+20M	/root/.config/chrome-residential
+175M	/root/.config/chrome-tr-proxy
+313M	/root/.config/chrome-us-proxy
+
+### profile tree (depth 1)
+--- /root/.config/google-chrome
+total 208
+drwx------ 36 root root  4096 Nov  8 10:41 .
+drwxr-xr-x 11 root root  4096 Nov 11 18:13 ..
+drwx------  3 root root  4096 Nov  8 09:43 ActorSafetyLists
+drwx------  3 root root  4096 Nov  8 09:44 AmountExtractionHeuristicRegexes
+drwx------  2 root root  4096 Nov  8 09:43 BrowserMetrics
+drwx------  3 root root  4096 Nov  8 09:44 CaptchaProviders
+drwx------  3 root root  4096 Nov  8 09:43 CertificateRevocation
+drwx------  2 root root  4096 Nov  8 09:44 component_crx_cache
+drwx------  6 root root  4096 Nov  8 09:39 Crash Reports
+drwx------  3 root root  4096 Nov  8 09:44 Crowd Deny
+drwx------ 41 root root  4096 Nov  8 10:41 Default
+drwx------  2 root root  4096 Nov  8 09:43 DeferredBrowserMetrics
+drwx------  2 root root  4096 Nov  8 09:42 Dictionaries
+-rw-r--r--  1 root root     0 Nov  8 09:42 EULA Accepted
+drwx------  2 root root  4096 Nov  8 09:43 extensions_crx_cache
+drwx------  3 root root  4096 Nov  8 09:43 FileTypePolicies
+drwx------  3 root root  4096 Nov  8 09:44 FirstPartySetsPreloaded
+-rw-r--r--  1 root root     0 Nov  8 09:42 First Run
+drwx------  3 root root  4096 Nov  8 09:39 GPUPersistentCache
+drwx------  3 root root  4096 Nov  8 09:44 hyphen-data
+-rw-r--r--  1 root root    13 Nov  8 09:42 Last Version
+-rw-------  1 root root  9500 Nov  8 10:41 Local State
+drwx------  3 root root  4096 Nov  8 09:44 MEIPreload
+drwx------  2 root root  4096 Nov  8 09:39 NativeMessagingHosts
+drwx------  3 root root  4096 Nov  8 09:43 OnDeviceHeadSuggestModel
+drwx------  3 root root  4096 Nov  8 09:43 OptimizationGuideModelsManifest
+drwx------ 12 root root  4096 Nov  8 09:43 optimization_guide_model_store
+drwx------  3 root root  4096 Nov  8 09:43 OptimizationHints
+drwx------  2 root root  4096 Nov  8 09:42 OriginTrials
+drwx------  3 root root  4096 Nov  8 09:44 PKIMetadata
+drwx------  3 root root  4096 Nov  8 09:43 PrivacySandboxAttestationsPreloaded
+drwx------  2 root root  4096 Nov  8 10:17 Safe Browsing
+drwx------  3 root root  4096 Nov  8 09:44 SafetyTips
+drwx------  2 root root  4096 Nov  8 10:41 segmentation_platform
+drwx------  3 root root  4096 Nov  8 09:43 SSLErrorAssistant
+drwx------  4 root root  4096 Nov  8 09:43 Subresource Filter
+drwx------  3 root root  4096 Nov  8 09:43 TrustTokenKeyCommitments
+-rw-r--r--  1 root root    85 Nov  8 10:41 Variations
+-rw-------  1 root root    11 Nov  8 09:43 VariationsSafeSeedV2
+--- /root/.config/google-chrome-headless
+total 8
+drwx------  2 root root 4096 Nov  9 17:04 .
+drwxr-xr-x 11 root root 4096 Nov 11 18:13 ..
+--- /root/.config/chrome-residential
+total 196
+drwxr-xr-x 33 root root  4096 Nov  8 12:28 .
+drwxr-xr-x 11 root root  4096 Nov 11 18:13 ..
+drwx------  2 root root  4096 Nov  8 12:27 ActorSafetyLists
+drwx------  2 root root  4096 Nov  8 12:27 AmountExtractionHeuristicRegexes
+drwx------  2 root root  4096 Nov  8 12:27 CaptchaProviders
+drwx------  2 root root  4096 Nov  8 12:27 CertificateRevocation
+drwx------  2 root root  4096 Nov  8 12:28 component_crx_cache
+drwx------  2 root root  4096 Nov  8 12:27 Crowd Deny
+drwx------ 39 root root  4096 Nov  8 12:28 Default
+drwx------  2 root root  4096 Nov  8 12:28 Dictionaries
+drwx------  2 root root  4096 Nov  8 12:27 extensions_crx_cache
+drwx------  2 root root  4096 Nov  8 12:27 FileTypePolicies
+drwx------  2 root root  4096 Nov  8 12:27 FirstPartySetsPreloaded
+drwx------  3 root root  4096 Nov  8 12:27 GPUPersistentCache
+drwx------  2 root root  4096 Nov  8 12:27 hyphen-data
+-rw-r--r--  1 root root    13 Nov  8 12:27 Last Version
+-rw-------  1 root root  8395 Nov  8 12:28 Local State
+drwx------  2 root root  4096 Nov  8 12:27 MEIPreload
+drwx------  2 root root  4096 Nov  8 12:27 NativeMessagingHosts
+drwx------  2 root root  4096 Nov  8 12:27 OnDeviceHeadSuggestModel
+drwx------  3 root root  4096 Nov  8 12:27 OptimizationGuideModelsManifest
+drwx------ 11 root root  4096 Nov  8 12:28 optimization_guide_model_store
+drwx------  2 root root  4096 Nov  8 12:27 OptimizationHints
+drwx------  2 root root  4096 Nov  8 12:27 OriginTrials
+drwx------  2 root root  4096 Nov  8 12:27 PKIMetadata
+drwx------  2 root root  4096 Nov  8 12:27 PrivacySandboxAttestationsPreloaded
+drwx------  2 root root  4096 Nov  8 12:27 Safe Browsing
+drwx------  2 root root  4096 Nov  8 12:27 SafetyTips
+drwx------  2 root root  4096 Nov  8 12:28 segmentation_platform
+drwx------  2 root root  4096 Nov  8 12:27 SSLErrorAssistant
+drwx------  4 root root  4096 Nov  8 12:28 Subresource Filter
+drwx------  2 root root  4096 Nov  8 12:27 TrustTokenKeyCommitments
+-rw-r--r--  1 root root    85 Nov  8 12:28 Variations
+-rw-------  1 root root    11 Nov  8 12:27 VariationsSafeSeedV2
+-rw-------  1 root root 40123 Nov  8 12:27 VariationsSeedV2
+drwx------  2 root root  4096 Nov  8 12:27 WasmTtsEngine
+drwx------  2 root root  4096 Nov  8 12:27 WidevineCdm
+drwx------  2 root root  4096 Nov  8 12:27 ZxcvbnData
+--- /root/.config/chrome-tr-proxy
+total 4340
+drwxr-xr-x 34 root root    4096 Nov 12 03:43 .
+drwxr-xr-x 11 root root    4096 Nov 11 18:13 ..
+drwx------  3 root root    4096 Nov 11 19:44 ActorSafetyLists
+drwx------  3 root root    4096 Nov 11 19:52 AmountExtractionHeuristicRegexes
+-rw-------  1 root root 4194304 Nov 11 19:45 BrowserMetrics-spare.pma
+drwx------  3 root root    4096 Nov 11 19:50 CaptchaProviders
+drwx------  3 root root    4096 Nov 11 19:45 CertificateRevocation
+drwx------  2 root root    4096 Nov 12 00:44 component_crx_cache
+drwx------  3 root root    4096 Nov 11 19:47 Crowd Deny
+drwx------ 41 root root    4096 Nov 12 04:01 Default
+drwx------  2 root root    4096 Nov 11 19:43 Dictionaries
+drwx------  2 root root    4096 Nov 11 18:13 extensions_crx_cache
+drwx------  3 root root    4096 Nov 11 19:46 FileTypePolicies
+drwx------  3 root root    4096 Nov 12 00:44 FirstPartySetsPreloaded
+drwx------  3 root root    4096 Nov 11 18:13 GPUPersistentCache
+drwx------  3 root root    4096 Nov 11 19:47 hyphen-data
+-rw-r--r--  1 root root      13 Nov 11 19:43 Last Version
+-rw-------  1 root root   10608 Nov 12 03:43 Local State
+drwx------  3 root root    4096 Nov 11 19:48 MEIPreload
+drwx------  2 root root    4096 Nov 11 18:13 NativeMessagingHosts
+drwx------  3 root root    4096 Nov 11 18:14 OnDeviceHeadSuggestModel
+drwx------  3 root root    4096 Nov 11 19:43 OptGuidePredictionModels
+drwx------  3 root root    4096 Nov 11 18:13 OptimizationGuideModelsManifest
+drwx------ 14 root root    4096 Nov 11 18:14 optimization_guide_model_store
+drwx------  3 root root    4096 Nov 11 18:15 OptimizationHints
+drwx------  2 root root    4096 Nov 11 18:13 OriginTrials
+drwx------  3 root root    4096 Nov 11 19:45 PKIMetadata
+drwx------  3 root root    4096 Nov 11 18:15 PrivacySandboxAttestationsPreloaded
+drwx------  2 root root    4096 Nov 12 03:47 Safe Browsing
+drwx------  3 root root    4096 Nov 11 19:46 SafetyTips
+drwx------  2 root root    4096 Nov 11 19:43 segmentation_platform
+lrwxrwxrwx  1 root root      19 Nov 11 19:43 SingletonCookie -> 5621284588375196118
+lrwxrwxrwx  1 root root      11 Nov 11 19:43 SingletonLock -> vps-3258440
+lrwxrwxrwx  1 root root      45 Nov 11 19:43 SingletonSocket -> /tmp/com.google.Chrome.Z1DYmJ/SingletonSocket
+drwx------  3 root root    4096 Nov 11 19:44 SSLErrorAssistant
+drwx------  4 root root    4096 Nov 11 18:14 Subresource Filter
+drwx------  3 root root    4096 Nov 11 18:15 TrustTokenKeyCommitments
+-rw-r--r--  1 root root      86 Nov 11 19:43 Variations
+-rw-------  1 root root   41175 Nov 11 19:44 VariationsSafeSeedV2
+--- /root/.config/chrome-us-proxy
+total 248
+drwxr-xr-x 36 root root  4096 Nov 12 04:02 .
+drwxr-xr-x 11 root root  4096 Nov 11 18:13 ..
+drwx------  3 root root  4096 Nov  8 12:27 ActorSafetyLists
+drwx------  3 root root  4096 Nov  8 12:27 AmountExtractionHeuristicRegexes
+drwx------  2 root root  4096 Nov 11 19:03 BrowserMetrics
+drwx------  3 root root  4096 Nov  8 12:28 CaptchaProviders
+drwx------  6 root root  4096 Nov 11 22:03 CertificateRevocation
+drwx------  2 root root  4096 Nov 11 22:03 component_crx_cache
+drwx------  3 root root  4096 Nov  9 17:12 Crowd Deny
+drwx------ 43 root root  4096 Nov 12 04:02 Default
+drwx------  2 root root  4096 Nov 11 19:03 DeferredBrowserMetrics
+drwx------  2 root root  4096 Nov  8 12:25 Dictionaries
+drwx------  2 root root  4096 Nov  8 12:25 extensions_crx_cache
+drwx------  3 root root  4096 Nov 10 16:02 FileTypePolicies
+drwx------  3 root root  4096 Nov  8 12:28 FirstPartySetsPreloaded
+drwx------  3 root root  4096 Nov  8 12:25 GPUPersistentCache
+drwx------  3 root root  4096 Nov  8 12:27 hyphen-data
+-rw-r--r--  1 root root    13 Nov 10 16:02 Last Version
+-rw-------  1 root root 11113 Nov 12 04:02 Local State
+drwx------  3 root root  4096 Nov  8 12:27 MEIPreload
+drwx------  2 root root  4096 Nov  8 12:25 NativeMessagingHosts
+drwx------  3 root root  4096 Nov  8 12:26 OnDeviceHeadSuggestModel
+drwx------  3 root root  4096 Nov  9 17:01 OptGuidePredictionModels
+drwx------  3 root root  4096 Nov  8 12:25 OptimizationGuideModelsManifest
+drwx------ 14 root root  4096 Nov  9 17:12 optimization_guide_model_store
+drwx------  5 root root  4096 Nov 11 22:03 OptimizationHints
+drwx------  2 root root  4096 Nov  8 12:25 OriginTrials
+drwx------  4 root root  4096 Nov 11 17:03 PKIMetadata
+drwx------  3 root root  4096 Nov  8 12:27 PrivacySandboxAttestationsPreloaded
+drwx------  2 root root  4096 Nov 12 04:02 Safe Browsing
+drwx------  3 root root  4096 Nov  8 12:27 SafetyTips
+drwx------  2 root root  4096 Nov 10 16:02 segmentation_platform
+lrwxrwxrwx  1 root root    20 Nov 10 16:02 SingletonCookie -> 16086034753717410327
+lrwxrwxrwx  1 root root    11 Nov 10 16:02 SingletonLock -> vps-2158374
+lrwxrwxrwx  1 root root    45 Nov 10 16:02 SingletonSocket -> /tmp/com.google.Chrome.rZb8X0/SingletonSocket
+drwx------  3 root root  4096 Nov  8 12:27 SSLErrorAssistant
+drwx------  4 root root  4096 Nov  8 12:26 Subresource Filter
+drwx------  3 root root  4096 Nov  8 12:26 TrustTokenKeyCommitments
+-rw-r--r--  1 root root    86 Nov 10 16:02 Variations
+
+### profile sizes
+11M	/root/.config/google-chrome/Default
+
+### default profile prefs files
+-rw------- 1 root root 32161 Nov  8 12:28 /root/.config/chrome-residential/Default/Preferences
+-rw------- 1 root root 45678 Nov 12 00:21 /root/.config/chrome-tr-proxy/Default/Preferences
+-rw------- 1 root root 99501 Nov 12 04:02 /root/.config/chrome-us-proxy/Default/Preferences
+-rw------- 1 root root 45919 Nov  8 10:41 /root/.config/google-chrome/Default/Preferences
+
+### extensions dirs
+--- /root/.config/google-chrome
+/root/.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi
+/root/.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda
+--- /root/.config/google-chrome-headless
+--- /root/.config/chrome-residential
+/root/.config/chrome-residential/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi
+/root/.config/chrome-residential/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda
+--- /root/.config/chrome-tr-proxy
+/root/.config/chrome-tr-proxy/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi
+/root/.config/chrome-tr-proxy/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda
+--- /root/.config/chrome-us-proxy
+/root/.config/chrome-us-proxy/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi
+/root/.config/chrome-us-proxy/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda

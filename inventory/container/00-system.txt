@@ -1,0 +1,97 @@
+### hostnamectl
+ Static hostname: vps
+       Icon name: computer-container
+         Chassis: container
+      Machine ID: <removed>
+         Boot ID: <removed>
+  Virtualization: lxc
+Operating System: Ubuntu 22.04.5 LTS
+          Kernel: Linux 5.4.0-216-generic
+    Architecture: x86-64
+
+### os-release
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+
+### uname
+Linux vps 5.4.0-216-generic #236-Ubuntu SMP Fri Apr 11 19:53:21 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+### uptime
+ 04:07:31 up 3 days, 18:39,  0 users,  load average: 1.15, 2.08, 1.96
+
+### date
+Thu Nov 12 04:07:31 AM UTC 2026
+Thu Nov 12 04:07:31 AM UTC 2026
+
+### timedatectl
+               Local time: Thu 2026-11-12 04:07:31 UTC
+           Universal time: Thu 2026-11-12 04:07:31 UTC
+                 RTC time: n/a
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: inactive
+          RTC in local TZ: no
+
+### locale
+LANG=en_US.UTF-8
+LANGUAGE=
+LC_CTYPE="en_US.UTF-8"
+LC_NUMERIC="en_US.UTF-8"
+LC_TIME="en_US.UTF-8"
+LC_COLLATE="en_US.UTF-8"
+LC_MONETARY="en_US.UTF-8"
+LC_MESSAGES="en_US.UTF-8"
+LC_PAPER="en_US.UTF-8"
+LC_NAME="en_US.UTF-8"
+LC_ADDRESS="en_US.UTF-8"
+LC_TELEPHONE="en_US.UTF-8"
+LC_MEASUREMENT="en_US.UTF-8"
+LC_IDENTIFICATION="en_US.UTF-8"
+LC_ALL=en_US.UTF-8
+
+### locale -a
+C
+C.utf8
+en_US.utf8
+POSIX
+
+### timezone
+Etc/UTC
+/usr/share/zoneinfo/Etc/UTC
+
+### systemd-detect-virt
+lxc
+
+### machine-id (sha256)
+<removed>
+
+### boot-id (sha256)
+<removed>
+
+### cmdline
+BOOT_IMAGE=/boot/vmlinuz-5.4.0-216-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+
+### cgroup
+12:rdma:/
+11:hugetlb:/
+10:freezer:/
+9:blkio:/
+8:pids:/
+7:perf_event:/
+6:cpu,cpuacct:/
+5:cpuset:/
+4:net_cls,net_prio:/
+3:devices:/
+2:memory:/
+1:name=systemd:/init.scope
+0::/init.scope

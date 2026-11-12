@@ -1,0 +1,59 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "http-in",
+      "listen": "127.0.0.1",
+      "port": 2080,
+      "protocol": "http",
+      "settings": {
+        "timeout": 300
+      }
+    },
+    {
+      "tag": "socks-in",
+      "listen": "127.0.0.1",
+      "port": 2081,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy-out",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "198.51.100.20",
+            "port": 10041,
+            "users": [
+              {
+                "id": "REDACTED-UUID",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "show": false,
+          "fingerprint": "chrome",
+          "serverName": "addons.mozilla.org",
+          "publicKey": "REDACTED-REALITY-PUBLIC-KEY",
+          "shortId": "REDACTED-SHORT-ID",
+          "spiderX": ""
+        }
+      }
+    }
+  ]
+}

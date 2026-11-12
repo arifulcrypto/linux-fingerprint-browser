@@ -1,0 +1,85 @@
+{
+  "log": {
+    "loglevel": "warning",
+    "access": "none"
+  },
+  "inbounds": [
+    {
+      "tag": "residential-in",
+      "listen": "0.0.0.0",
+      "port": 10041,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "REDACTED-UUID",
+            "flow": "xtls-rprx-vision",
+            "email": "residential"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "show": false,
+          "target": "addons.mozilla.org:443",
+          "xver": 0,
+          "serverNames": [
+            "addons.mozilla.org"
+          ],
+          "privateKey": "REDACTED-REALITY-PRIVATE-KEY",
+          "shortIds": [
+            "REDACTED-SHORT-ID"
+          ]
+        }
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "routeOnly": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "residential-http-out",
+      "protocol": "http",
+      "settings": {
+        "servers": [
+          {
+            "address": "geo.example-provider.net",
+            "port": 32345,
+            "users": [
+              {
+                "user": "REDACTED-USER",
+                "pass": "REDACTED-PASS"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tag": "blocked-out",
+      "protocol": "blackhole"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "residential-in"
+        ],
+        "outboundTag": "residential-http-out"
+      }
+    ]
+  }
+}

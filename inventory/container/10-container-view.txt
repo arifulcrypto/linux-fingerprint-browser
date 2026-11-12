@@ -1,0 +1,125 @@
+### container identity
+vps
+10.89.10.1 172.17.0.1 10.89.13.1 10.89.11.1 10.89.12.1 10.0.43.40 fd42:43::216:3eff:fe41:db37 
+vps
+
+### /proc/1
+Name:	systemd
+Umask:	0000
+State:	S (sleeping)
+Tgid:	1
+Ngid:	0
+Pid:	1
+PPid:	0
+TracerPid:	0
+Uid:	0	0	0	0
+Gid:	0	0	0	0
+FDSize:	128
+Groups:	 
+NStgid:	1
+NSpid:	1
+NSpgid:	1
+NSsid:	1
+VmPeak:	  231468 kB
+VmSize:	  167168 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   11016 kB
+VmRSS:	    6916 kB
+RssAnon:	    2612 kB
+RssFile:	    4304 kB
+RssShmem:	       0 kB
+VmData:	   19384 kB
+VmStk:	    1036 kB
+VmExe:	    1112 kB
+VmLib:	    8844 kB
+VmPTE:	      88 kB
+
+### cgroup
+12:rdma:/
+11:hugetlb:/
+10:freezer:/
+9:blkio:/
+8:pids:/
+7:perf_event:/
+6:cpu,cpuacct:/
+5:cpuset:/
+4:net_cls,net_prio:/
+3:devices:/
+2:memory:/
+1:name=systemd:/init.scope
+0::/init.scope
+
+### mounts (top)
+/dev/vda1 on / type ext4 (rw,relatime)
+none on /dev type tmpfs (rw,relatime,size=492k,mode=755,uid=1000000,gid=1000000)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+sysfs on /sys type sysfs (rw,relatime)
+udev on /dev/fuse type devtmpfs (rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755)
+udev on /dev/net/tun type devtmpfs (rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+proc on /dev/.lxc/proc type proc (rw,relatime)
+sys on /dev/.lxc/sys type sysfs (rw,relatime)
+tmpfs on /dev/lxd type tmpfs (rw,relatime,size=1024k,mode=711)
+tmpfs on /dev/.lxd-mounts type tmpfs (rw,relatime,size=100k,mode=711)
+lxcfs on /proc/cpuinfo type fuse.lxcfs (rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other)
+lxcfs on /proc/diskstats type fuse.lxcfs (rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other)
+lxcfs on /proc/loadavg type fuse.lxcfs (rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other)
+lxcfs on /proc/meminfo type fuse.lxcfs (rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other)
+lxcfs on /proc/stat type fuse.lxcfs (rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other)
+lxcfs on /proc/swaps type fuse.lxcfs (rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other)
+lxcfs on /proc/uptime type fuse.lxcfs (rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other)
+lxcfs on /sys/devices/system/cpu/online type fuse.lxcfs (rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other)
+udev on /dev/full type devtmpfs (rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755)
+udev on /dev/null type devtmpfs (rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755)
+udev on /dev/random type devtmpfs (rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755)
+udev on /dev/tty type devtmpfs (rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755)
+udev on /dev/urandom type devtmpfs (rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755)
+udev on /dev/zero type devtmpfs (rw,nosuid,noexec,relatime,size=1973476k,nr_inodes=493369,mode=755)
+/proc/self/fd/43 on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=1000005,mode=620,ptmxmode=666,max=1024)
+/proc/self/fd/43 on /dev/ptmx type devpts (rw,nosuid,noexec,relatime,gid=1000005,mode=620,ptmxmode=666,max=1024)
+/proc/self/fd/43 on /dev/console type devpts (rw,nosuid,noexec,relatime,gid=1000005,mode=620,ptmxmode=666,max=1024)
+none on /proc/sys/kernel/random/boot_id type tmpfs (ro,nosuid,nodev,noexec,relatime,size=492k,mode=755,uid=1000000,gid=1000000)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,uid=1000000,gid=1000000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,size=796344k,nr_inodes=819200,mode=755,uid=1000000,gid=1000000)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k,uid=1000000,gid=1000000)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,size=4096k,nr_inodes=1024,mode=755,uid=1000000,gid=1000000)
+cgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset,clone_children)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+none on /run/credentials/systemd-sysusers.service type ramfs (ro,nosuid,nodev,noexec,relatime,mode=700)
+tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,size=398168k,nr_inodes=99542,mode=700,uid=1000000,gid=1000000)
+overlay on /var/lib/docker/rootfs/overlayfs/ce866d3035c782f4193188e544d568dd9268a457bf42c859e16cdc63fa4b22d4 type overlay (rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/120/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/119/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/118/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/117/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/116/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/121/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/121/work,xino=off)
+nsfs on /run/docker/netns/18147909fff8 type nsfs (rw)
+overlay on /var/lib/docker/rootfs/overlayfs/90f995984ca7c8b2c8821c45633e967d66c98d9ff467001f79f7b38bcb526596 type overlay (rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/283/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/54/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/53/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/52/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/51/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/50/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/49/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/48/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/47/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/46/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/36/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/285/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/285/work,xino=off)
+nsfs on /run/docker/netns/1c526f222f04 type nsfs (rw)
+overlay on /var/lib/docker/rootfs/overlayfs/c90771a2681c33239c7f92d293c9184517ff7415081c348b4c60935fb860f2f3 type overlay (rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/282/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/61/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/60/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/59/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/58/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/57/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/56/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/55/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/284/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/284/work,xino=off)
+
+### disk
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/vda1      ext4   22G   20G  2.2G  91% /
+
+### limits
+cat: /sys/fs/cgroup/memory.max: No such file or directory
+cat: /sys/fs/cgroup/cpu.max: No such file or directory
+cat: /sys/fs/cgroup/pids.max: No such file or directory
+
+### lxc env
+none

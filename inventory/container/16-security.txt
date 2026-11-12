@@ -1,0 +1,81 @@
+### apparmor
+apparmor module is loaded.
+22 profiles are loaded.
+22 profiles are in enforce mode.
+   /usr/bin/man
+   /usr/lib/NetworkManager/nm-dhcp-client.action
+   /usr/lib/NetworkManager/nm-dhcp-helper
+   /usr/lib/connman/scripts/dhclient-script
+   /usr/lib/snapd/snap-confine
+   /{,usr/}sbin/dhclient
+   docker-default
+   lsb_release
+   man_filter
+   man_groff
+   nvidia_modprobe
+   nvidia_modprobe//kmod
+   ubuntu_pro_apt_news
+   ubuntu_pro_esm_cache
+   ubuntu_pro_esm_cache//apt_methods
+   ubuntu_pro_esm_cache//apt_methods_gpgv
+   ubuntu_pro_esm_cache//cloud_id
+   ubuntu_pro_esm_cache//dpkg
+   ubuntu_pro_esm_cache//ps
+   ubuntu_pro_esm_cache//ubuntu_distro_info
+   ubuntu_pro_esm_cache_systemctl
+   ubuntu_pro_esm_cache_systemd_detect_virt
+0 profiles are in complain mode.
+0 profiles are in kill mode.
+0 profiles are in unconfined mode.
+16 processes have profiles defined.
+16 processes are in enforce mode.
+
+### ufw
+Status: inactive
+
+### sysctl hardening
+kernel.randomize_va_space = 2
+kernel.kptr_restrict = 1
+kernel.dmesg_restrict = 0
+
+### open ports
+Netid State  Recv-Q Send-Q                   Local Address:Port  Peer Address:PortProcess                                   
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=3258480,fd=78))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=3258480,fd=74))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=3258480,fd=62))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=3258480,fd=48))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=3258480,fd=46))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=2158412,fd=92))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=2158412,fd=90))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=2158412,fd=87))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=2158412,fd=84))     
+udp   UNCONN 0      0                          224.0.0.251:5353       0.0.0.0:*    users:(("chrome",pid=2158412,fd=79))     
+udp   UNCONN 0      0                        127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=103,fd=13))
+udp   UNCONN 0      0                      10.0.43.40%eth0:68         0.0.0.0:*    users:(("systemd-network",pid=101,fd=15))
+udp   UNCONN 0      0                                    *:10042            *:*    users:(("hysteria",pid=3232619,fd=5))    
+udp   UNCONN 0      0      [fe80::216:3eff:fe41:db37]%eth0:546           [::]:*    users:(("systemd-network",pid=101,fd=21))
+tcp   LISTEN 0      4096                     127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=103,fd=14))
+tcp   LISTEN 0      128                            0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=160,fd=3))            
+tcp   LISTEN 0      4096                           0.0.0.0:8088       0.0.0.0:*    users:(("docker-proxy",pid=2175115,fd=9))
+tcp   LISTEN 0      128                          127.0.0.1:2080       0.0.0.0:*    users:(("xray",pid=2157613,fd=5))        
+tcp   LISTEN 0      100                          127.0.0.1:18080      0.0.0.0:*    users:(("pproxy",pid=111662,fd=6))       
+tcp   LISTEN 0      100                          127.0.0.1:18081      0.0.0.0:*    users:(("pproxy",pid=3232992,fd=6))      
+tcp   LISTEN 0      128                          127.0.0.1:2081       0.0.0.0:*    users:(("xray",pid=2157613,fd=8))        
+tcp   LISTEN 0      128                               [::]:22            [::]:*    users:(("sshd",pid=160,fd=4))            
+tcp   LISTEN 0      2                                [::1]:3350          [::]:*    users:(("xrdp-sesman",pid=143,fd=7))     
+tcp   LISTEN 0      4096                              [::]:8088          [::]:*    users:(("docker-proxy",pid=2175121,fd=9))
+tcp   LISTEN 0      128                                  *:10041            *:*    users:(("xray-26.6.27",pid=3232274,fd=5))
+tcp   LISTEN 0      2                                    *:3389             *:*    users:(("xrdp",pid=155,fd=11))           
+
+### /etc/shadow root hash algorithm
+$y$
+
+### sudoers
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	use_pty
+root	ALL=(ALL:ALL) ALL
+%admin ALL=(ALL) ALL
+%sudo	ALL=(ALL:ALL) ALL
+@includedir /etc/sudoers.d

@@ -1,0 +1,23 @@
+# Hysteria2 client example.
+# For production, use a CA-issued certificate instead of insecure: true.
+
+server: 198.51.100.20:10042
+auth: REDACTED-HY2-PASSWORD
+
+tls:
+  sni: www.bing.com
+  insecure: true
+
+obfs:
+  type: salamander
+  salamander:
+    password: REDACTED-OBFS-PASSWORD
+
+socks5:
+  listen: 127.0.0.1:1080
+
+http:
+  listen: 127.0.0.1:8080
+
+# Hysteria2 is UDP-based; the local HTTP/SOCKS listeners give Chrome a
+# conventional proxy endpoint.

@@ -1,0 +1,47 @@
+# Hysteria2 server example.
+# Replace every REDACTED value; never commit the real certificate or password.
+
+listen: :10042
+
+tls:
+  cert: /etc/hysteria/server.crt
+  key: /etc/hysteria/server.key
+
+auth:
+  type: password
+  password: REDACTED-HY2-PASSWORD
+
+obfs:
+  type: salamander
+  salamander:
+    password: REDACTED-OBFS-PASSWORD
+
+quic:
+  initStreamReceiveWindow: 8388608
+  maxStreamReceiveWindow: 8388608
+  initConnReceiveWindow: 20971520
+  maxConnReceiveWindow: 20971520
+
+# The upstream is an HTTP proxy, which cannot carry UDP.
+# Keep this true so Hysteria2 only tunnels TCP inside QUIC.
+disableUDP: true
+
+# The VPS-to-provider leg is plain HTTP. Prefer an HTTPS provider endpoint
+# or wrap this hop in TLS before using it for sensitive traffic.
+outbounds:
+  - name: residential
+    type: http
+    http:
+      url: http://REDACTED-USER:REDACTED-PASS@geo.example-provider.net:32345
+      insecure: false
+
+masquerade:
+  type: proxy
+  proxy:
+    url: https://www.bing.com
+    rewriteHost: true
+
+# Optional: pin the upstream health check so a dead provider fails closed.
+# acl:
+#   inline:
+#     - reject(all, udp/443)
